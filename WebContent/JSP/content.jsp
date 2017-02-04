@@ -101,7 +101,6 @@
 				               <option value="14">2014-15</option>
 						      <option value="15"  >2015-16</option>
 						      <option value="16" selected="selected" >2016-17</option>
-						      <option value="17">2017-18</option>
 						      
 						</Select>	  
 				   <br><br>
@@ -128,7 +127,6 @@
 				 			 <option value="14">2014-15</option>
 						      <option value="15" >2015-16</option>
 						      <option value="16" selected="selected" >2016-17</option>
-						      <option value="17">2017-18</option>
 						</Select> <br><br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -160,9 +158,8 @@
 				Email2: &nbsp;&nbsp; <input type = "text" name="email2" value = "<%= rs.getString("email_2")%>" size= 75  /> <br>
 				Year: &nbsp;&nbsp;<Select id="yearClass" name = "yearClass">
 						       <option value="14">2014-15</option>
-						      <option value="15"  >2015-16</option>
-						      <option value="16" selected="selected">2016-17</option>
-						      <option value="17">2017-18</option>
+						      <option value="15" selected="selected" >2015-16</option>
+						      <option value="16">2016-17</option>
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>

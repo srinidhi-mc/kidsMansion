@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="java.sql.ResultSet" %>
+    <%@page import="java.util.List" %>
+     <%@page import="kidsMansion.DailyReportTO" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,15 +11,44 @@
 </head>
 <body>
 <script>
-		function onSubmit(id, counter){
-
-			    var searchString = document.getElementById("searchData").value;
-			  //  alert("search Data " + searchString);
-			    var url = "./expenseServlet?type=update&id="+id+"&counter="+counter+"&searchData="+searchString;
+		function onSubmit(id, type){
+			var selected = '0';
+	    	 checkboxes = document.getElementsByName('checker');
+		    for(var i=0, n=checkboxes.length;i<n;i++) {
+				  if(checkboxes[i].checked)
+				        selected =  (checkboxes[i].id) + "," + selected; 
+			 }
+    	 	  if(selected == '0') {
+	    		  alert("No rows are selected");
+	    		  return false;
+	    	  }
+	    	  if(id == 'submit') {
+		    	  var confirmResponse = confirm("Submit All the selected records?");
+				   if (!confirmResponse){  return false; 	}			   
+			  }
+	    	  
+	    	  if(id == 'delete') {
+		    	  var confirmResponse = confirm("Delete All the selected records?");
+				   if (!confirmResponse){  return false; 	}			   
+			  }
+		    	 
+	    	  if(id == 'view') {
+	    		  var splited = selected.split(",")
+	    		  if(splited.length > 2) {
+	    			  alert("Select only one record to view at a time");
+	    			  return false;
+	    		  }
+		    	 			   
+			  }
+		    
+		     
+		     alert(selected);
+			    //var url = "./expenseServlet?type=update&id="+id+"&counter="+counter+"&searchData="+searchString;
 				// alert(" url  " +  url);
 				 // return false;
-				 document.forms["expense"].action= url;
-				 document.forms["expense"].submit();
+				// document.forms["expense"].action= url;
+				 return false;
+				 //document.forms["expense"].submit();
 		 }
 
 		function onSearch(request){
@@ -29,69 +60,78 @@
 			 document.forms["expense"].action= url;
 			 document.forms["expense"].submit();         
 		}
+		
+		function toggle(source) {
+			  checkboxes = document.getElementsByName('checker');
+			  for(var i=0, n=checkboxes.length;i<n;i++) {
+			    checkboxes[i].checked = source.checked;
+			  }
+			}
 		 
  </script>
+ 
+ <style>
+
+table {
+    border: solid 1px #ff0000;
+    border-collapse: collapse;
+ 
+}
+
+tr{
+   border: solid 1px #ff0000;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px #ff0000;
+    border-collapse: collapse;
+}
+</style>
 
 <form name ='expense' method ='post' >
-	<%  String resp = (String)request.getAttribute("type"); 
-	    String message = (String)request.getAttribute("message"); 
-	    ResultSet rs  = (ResultSet)request.getAttribute("resultSet");
+	<%  List<DailyReportTO> dailyReportTO = (List<DailyReportTO>)request.getAttribute("dailReportTOList"); 
+	   	    
 	%>
 	
-	     <h1> Search </h1> 	
-                    Search Option: &nbsp; MONTH
-				   <input type = "text" name="searchData" id= "searchData" />	
-				   <br><br>
-				   <input type = "button" value ="Search" onclick="javascript:onSearch('search');"/>
-	
+	    
 	   <table border = "1" width = "85%">
 	     <tr>
-		     <td> Name </td>
-		     <td> Amount</td>
-		     <td> Description</td>
-		     <td> MONTH </td>
-		     <td> Update</td>
+	         <td width ="15%"> Select All <Br><input type= 'checkbox' id = 'selectAll' , name='selectAll'  onClick="toggle(this)" />  </td>
+		     <td> SUBJECT </td>
+		     <td> REPORT DATE</td>
+		     <td> MAIL TIME</td>
+		    
+		     
 	    </tr>
-	<%   int counter = 0 , grandTotal = 0;
-	     if(resp!= null &&  resp.equalsIgnoreCase("List")) {
-	       while(rs.next()){
-	    	   grandTotal += rs.getInt("AMOUNT");
+	  
+	<% if(dailyReportTO != null){ 
+	   for(DailyReportTO drTo : dailyReportTO ) {
 	 %>
 		        <tr>
-		        <td><input type ="text" name ="name<%=counter%>" id="name<%=counter%>" value="<%=rs.getString("NAME")%>" /></td>
-		        <td><input type ="text" name ="amount<%=counter%>" id="amount<%=counter%>" value="<%=rs.getInt("AMOUNT")%>" /></td>
-		        <td><input type ="text" name ="desc<%=counter%>" id="desc<%=counter%>" value="<%=rs.getString("DESCRIPTION")%>" /></td>
-		        <td><input type ="text" name ="month<%=counter%>" id="month<%=counter%>" value="<%=rs.getString("MONTH")%>" /> </td>
-		        <td><input type="button" value = "Update" id="update<%=counter%>" name="update<%=counter%>" onClick="Javascript:onSubmit(<%=rs.getInt("ID")%>,<%=counter%>);"/> </td>
-	           </tr>
-	      <%  counter++;
-	          } %>
-	          <!--  Adding a new row for cheque information  -->
-	          <tr>
-	             <td> <input type ="text" name ="name<%=counter%>" id="name<%=counter%>" />  </td>
-	             <td> <input type ="text" name ="amount<%=counter%>" id="amount<%=counter%>" /> </td>
-	             <td> <input type ="text" name ="desc<%=counter%>" id="desc<%=counter%>" /> </td>
-	             <td> <input type ="text" name ="month<%=counter%>" id="month<%=counter%>" /> </td>
-	             <td><input type="button" value = "Update" id="update<%=counter%>" name="update<%=counter%>" onClick="Javascript:onSubmit(-1,<%=counter%>);" /> </td>
-	          </tr>
+		          <td> <input type= 'checkbox' id = '<%=drTo.getID() %>' , name='checker' /> </td>
+		          <td><%= drTo.getSUBJECT()%> </td>
+		          <td><%= drTo.getSEND_DATE()%> </td>
+		          <td><%= drTo.getTIME()%> </td>
+		         
+		           
+		       </tr>
+	      
+	<% } } %>
+	     
 	     </table>
+	     <br><br>
+	     <input type = 'button' name = 'submit01' id = 'submit01'  value  = "Submit" onclick="javascript:onSubmit('submit','ALL')"/> 
+	     &nbsp;&nbsp;&nbsp; 
+	     <input type = 'button' name = 'submit02' id = 'submit02'  value  = "Delete" onclick="javascript:onSubmit('delete','ALL')" /> </td>
+	     &nbsp;&nbsp;&nbsp; 
+	     <input type = 'button' name = 'submit02' id = 'submit02'  value  = "View" onclick="javascript:onSubmit('view','ALL')" /> </td>
 	     
-	      <br> Total Expense = <%=grandTotal %>
-	<% } else if(resp!= null &&  resp.equalsIgnoreCase("fetch")) { %>
-	          
-	 
-	<%}
+	
 	     
-	     if(rs!= null) {
-	      rs.close();
-          System.out.println("expense.jsp --> Result Set Closed ...");
-	     }
-	 %> 
-	     
-	       <br><br> <h3>
+	    <%--    <br><br> <h3>
           <% if(message != null && message != "" )   		
     			out.println(" " + message) ;
-       %>
+       %> --%>
      </h3>  
   </form>
 </body>

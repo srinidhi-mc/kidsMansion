@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class mailSenderServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = -6990596740077647269L;
+	private mailThreadExecutor mTE = null;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -27,98 +28,73 @@ public class mailSenderServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		       String type = req.getParameter("type");
-		       List<mailerTO> mailerDate = new ArrayList<mailerTO>();
+		       String type = req.getParameter("type"); 
+		       String ids = req.getParameter("id");
+		       String selectDate = (String)req.getParameter("reportdate");
+		       /*List<mailerTO> mailerDate = new ArrayList<mailerTO>();*/
+		       List<DailyReportTO> dailReportTOList = new ArrayList<DailyReportTO>();
+		       if(type.equalsIgnoreCase("fetch")){
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
+				   
+		       }else if (type.equalsIgnoreCase("deleted")){
+		    	   boolean firstEntry = true;
+		    	   StringBuilder sb = new StringBuilder();
+		    	   sb.append("Update KM.DAILY_REPORT SET DELETED = 1, UPDATED_DATE = NOW() where ID IN (" );
+		    	   if(ids != null && !ids.equalsIgnoreCase("")){
+		    		   String[] idDetail = ids.split(",");
+		    		   for(String idd: idDetail){
+		    			   if(!idd.equalsIgnoreCase("0") && !firstEntry){
+		    				   sb.append(", " + idd);
+		    			   }else if(firstEntry){
+		    				   sb.append(idd);
+		    				   firstEntry = false;
+		    			   }
+		    		   }
+		    		   sb.append(")");
+		    		   controllerDAO cDAO = new controllerDAO();
+		    		   cDAO.addUser(sb.toString());
+		    	   }
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
 		       
-		       if(type.equalsIgnoreCase("sendMail")){
-		    	   String subject = req.getParameter("subject");
-		    	   String selection = req.getParameter("selection");
-		    	   String message= req.getParameter("message");
-		    	   String uploadFile01 = req.getParameter("uploadFile01");
-		    	   String uploadFile02 = req.getParameter("uploadFile02");
-		    	   String uploadFile03 = req.getParameter("uploadFile03");
-		    	   String FileName01 = req.getParameter("FileName01");
-		    	   String FileName02 = req.getParameter("FileName02");
-		    	   String FileName03 = req.getParameter("FileName03");
-		    	   
-		    	   System.out.println("Request type is sendMail " + subject +" -- " + selection + " -- " + message);
-		    	   System.out.println("Request type is sendMail " + uploadFile01 + " -- " + uploadFile02 + " -- " + uploadFile03);
-		    	   System.out.println("Request type is sendMail " + FileName01 + " -- " + FileName02 + " -- " + FileName03);
-		    	   
-		    	   String sql = "select * from KM.STUDENTS " ;
-		    		if(!selection.equalsIgnoreCase("All"))	  sql = sql +" where class = '"+selection+"'";
-		    		  controllerDAO cDAO = new controllerDAO();
-				    ResultSet  rs =  cDAO.getResult(sql);
-				    String emailList = "srinidhi.mc@gmail.com";
-				    System.out.println(" Sql is *** " + sql);
-				  //  int i =1;
-				    try {
-						while(rs.next()){
-							String email1 =  rs.getString("EMAIL_1"); 
-							String email2 = rs.getString("EMAIL_2");
-					//		System.out.println(" emailList --> " + i + " -- " +  email1 + " -- " + email2);
-							if(email1 != null && !email1.equalsIgnoreCase("")) emailList += "," + email1 ; //+ "," + emailList;
-							if(email2 != null && !email2.equalsIgnoreCase("")) emailList += "," + email2; // + "," + emailList;
-							//System.out.println(" emailList --> " +  + i + " -- " +  emailList);
-						//	i++;
-						}
-					} catch (SQLException e) {
-						
-						e.printStackTrace();
-					}
-		    	   
-				    System.out.println(" Email id is " + emailList);
-				    
-				  int size =  insertMailData(subject, message, emailList, uploadFile01, uploadFile02, uploadFile03, FileName01, FileName02, FileName03);
-				    
-				    mailThreadExecutor mTE =   new mailThreadExecutor(size);
-				    new Thread(mTE).start();
-		    	    System.out.println(" *** Task Completed **** "); 
-		    	   
-		    	   
-		       }
-		       
-		       /*  Display any pending task         */
-		
-				     String sql ="select * from KM.MAIL_INFO WHERE MAIL_SENT = 'N'";
-				     System.out.println("mailSenderServlet:doPost.." +sql);
-				      controllerDAO cDAO = new controllerDAO();
-					  ResultSet  rs =  cDAO.getResult(sql);
-					
-					 try {
-						while(rs.next()){
-							mailerTO mTO = new mailerTO();
-							mTO.setID(rs.getInt("ID"));
-							//mTO.setPID(rs.getInt("PID"));
-							mTO.setCREATE_DATE(rs.getString("CREATE_DATE"));
-							mTO.setCREATE_DATE(rs.getString("MODIFIED_DATE"));
-							mTO.setSUBJECT(rs.getString("SUBJECT"));	
-							mTO.setATTACHMENT_FILE(rs.getString("aTTACHMENT_FILE"));
-							mTO.setMAILER_LIST(rs.getString("mAILER_LIST"));
-							mailerDate.add(mTO);
-					  }
-						rs.close();
-					 
-					} catch (SQLException e) {
-						cDAO.setError(true);
-						e.printStackTrace();
-						
-					}
-					
-				       
-					  
-					  if(cDAO.isError()) {
-						   req.setAttribute("message", "Error during Adding Please check Logs");
-					   }else{
-						   req.setAttribute("message", "Search Succesful!!!");
-					   }
-			 
-		         
-		    req.setAttribute("mailStatus", mailerDate);
-		    getServletContext().getRequestDispatcher("/JSP/mailSender.jsp").forward(req, resp);
-			}
+		       }else if(type.equalsIgnoreCase("submit")){
+		    	    
+		    	   if(mTE != null && mTE.isAlive()){
+		    		   req.setAttribute("message", "Mail sending in progress, please resubmit after completion");
+		    	   }else{
+			    	   boolean firstEntry = true;
+			    	   StringBuilder sb = new StringBuilder();
+			    	   mTE = new mailThreadExecutor(selectDate, ids);
+			    	   sb.append("Update KM.DAILY_REPORT SET TO_SEND = 1,STATUS = 0, UPDATED_DATE = NOW() where ID IN (" );
+			    	   if(ids != null && !ids.equalsIgnoreCase("")){
+			    		   String[] idDetail = ids.split(",");
+			    		   for(String idd: idDetail){
+			    			   if(!idd.equalsIgnoreCase("0") && !firstEntry){
+			    				   sb.append(", " + idd);
+			    			   }else if(firstEntry){
+			    				   sb.append(idd);
+			    				   firstEntry = false;
+			    			   }
+			    		   }
+			    		 sb.append(")");
+			    	     controllerDAO cDAO = new controllerDAO();
+		    		    cDAO.addUser(sb.toString());
+			    	   	}
+		    	   	  mTE.start();
+			          System.out.println(" *** Task Completed **** "); 
+		    	  }
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
+		      }
+		      req.setAttribute("reportDate", selectDate);
+		      if(type.equalsIgnoreCase("List") ){     
+		    	    req.setAttribute("dailReportTOList", dailReportTOList);
+				    getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
+		       }else{
+		    	    req.setAttribute("dailReportTOList", dailReportTOList);
+				    getServletContext().getRequestDispatcher("/JSP/dailyReportStatus.jsp").forward(req, resp);
+		     }
+	}
 	
- public int insertMailData(String subject, String  message,String  emailLists, String uploadFile01,String  uploadFile02, String uploadFile03,String  FileName01,String  FileName02, String  FileName03){
+ /*public int insertMailData(String subject, String  message,String  emailLists, String uploadFile01,String  uploadFile02, String uploadFile03,String  FileName01,String  FileName02, String  FileName03){
 	 SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
 	    String[] emailList = emailLists.split(",");
 		System.out.println(" Total Number of Emails " + emailList.length);
@@ -150,7 +126,7 @@ public class mailSenderServlet extends HttpServlet {
 		}
 			
 		
-		/*
+		
 		 
 		 for(int i =0; i< emailList.length; i++){
 			counter++;
@@ -179,7 +155,7 @@ public class mailSenderServlet extends HttpServlet {
 		    }
 		}
 		  
-		 */
+		 
 		
 		String filePathAppended = uploadFile01+ ";" + uploadFile02 + ";" + uploadFile03;
 		String fileNamesAppended = FileName01 + ";" + FileName02 +";" + FileName03 ;
@@ -197,6 +173,38 @@ public class mailSenderServlet extends HttpServlet {
 	 return size;	
  }
    
+	*/
 	
+
+
+
+public List<DailyReportTO> fetchData ( String selectDate){
+	List<DailyReportTO> dailReportTOList = new ArrayList<DailyReportTO>();
+	   String sql = "select * from KM.DAILY_REPORT where SEND_DATE = '"+selectDate +"' order by TIME" ;
+	   controllerDAO cDAO = new controllerDAO();
+	 
+	  ResultSet rs = cDAO.getResult(sql);
+	  try {
+		while(rs.next()){
+			DailyReportTO dailReportTO = new DailyReportTO();
+			dailReportTO.setCONTENT( rs.getString("CONTENT"));
+			dailReportTO.setID(rs.getInt("ID"));
+			dailReportTO.setSTATUS(rs.getInt("STATUS"));
+			dailReportTO.setSEND_DATE(rs.getString("SEND_DATE"));
+			dailReportTO.setSUBJECT(rs.getString("SUBJECT"));
+			dailReportTO.setTIME(rs.getString("TIME"));
+			dailReportTO.setTO_SEND(rs.getInt("TO_SEND"));
+			dailReportTO.setDELETED(rs.getInt("DELETED"));
+			dailReportTOList.add(dailReportTO);
+			//dailReportTOList.add(dailReportTO);
+			
+		  }
+	} catch (SQLException e) {
+		
+		e.printStackTrace();
+	}
 	
+	return dailReportTOList ;
+}
+
 }

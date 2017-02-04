@@ -3,6 +3,7 @@ package kidsMansion;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 
@@ -20,166 +21,75 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-public class mailThreadExecutor implements Runnable  {
-	String emails, subject, message, fileName01, fileName02, fileName03, uploadfile01 ,uploadfile02, uploadfile03 ;
-	int size;
+public class mailThreadExecutor extends Thread  {
 	
-	public mailThreadExecutor(int size){
-		this.size = size;
-		
-	}
-	
-	public mailThreadExecutor(String Subject, String Message, String Emails, String uploadFile01, 
-			                  String uploadFile02, String uploadFile03, String FileName01, String FileName02, String FileName03  ){
-		
-		this.subject = Subject;
-		this.message= Message;
-		this.emails = Emails;
-		this.uploadfile01 = uploadFile01;
-		this.uploadfile02 = uploadFile02;
-		this.uploadfile03= uploadFile03;
-		this.fileName01 = FileName01;
-		this.fileName02 = FileName02;
-		this.fileName03 = FileName03;
-		//this.size = size;
-	}
-	
-	
-	@Override
-	public String toString() {
-		return "mailThreadExecutor [emails=" + emails + ", subject=" + subject
-				+ ", message=" + message + ", fileName01=" + fileName01
-				+ ", fileName02=" + fileName02 + ", fileName03=" + fileName03
-				+ ", uploadfile01=" + uploadfile01 + ", uploadfile02="
-				+ uploadfile02 + ", uploadfile03=" + uploadfile03 + "]";
-	}
+  public static String last_mail_sent = null;
+  private String selectDate, iDs;
+  
+  
+  public mailThreadExecutor(String selectDate, String iDs){
+	  this.selectDate = selectDate;
+	  this.iDs = iDs;
+	  
+  }
 
 	@SuppressWarnings("null")
 	public void run()  {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
-		/*String[] emailList = this.emails.split(",");
-		System.out.println(" Total Number of Emails " + emailList.length);
-		int size =  emailList.length /22 +1 ;// + 1;
-		String[] emailBreakUp = new String[size];
-		System.out.println(" *** Size " + size);
-		int counter =0, listVar = 0;
-		 String emailsAdd = null;
-		for(int i =0; i< emailList.length; i++){
-			counter++;
-			if(counter <= 22 ){
-				if (counter == 1) {
-					emailsAdd = emailList[i] ;
-				}else {
-				    emailsAdd +=  "," +emailList[i];
-				}	
-		    } else {
-		    //	System.out.println(" ****  " + i);
-		    	emailBreakUp[listVar] = emailsAdd;
-		    	counter = 0;
-		    	listVar++;
-		    	emailsAdd = null;
-		    }
-			
-			
-		}
-		
-		String filePathAppended = this.uploadfile01+ ";" + this.uploadfile02 + ";" + this.uploadfile03;
-		String fileNamesAppended = this.fileName01+ ";" + this.fileName02 +";" + this.fileName03 ;
-		for(String str: emailBreakUp ) {
-			 System.out.println(" Break Up Email is  " + str);
-		   String  sql =" INSERT INTO KM.MAIL_INFO (SUBJECT,MODIFIED_DATE,MAILER_LIST,CREATE_DATE,BODY,ATTACHMENT_PATH,ATTACHMENT_FILE) VALUES ( " 
-			        		+ "'" + this.subject + "','" + sdf.format(new Date()) + "','"  + str + "','"   +  sdf.format(new Date()) + "','" + this.message + "','"
-				            +  filePathAppended + "','" + fileNamesAppended +"')";
-		   controllerDAO cDAO = new controllerDAO();
-		   cDAO.addUser(sql);
-		   System.out.println(" mailThreadExecutor::run --> SQL " + sql);
-		  
-		}*/
-		
-		// Insertion Completed...
-	  int counter = 1, id=0;
-	  while(counter <= size) {
+		int id = 0;
+		String sql = null;
+		controllerDAO cDAO = new controllerDAO();
 		try {
-			
-			System.out.println(" run Invoked....");
-			
-			
-			
-			String sql = "select * from mail_info where MAIL_SENT ='N' limit 1";
-			controllerDAO cDAO = new controllerDAO();
-			ResultSet rs = cDAO.getResult(sql);
-			while(rs.next()) {
-				this.subject  = rs.getString("SUBJECT");
-				this.message = rs.getString("BODY");
-				this.emails = rs.getString("MAILER_LIST");
-				String fileNamess = rs.getString("ATTACHMENT_FILE");
-				String filePathss = rs.getString("ATTACHMENT_PATH");
-				id = rs.getInt("ID");
-			
-			String[] fileNamesss = null;
-			String[] filePathsss = null ;
-			
-			if(!fileNamess.equalsIgnoreCase(";;"))  {
-				 fileNamesss  = fileNamess.split(";");
-						
-				if(fileNamesss.length!= 0 &&!fileNamesss[0].equalsIgnoreCase("")){
-					this.fileName01 = fileNamesss[0];
-				}
+				SimpleDateFormat sdf = new SimpleDateFormat("HH.mm");
+				String curentTime = sdf.format(Calendar.getInstance().getTime());
+				String startTime = null;
+				long waitTime =0; ;
+				sql = "select * from KM.DAILY_REPORT where SEND_DATE = '" + selectDate + "' and ID in ("+ iDs + ") AND DELETED = 0 AND STATUS in (0,-1)  AND TO_SEND = 1 ORDER BY TIME ";
 				
-				if(fileNamesss.length >1 && !fileNamesss[1].equalsIgnoreCase("")){
-					this.fileName02 = fileNamesss[1];
+				ResultSet rs1 = cDAO.getResult(sql);
+				if(rs1.next()){
+					startTime = rs1.getString("TIME");
+					Date startingTime = sdf.parse(startTime);
+					Date currentTime = sdf.parse(curentTime);
+					 waitTime =  startingTime.getTime() - currentTime.getTime();
+					 System.out.println("wait time --> " + waitTime);
 				}
-				
-				if(fileNamesss.length >2 &&!fileNamesss[2].equalsIgnoreCase("")){
-					this.fileName03 = fileNamesss[2];
-				}
-			
-			}
-			 
-			if(!filePathss.equalsIgnoreCase(";;"))  {
-				 filePathsss  = filePathss.split(";");
-				
-					if( filePathsss.length != 0 &&!filePathsss[0].equalsIgnoreCase("")){
-						this.uploadfile01 = filePathsss[0];
+				rs1.close();
+				// Only if the wait time is more than wait till 13:15 else get started.
+			//	if(waitTime > 0)	Thread.sleep(waitTime);
+					 id = 0;
+				   while(true) {
+					System.out.println("mailThreadExecutor:run Invoked....");
+				    sql = "select * from KM.DAILY_REPORT where SEND_DATE = '" + selectDate + "' and ID in ("+ iDs + ") AND DELETED = 0 AND STATUS =0 AND TO_SEND= 1 order by TIME";
+					ResultSet rs = cDAO.getResult(sql);
+					if(rs.next()) {
+						id = rs.getInt("ID");
+						sendMailContent(rs.getString("SUBJECT"), rs.getString("CONTENT"), rs.getString("MAIL_ID"));
+					}else{
+						break;
 					}
-					
-					if( filePathsss.length > 1 && !filePathsss[1].equalsIgnoreCase("")){
-						this.uploadfile02 = filePathsss[1];
-					}
-					
-					if( filePathsss.length >2 &&  !filePathsss[2].equalsIgnoreCase("")){
-						this.uploadfile03 = filePathsss[2];
-					}
-				
-				}
-			
+					rs.close();
+			    	sql = "UPDATE KM.DAILY_REPORT SET STATUS = 1 , UPDATED_DATE = NOW() WHERE ID =" + id;
+			    	 cDAO.addUser(sql); 
+			    	 Thread.sleep(100000); // 15 min = 900000 milliseconds
 			}	
-			rs.close();
-	    	
-	    	sendMailContent();
-	    	
-	    	 sql = "UPDATE KM.MAIL_INFO SET MAIL_SENT = 'Y', MODIFIED_DATE = '" + sdf.format(new Date())  +"' WHERE ID =" + id;
-	    	 cDAO.addUser(sql);
-	    	
-			if(counter != size )Thread.sleep(10000); //600000
-			
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch(Exception e){
+			sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
+	    	 cDAO.addUser(sql); 
+			 e.printStackTrace();
+		} catch (MessagingException me){
+			sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
+	    	 cDAO.addUser(sql);
+		     me.printStackTrace();
+	     }catch(Exception e){
+	    	 sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
+	    	 cDAO.addUser(sql);
 			e.printStackTrace();
 		}
-		
-		counter++;
-		
-	}	
-		System.out.println( sdf.format(new Date()) + "  mailThreadExecutor Completed..." + this.toString());
-		
-	}
+  }
 	
 	
 	
-	public boolean sendMailContent()	{
+	public boolean sendMailContent(String Subject, String Content, String recipients) throws MessagingException, Exception	{
 	    boolean sent = true;
 		System.out.println(" sendMailContent::Start...");
         
@@ -203,13 +113,14 @@ public class mailThreadExecutor implements Runnable  {
       			}
       		  });
         
-	     try {
+	    
         	 
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 			//String recipient = emails;
-			String recipient ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
-			String[] recipientList = recipient.split(",");
+			System.out.println("actual recipients " + recipients);
+			 recipients ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
+			String[] recipientList = recipients.split(",");
 			InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
 			int counter = 0;
 			for (String rec : recipientList) {
@@ -219,61 +130,25 @@ public class mailThreadExecutor implements Runnable  {
 			message.setRecipients(Message.RecipientType.BCC, recipientAddress);
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 		    message.setSentDate(new Date());
-		    message.setSubject(this.subject);
+		    message.setSubject(Subject);
 		    
 			StringBuilder sb = new StringBuilder();
-			sb.append("<HTML> <BODY> <Font Face = 'Verdana' size = '2' color = 'Navy'>" );
-			sb.append(this.message);
+			
+			sb.append(Content);
 						
 			// Signature
+			sb.append("<HTML> <BODY> <Font Face = 'Verdana' size = '2' color = 'Navy'>" );
 			sb.append("<Br><br> -- <br>Thank You <br> Vinaya Srinidhi </font> ");
 			sb.append("<Font Face = 'Verdana' size = '1.5' color = 'Navy'> <br> KIDS MANSION <br> Ph: +91 9980264602 <br> <a href='http://www.kidsmansion.in'>www.kidsmansion.in </a>   ");
 			sb.append("<br> <a href='http://www.facebook.com/kidsmansion'> www.facebook.com/kidsmansion </a> </font>");
 			sb.append("</body></html>");
 			System.out.println(" Text body is " + sb);
-			
-			
-		 
-		// If attachment Exists	 
-		  if(this.fileName01!= null && !this.fileName01.equalsIgnoreCase("")) {
-			  // Set Message Information
-			  MimeBodyPart messageBodyPart = new MimeBodyPart();
-		      messageBodyPart.setContent(sb.toString(), "text/html");
-		       
-		      Multipart multipart = new MimeMultipart();
-		      multipart.addBodyPart(messageBodyPart);
-			 
-		      //For first Attachment     
-		      MimeBodyPart attachPart = new MimeBodyPart();
-		      attachPart.attachFile(this.uploadfile01 + "//"+ this.fileName01);
-		      multipart.addBodyPart(attachPart);
-		      
-			   if(this.fileName02!= null && !this.fileName02.equalsIgnoreCase("")) {
-				   MimeBodyPart attachPart01 = new MimeBodyPart();
-				   attachPart01.attachFile( this.uploadfile02 + "//"+ this.fileName02);
-				   multipart.addBodyPart(attachPart01);
-			   }	   
-			   if(this.fileName03!= null && !this.fileName03.equalsIgnoreCase("")) {
-				   MimeBodyPart attachPart01 = new MimeBodyPart();
-				   messageBodyPart.attachFile(this.uploadfile03 + "//"+ this.fileName03);
-				   multipart.addBodyPart(attachPart01);
-				   
-			   }  
-			    
-			   message.setContent(multipart);
-		  }else{
-			  message.setContent(sb.toString(), "text/html");
-		  }
-		    
-	//	    Transport.send(message);
+	       message.setContent(sb.toString(), "text/html");
+				    
+	        Transport.send(message);
            System.out.println(" sendMailContent::Done..");
  
-		} catch (MessagingException e) {
-			throw new RuntimeException(e);
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-	
+		
 	
 	 return sent;
  }

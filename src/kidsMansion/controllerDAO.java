@@ -9,10 +9,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
-
-
 
 public class controllerDAO {
 	
@@ -273,4 +275,25 @@ public class controllerDAO {
 			return sb.toString();
 		}
 
+	public static void main(String args[]) throws ParseException{
+		String test = "<html> <body> <table border='1' width='100%' > <tr width = '100%'> <td align = 'center'>   <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> <br> L.K.G Daily Report 04-Feb-2017 </td>  </tr> </table> <table border = '1'   width='100%'> <tr>  <th>Time</th>   <th> Activity</th> </tr>   <tr> <td> 9:30 To 9:45 AM </td> <td> Circle Time(Prayer , National Anthem & Rhymes with action) </td> </tr>  <tr> <td> 9:45 to 10:00 AM </td> <td> Picture Writing ? Revision  </td> </tr>  <tr> <td> 10:00 to 11:00 AM </td> <td> L.K.G English - & * > < $ # @ ! ( ) ^ \\ /  Cursive-  Alphabet- t </td> </tr>  <tr> <td> 11:00 to 11:20 AM </td> <td>  Snacks Break </td> </tr>  <tr> <td> 11:20 to 11:40 AM </td> <td> Play Time </td> </tr>  <tr> <td> 11:40 to 12:00 Noon </td> <td> GK ? Revision ? People around us </td> </tr>  <tr> <td> 12:30 to 12:50 PM  </td> <td> Annual day Practice </td> </tr> </table> <br> <b>Note:</b>  Daily Report is sent to entire class even if the child is absent. This helps to know the activity performed for the day.</body> </html>";
+		StringBuilder sb = new StringBuilder();
+		sb.append(test);
+		System.out.println(sb);
+	//	StringEscapeUtils.escapeHtml(sb.toString());
+		System.out.println(sb);
+		//sb.toString().replaceAll(regex, replacement)
+		/*SimpleDateFormat sdf = new SimpleDateFormat("HH.mm");
+		Date time = sdf.parse("13.15");
+		String curentTime = sdf.format(Calendar.getInstance().getTime());
+		Date currentTime = sdf.parse(curentTime);
+		long timetoStart =  time.getTime() - currentTime.getTime();*/
+		
+		
+		
+		
+		//System.out.println(timetoStart);
+		
+	}
+		
 }

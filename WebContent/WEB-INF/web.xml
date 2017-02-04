@@ -50,5 +50,14 @@
          <url-pattern>/mailSenderServlet</url-pattern>
     </servlet-mapping>
     
+      <servlet>
+         <servlet-name>dailyReportServlet</servlet-name>
+         <servlet-class>kidsMansion.dailyReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>dailyReportServlet</servlet-name>
+         <url-pattern>/dailyReportServlet</url-pattern>
+    </servlet-mapping>
+    
     
 </web-app>
