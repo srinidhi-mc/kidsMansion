@@ -55,7 +55,7 @@ public class mailThreadExecutor extends Thread  {
 				}
 				rs1.close();
 				// Only if the wait time is more than wait till 13:15 else get started.
-			//	if(waitTime > 0)	Thread.sleep(waitTime);
+			  if(waitTime > 0)	Thread.sleep(waitTime);
 					 id = 0;
 				   while(true) {
 					System.out.println("mailThreadExecutor:run Invoked....");
@@ -70,7 +70,7 @@ public class mailThreadExecutor extends Thread  {
 					rs.close();
 			    	sql = "UPDATE KM.DAILY_REPORT SET STATUS = 1 , UPDATED_DATE = NOW() WHERE ID =" + id;
 			    	 cDAO.addUser(sql); 
-			    	 Thread.sleep(100000); // 15 min = 900000 milliseconds
+			    	 Thread.sleep(900000); // 15 min = 900000 milliseconds
 			}	
 		} catch (InterruptedException e) {
 			sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
@@ -119,7 +119,7 @@ public class mailThreadExecutor extends Thread  {
 			message.setFrom(new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 			//String recipient = emails;
 			System.out.println("actual recipients " + recipients);
-			 recipients ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
+			// recipients ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
 			String[] recipientList = recipients.split(",");
 			InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
 			int counter = 0;
