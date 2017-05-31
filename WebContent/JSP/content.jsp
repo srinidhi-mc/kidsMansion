@@ -100,8 +100,8 @@
 				     <Select id="yearClass" name = "yearClass">
 				               <option value="14">2014-15</option>
 						      <option value="15"  >2015-16</option>
-						      <option value="16" selected="selected" >2016-17</option>
-						       <option value="17">2017-18</option>
+						      <option value="16"  >2016-17</option>
+						       <option value="17" selected="selected" >2017-18</option>
 						      
 						</Select>	  
 				   <br><br>
