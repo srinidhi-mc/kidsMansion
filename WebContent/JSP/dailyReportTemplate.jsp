@@ -166,6 +166,9 @@ $( function() {
    		<br><br>
    			<input type= 'text' id='nSixT' name= 'nSixT' value='11:40 to 12:00 Noon' length = 75/> &nbsp;&nbsp;&nbsp;
    			 <textarea cols="80" rows="1" id='nSixA' name = 'nSixA'></textarea>
+   		<br><br>
+   			<input type= 'text' id='nSevenT' name= 'nSevenT' value='12:00 Noon to 12:20 PM' length = 75/> &nbsp;&nbsp;&nbsp;
+   			 <textarea cols="80" rows="1" id='nSevenA' name = 'nSevenA'></textarea>
      <br><br>
     		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('NURSERY', 'datepicker1')"/>
      <hr><hr>
@@ -219,25 +222,25 @@ $( function() {
     		Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
     		<input type="text" name = 'datepicker3' id = 'datepicker3' class="datepicker"  <%if(selDate!= null) %> value = "<%=selDate%>"/>
       <br><br>
-   			<input type= 'text' id='UoneT' name= 'UoneT' value='9:30 To 9:45 AM' length = 75/> &nbsp;&nbsp;&nbsp;
+   			<input type= 'text' id='UoneT' name= 'UoneT' value='9:30 To 10:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
      		<textarea cols="80" rows="1"  id='UoneA' name = 'UoneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
        <br><br>
-            <input type= 'text' id='UtwoT' name= 'UtwoT' value='9:45 to 10:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-     		<textarea cols="80" rows="1" id='UtwoA' name = 'UtwoA'></textarea>
+            <input type= 'text' id='UtwoT' name= 'UtwoT' value='10:00 to 11:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
+     		<textarea cols="80" rows="3" id='UtwoA' name = 'UtwoA'></textarea>
 		<br><br>
-   			<input type= 'text' id='UthreeT' name= 'UthreeT' value='10:00 to 11:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-    		 <textarea cols="80" rows="3" id='UthreeA' name = 'UthreeA'></textarea>
+   			<input type= 'text' id='UthreeT' name= 'UthreeT' value='11:00 to 11:20 AM' length = 75/> &nbsp;&nbsp;&nbsp;
+    		 <textarea cols="80" rows="1" id='UthreeA' name = 'UthreeA'>Snacks Break</textarea>
  		 <br><br>
-   			<input type= 'text' id='UfourT' name= 'UfourT' value='11:00 to 11:20 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-     		<textarea cols="80" rows="1" id='UfourA' name = 'UfourA'>Snacks Break</textarea>
+   			<input type= 'text' id='UfourT' name= 'UfourT' value='11:20 to 11:40 AM' length = 75/> &nbsp;&nbsp;&nbsp;
+     		<textarea cols="80" rows="1" id='UfourA' name = 'UfourA'>Play Time</textarea>
     	<br><br>
-     		 <input type= 'text' id='UfiveT' name= 'UfiveT' value='11:20 to 11:40 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-   		 	<textarea cols="80" rows="1" id='UfiveA' name = 'UfiveA'>Play Time</textarea>
+     		 <input type= 'text' id='UfiveT' name= 'UfiveT' value='11:40 to 12:10 PM' length = 75/> &nbsp;&nbsp;&nbsp;
+   		 	<textarea cols="80" rows="3" id='UfiveA' name = 'UfiveA'></textarea>
    		<br><br>
-   			<input type= 'text' id='USixT' name= 'USixT' value='11:40 to 12:00 Noon' length = 75/> &nbsp;&nbsp;&nbsp;
+   			<input type= 'text' id='USixT' name= 'USixT' value='12:10 to 12:30 Noon' length = 75/> &nbsp;&nbsp;&nbsp;
    			 <textarea cols="80" rows="3" id='USixA' name = 'USixA'></textarea>
    	 	<br><br>
-   	 		<input type= 'text' id='USevenT' name= 'USevenT' value='12:00 to 12:50 PM' length = 75/> &nbsp;&nbsp;&nbsp;
+   	 		<input type= 'text' id='USevenT' name= 'USevenT' value='12:30 to 12:50 PM' length = 75/> &nbsp;&nbsp;&nbsp;
    			 <textarea cols="80" rows="3" id='USevenA' name = 'USevenA'></textarea>
    	 <br><br>
     		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('U.K.G', 'datepicker3')"/>
