@@ -36,7 +36,7 @@ public class dailyReportServlet extends HttpServlet {
 		
 		String[] playGroup = {"poneT","poneA" ,"ptwoT","ptwoA","pthreeT","pthreeA","pfourT","pfourA","pfiveT","pfiveA","pSixT","pSixA"};
 		String[] nursery = {"noneT","noneA" ,"ntwoT","ntwoA","nthreeT","nthreeA","nfourT","nfourA","nfiveT","nfiveA","nSixT","nSixA","nSevenT","nSevenA"};
-		String[] lkg = {"LoneT","LoneA" ,"LtwoT","LtwoA","LthreeT","LthreeA","LfourT","LfourA","LfiveT","LfiveA","LSixT","LSixA","LSeveLT","LSeveLA","LEightT","LEightA"};
+		String[] lkg = {"LoneT","LoneA" ,"LtwoT","LtwoA","LthreeT","LthreeA","LfourT","LfourA","LfiveT","LfiveA","LSixT","LSixA","LSevenT","LSevenA","LEightT","LEightA"};
 		String[] ukg ={"UoneT","UoneA" ,"UtwoT","UtwoA","UthreeT","UthreeA","UfourT","UfourA","UfiveT","UfiveA","USixT","USixA","USevenT","USevenA"};//,"UEightT","UEightA"
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
