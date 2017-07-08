@@ -223,7 +223,7 @@ $( function() {
     		<input type="text" name = 'datepicker3' id = 'datepicker3' class="datepicker"  <%if(selDate!= null) %> value = "<%=selDate%>"/>
       <br><br>
    			<input type= 'text' id='UoneT' name= 'UoneT' value='9:30 To 10:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-     		<textarea cols="80" rows="1"  id='UoneA' name = 'UoneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
+     		<textarea cols="80" rows="3"  id='UoneA' name = 'UoneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
        <br><br>
             <input type= 'text' id='UtwoT' name= 'UtwoT' value='10:00 to 11:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
      		<textarea cols="80" rows="3" id='UtwoA' name = 'UtwoA'></textarea>
