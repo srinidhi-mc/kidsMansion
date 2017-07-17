@@ -93,8 +93,8 @@ public class mailThreadExecutor extends Thread  {
 	    boolean sent = true;
 		System.out.println(" sendMailContent::Start...");
         
-        final String username = "vinaya@kidsmansion.in";
-		final String password = "vin_sri_22";
+        final String username = "";
+		final String password = "";
 		
         Properties props = new Properties();
         props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
