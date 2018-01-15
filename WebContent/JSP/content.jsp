@@ -102,7 +102,7 @@
 						      <option value="15"  >2015-16</option>
 						      <option value="16"  >2016-17</option>
 						       <option value="17" selected="selected" >2017-18</option>
-						        <option value="18"  >2018-19</option>
+						        <option value="18">2018-19</option>
 						      
 						</Select>	  
 				   <br><br>
@@ -163,7 +163,8 @@
 						       <option value="14">2014-15</option>
 						      <option value="15"  >2015-16</option>
 						      <option value="16">2016-17</option>
-						       <option value="17" selected="selected">2017-18</option>
+						       <option value="17" >2017-18</option>
+						       <option value="18" selected="selected">2018-19</option>
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -227,7 +228,8 @@
 			      			                  if(rs.getInt("YEAR")== 14 ) { strYear ="2014-15" ; } 
 			      			                  else if( rs.getInt("YEAR")== 15){ strYear = "2015-16" ; }
 			      			                else if( rs.getInt("YEAR")== 16){ strYear = "2016-17" ; }
-			      			                  else  strYear ="2017-18"	; 
+			      			              else if( rs.getInt("YEAR")== 17){ strYear = "2017-18" ; }
+			      			                  else  strYear ="2018-19"	; 
 			      			             } 		
 		      			                 out.print(strYear);
 		      			                 %>
