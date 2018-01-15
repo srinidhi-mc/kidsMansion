@@ -102,6 +102,7 @@
 						      <option value="15"  >2015-16</option>
 						      <option value="16"  >2016-17</option>
 						       <option value="17" selected="selected" >2017-18</option>
+						        <option value="18"  >2018-19</option>
 						      
 						</Select>	  
 				   <br><br>
@@ -126,8 +127,9 @@
 				Email2: &nbsp;&nbsp; <input type = "text" name="email2"/> <br><Br>
 				Year: &nbsp;&nbsp;<Select id="yearClass" name = "yearClass">
 				 			  <option value="15" >2015-16</option>
-						      <option value="16" selected="selected" >2016-17</option>
+						      <option value="16"  >2016-17</option>
 						       <option value="17">2017-18</option>
+						        <option value="18" selected="selected" >2018-19</option>
 						</Select> <br><br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>

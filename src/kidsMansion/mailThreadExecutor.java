@@ -97,13 +97,20 @@ public class mailThreadExecutor extends Thread  {
 		final String password = "vin_sri_22";
 		
         Properties props = new Properties();
-        props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
+        /* commented out as this port 465 is not working and pointin to pop3 25*/
+      /*  props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
         props.put("mail.smtp.socketFactory.port", "465"); //SSL Port
         props.put("mail.smtp.socketFactory.class",
                 "javax.net.ssl.SSLSocketFactory"); //SSL Factory Class
         props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
         props.put("mail.smtp.port", "465"); //SMTP Port
-       
+*/       
+        
+         props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
+         props.put("mail.smtp.starttls.enables", "true"); 
+         props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
+         props.put("mail.smtp.port", "25"); //SMTP Port
+
         
         Session session = Session.getInstance(props,
       		  new javax.mail.Authenticator(
