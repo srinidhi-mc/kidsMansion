@@ -58,7 +58,10 @@ public class controllerServlet extends HttpServlet {
 				   sql.append("SELECT STU.ID, STU.NAME, STU.CLASS, STU.EMAIL_1, STU.EMAIL_2, STU.YEAR"); 
 				   sql.append(" FROM KM.STUDENTS STU  ");
 					sql.append(" WHERE NAME like '%" + searchString + "%' and active = " + active + " and (year is null or year =" + yearClass + ")"); 
-					sql.append(" and STU.CLASS <>'DayCare' order by NAME asc");	 
+					if(searchString == null || searchString == "" || searchString.equalsIgnoreCase("null")) {
+						sql.append(" and STU.CLASS <>'DayCare' ");
+					}
+					sql.append(" order by NAME asc"); 
 			//  sql.append( " FROM KM.STUDENTS STU where NAME like '%" + searchString + "%' and active =" + active + " order by STU.NAME ") ;
 			 
 			 }else if(classValue.equalsIgnoreCase("DayCare")) {
@@ -66,7 +69,7 @@ public class controllerServlet extends HttpServlet {
 				 			 		// Enter only when Search String is provided.
 			 		 if(searchString != null && searchString != "" && !searchString.equalsIgnoreCase("null")) {
 			 			sql.append(", PD.TOTAL,PD.PAID_DATE ,PD.TYPE, PD.STATUS, PD.MONTH  FROM KM.STUDENTS STU INNER JOIN PAYMENT_DETAILS PD ON STU.ID = PD.STUDENT_ID  AND STU.CLASS ='" + classValue + "'");
-						sql.append(" AND PD.MONTH LIKE '" + searchString + "%' and ACTIVE = " + active + "  and PD.ID >3001 "); 
+						sql.append(" AND PD.MONTH LIKE '" + searchString + "%' and ACTIVE = " + active + "  and PD.ID >4001 "); 
 						sql.append(" order by STATUS, NAME asc");
 					 }else{
 						 sql.append(" FROM KM.STUDENTS STU  where STU.CLASS ='DayCare' and active = " + active +" order by  NAME asc");
