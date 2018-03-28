@@ -58,7 +58,7 @@ public class controllerServlet extends HttpServlet {
 				   sql.append("SELECT STU.ID, STU.NAME, STU.CLASS, STU.EMAIL_1, STU.EMAIL_2, STU.YEAR"); 
 				   sql.append(" FROM KM.STUDENTS STU  ");
 					sql.append(" WHERE NAME like '%" + searchString + "%' and active = " + active + " and (year is null or year =" + yearClass + ")"); 
-					sql.append(" order by NAME asc");	 
+					sql.append(" and STU.CLASS <>'DayCare' order by NAME asc");	 
 			//  sql.append( " FROM KM.STUDENTS STU where NAME like '%" + searchString + "%' and active =" + active + " order by STU.NAME ") ;
 			 
 			 }else if(classValue.equalsIgnoreCase("DayCare")) {
@@ -78,7 +78,7 @@ public class controllerServlet extends HttpServlet {
 				 sql.append("SELECT S.ID, S.NAME, S.CLASS, S.EMAIL_1, S.EMAIL_2, S.YEAR");
 			 	 sql.append(" from students s where UPPER(s.CLASS) = UPPER('DayCare') and s.ACTIVE = 1  and s.id and s.ID NOT IN ");
 		         sql.append(" (select s.id from payment_details pd inner join students s on s.id = pd.STUDENT_ID and  UPPER(pd.CLASS) = UPPER('DayCare') and s.ACTIVE = 1 and  "); 
-		         sql.append("  PD.MONTH LIKE '" + searchString + "%' and PD.ID >2001) "); 
+		         sql.append("  PD.MONTH LIKE '" + searchString + "%' and PD.ID >3001) "); 
 		         sql.append(" order by NAME asc");
 	       }
 
