@@ -11,16 +11,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 public class dailyReportServlet extends HttpServlet {
 
 	/**
-	 * 
+	 * TO_SEND : Report Creation Default 0 when Report submitted will set to 1
+	 * DELETED : Deleted report from the Daily Report Submit Option
+	 * STATUS:  Default 0 when successfully sent 1 and failed -1 
 	 */
 	private static final long serialVersionUID = -5467734113232851687L;
 
 	public  static void initialize() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -41,6 +46,7 @@ public class dailyReportServlet extends HttpServlet {
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
 		 String reportdate =req.getParameter("reportdate");
+		List DataSet =  fetchReportData(reportdate, classValue, req);
 		 if("PG".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,playGroup, req, "Play Group" ) ;
 		 }else if ("NURSERY".equalsIgnoreCase(classValue)){
@@ -69,14 +75,14 @@ public class dailyReportServlet extends HttpServlet {
 		
 		sb.append("<html> <body> <table border='1' width='100%' > <tr width = '100%'> <td align = 'center'>   <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> <br>");
 		sb.append(" " + subject);
-		sb.append(" </td>  </tr> </table> <table border = '1'   width='100%'> <tr>  <th>Time</th>   <th> Activity</th> </tr>  ");
+		sb.append(" </td>  </tr> </table> <table border = '1'   width='100%'> <tr><th>Time</th> <th>Activity</th></tr>");
 		 for(String reqParam: classDetails){
 			 if(req.getParameter(reqParam)!= null && req.getParameter(reqParam)!= "" ){
 				 
 				 if(counter % 2 != 0) {
-					 sb.append(" <tr> <td> " + req.getParameter(reqParam) + " </td> " );
+					 sb.append("<tr><td>" + req.getParameter(reqParam) + "</td>" );
 			     }else{
-			    	 sb.append("<td> " + req.getParameter(reqParam) + " </td> </tr> " );
+			    	 sb.append("<td>" + req.getParameter(reqParam) + "</td></tr>" );
 			     }
 		 }
 			 counter++;
@@ -120,5 +126,50 @@ public class dailyReportServlet extends HttpServlet {
 	   	  req.setAttribute("classString", classString);
 		  
 	  }
+ 
+ /* <html> <body> <table border='1' width='100%' > <tr width = '100%'> <td align = 'center'>  
+  *  <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  
+  *  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> 
+  *  <br> Play Group Daily Report 16-Jun-2017 </td>  </tr> </table> 
+  *  <table border = '1'   width='100%'> 
+  *  <tr>  <th>Time</th>   <th> Activity</th> </tr>  
+  *   <tr> <td> 9:30 To 9:45 AM </td> <td> Circle Time(Prayer , National Anthem & Rhymes with action) </td> </tr> 
+  *    <tr> <td> 9:45 to 10:00 AM </td> <td> Conversation with teachers and friends </td> </tr> 
+  *     <tr> <td> 10:00 to 10:20 AM </td> <td> Free Play </td> </tr> 
+  *      <tr> <td> 10:20 to 11:00 AM </td> <td> Oral- Introduction to Alphabet and numbers<BR> Fine Motor Skills- Touch and feel the wheat flour (Aata)
+ </td> </tr>  
+ <tr> <td> 11:00 to 11:20 AM </td> <td> Snacks Break </td> </tr> 
+  <tr> <td> 11:30 to 11:50 AM </td> <td> Gross Motor Skill- Shake your body </td> </tr> </table> 
+  <br> <b>Note:</b>  Daily Report is sent to entire class even if the child is absent. This helps to know the activity performed for the day.</body> </html>
+ 
+  */
+    public List<String> fetchReportData(String reportDate, String classString , HttpServletRequest req) {
+    	List<String> returnReport = new ArrayList<String>();
+    	if("PG".equalsIgnoreCase(classString)) classString = "Play Group";
+    	String subject = classString +" Daily Report " + reportDate;
+    	String reportData = null ;
+    	String sql = "select count(*) Counter from DAILY_REPORT where SEND_DATE ='" + reportDate + "'  AND  STATUS != 1 AND SUBJECT LIKE '%" + subject+ "%' AND DELETED = 0";
+		System.out.println("fetchReportData :SQL " + sql);
+		
+	   if( new controllerDAO().returnPaymentId(sql) <= 0 ){
+		   req.setAttribute("message", "<B>ERROR: Report Does Not Exist </B>");
+	   } else {
+		   sql = "select * from DAILY_REPORT where SEND_DATE ='" + reportDate + "'  AND  STATUS != 1 AND SUBJECT LIKE '%" + subject+ "%' AND DELETED = 0";
+		   ResultSet  rsExecute =  new controllerDAO().getResult(sql.toString());
+    	    try {
+				if(rsExecute.next())  reportData = rsExecute.getString("CONTENT");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	    int startDataPoint = reportData.indexOf("<tr><td>");
+    	    System.out.println(" --> " + startDataPoint);
+    	    
+    	}
+    	return returnReport;
+    	
+    }
+ 
+ 
  }
 	
