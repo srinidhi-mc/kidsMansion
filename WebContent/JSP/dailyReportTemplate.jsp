@@ -18,8 +18,10 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <% String selDate = (String)request.getAttribute("reportDate");
-	  String classString = (request.getAttribute("classString")!= null? (String)request.getAttribute("classString"):"");
-     	System.out.println(" date " + selDate + " classString " + classString); %>
+   String classString = (request.getAttribute("classString")!= null? (String)request.getAttribute("classString"):"");
+   List<String> fetchReportData = (request.getAttribute("fetchReportData")!= null? (List<String>)request.getAttribute("fetchReportData"):null);  
+   System.out.println(" dailyReportTemplate.jsp: date " + selDate + " classString " + classString + " fetchReportData " + fetchReportData); 
+ %>
 
 <style>
 
@@ -43,7 +45,7 @@ td{
 
 <script>
  
-   function onSubmit(param1, dateElement){
+   function onSubmit(param1, dateElement, isFetchRptData){
 
 	   var sendDate  = document.getElementById(dateElement).value;
 	   var confirmResponse = confirm("Schedule Mail for Class: " + param1 + " Date:" + sendDate);
@@ -51,7 +53,11 @@ td{
 	   if (!confirmResponse){
 		   return false;
 	   }
-	    var actionURL = "./dailyReportServlet?type="+param1+"&reportdate="+sendDate;
+	     var actionURL = "./dailyReportServlet?type="+param1+"&reportdate="+sendDate;
+	  /*   if (isFetchRptData != null && isFetchRptData == 'true') {
+	    	actionURL = actionURL + "&isFetchRptData=true"
+	    } */
+	   
 		 document.forms["dailyReport"].action= actionURL;
 		 document.forms["dailyReport"].submit();
    }
@@ -117,7 +123,9 @@ $( function() {
      <br><br>
     		Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
     		<input type="text" name = 'datepicker' id = 'datepicker' class="datepicker"  <%if(selDate!= null) %> value = "<%=selDate%>" />
+    		&nbsp;  <!--   <input type="submit" value ="Search" onclick="javascript:onSubmit('PG','datepicker','true')"/> -->
       <br><br>
+      	  
    			<input type= 'text' id='poneT' name= 'poneT' value='9:30 To 9:45 AM' length = 75/> &nbsp;&nbsp;&nbsp;
      		<textarea cols="80" rows="1"  id='poneA' name = 'poneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
        <br><br>
@@ -125,7 +133,7 @@ $( function() {
      		<textarea cols="80" rows="1" id='ptwoA' name = 'ptwoA'></textarea>
 		<br><br>
    			<input type= 'text' id='pthreeT' name= 'pthreeT' value='10:00 to 10:20 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-    		 <textarea cols="80" rows="1" id='pthreeA' name = 'pthreeA'>Free Play</textarea>
+    		 <textarea cols="80" rows="1" id='pthreeA' name = 'pthreeA'>Play Time</textarea>
  		 <br><br>
    			<input type= 'text' id='pfourT' name= 'pfourT' value='10:20 to 11:00 AM' length = 75/> &nbsp;&nbsp;&nbsp;
      		<textarea cols="80" rows="3" id='pfourA' name = 'pfourA'></textarea>
@@ -135,6 +143,7 @@ $( function() {
    		<br><br>
    			<input type= 'text' id='pSixT' name= 'pSixT' value='11:30 to 11:50 AM' length = 75/> &nbsp;&nbsp;&nbsp;
    			 <textarea cols="80" rows="1" id='pSixA' name = 'pSixA'></textarea>
+   	 		 
      <br><br>
     		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('PG','datepicker')"/>
      <hr><hr>
@@ -153,7 +162,7 @@ $( function() {
      		<textarea cols="80" rows="1"  id='noneA' name = 'noneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
        <br><br>
             <input type= 'text' id='ntwoT' name= 'ntwoT' value='9:45 to 10:05 AM' length = 75/> &nbsp;&nbsp;&nbsp;
-     		<textarea cols="80" rows="1" id='ntwoA' name = 'ntwoA'>Free Play</textarea>
+     		<textarea cols="80" rows="1" id='ntwoA' name = 'ntwoA'>Play Time</textarea>
 		<br><br>
    			<input type= 'text' id='nthreeT' name= 'nthreeT' value='10:10 to 10:30 AM' length = 75/> &nbsp;&nbsp;&nbsp;
     		 <textarea cols="80" rows="1" id='nthreeA' name = 'nthreeA'></textarea>
