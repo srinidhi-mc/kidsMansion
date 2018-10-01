@@ -161,11 +161,12 @@
 				Email1: &nbsp;&nbsp; <input type = "text" name="email1" value = "<%= rs.getString("email_1")%>" size= 75 />	<br>
 				Email2: &nbsp;&nbsp; <input type = "text" name="email2" value = "<%= rs.getString("email_2")%>" size= 75  /> <br>
 				Year: &nbsp;&nbsp;<Select id="yearClass" name = "yearClass">
-						       <option value="14">2014-15</option>
+						      <!--  <option value="14">2014-15</option>
 						      <option value="15"  >2015-16</option>
 						      <option value="16">2016-17</option>
-						       <option value="17" >2017-18</option>
+						       <option value="17" >2017-18</option> -->
 						       <option value="18" selected="selected">2018-19</option>
+						       <option value="19" selected="selected">2019-20</option>
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
