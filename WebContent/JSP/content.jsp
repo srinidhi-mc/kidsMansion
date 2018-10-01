@@ -130,7 +130,8 @@
 				 			  <option value="15" >2015-16</option>
 						      <option value="16"  >2016-17</option>
 						       <option value="17">2017-18</option>
-						        <option value="18" selected="selected" >2018-19</option>
+						      <option value="18" selected="selected" >2018-19</option>
+						       <option value="19" >2019-20</option>
 						</Select> <br><br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -166,7 +167,7 @@
 						      <option value="16">2016-17</option>
 						       <option value="17" >2017-18</option> -->
 						       <option value="18" selected="selected">2018-19</option>
-						       <option value="19" selected="selected">2019-20</option>
+						       <option value="19" >2019-20</option>
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>

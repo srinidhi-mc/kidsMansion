@@ -167,29 +167,39 @@
 										<% if (rs.getString("TYPE")!= null) { %>
 										 <%if (rs.getString("TYPE").equalsIgnoreCase("NETBANK-V")){ %>  
 											   <option value="NETBANK-V" selected >NETBANK-V</option> 
-											   <option value="NETBANK-KM" >NETBANK-KM</option>   
+											   <option value="NETBANK-KM" >NETBANK-KM</option>  
+											   <option value="NETBANK-UPI">NETBANK-UPI</option>  
 											   <option value="CHEQUE">CHEQUE</option>
 											   <option value="CASH">CASH</option>
 										  <%}else if (rs.getString("TYPE").equalsIgnoreCase("CHEQUE")){ %>
 											   <option value="NETBANK-V"  >NETBANK-V</option> 
 											   <option value="NETBANK-KM" >NETBANK-KM</option>   
+											   <option value="NETBANK-UPI">NETBANK-UPI</option> 
 											   <option value="CHEQUE" selected>CHEQUE</option>
 											   <option value="CASH">CASH</option>
 										 <%}else if (rs.getString("TYPE").equalsIgnoreCase("NETBANK-KM")){ %>
 											   <option value="NETBANK-V"  >NETBANK-V</option> 
-											   <option value="NETBANK-KM" selected >NETBANK-KM</option>   
+											   <option value="NETBANK-KM" selected >NETBANK-KM</option>  
+											   <option value="NETBANK-UPI">NETBANK-UPI</option>  
 											   <option value="CHEQUE" >CHEQUE</option>
 											   <option value="CASH">CASH</option>	   
 										 <%}else if (rs.getString("TYPE").equalsIgnoreCase("CASH")){ %>
 											   <option value="NETBANK-V"  >NETBANK-V</option> 
-											   <option value="NETBANK-KM" selected >NETBANK-KM</option>   
+											   <option value="NETBANK-KM" selected >NETBANK-KM</option> 
+												<option value="NETBANK-UPI">NETBANK-UPI</option>  
 											   <option value="CHEQUE" >CHEQUE</option>
 											   <option value="CASH" selected >CASH</option>	   
-										 
+										 <%}else if (rs.getString("TYPE").equalsIgnoreCase("NETBANK-UPI")){ %>
+											   <option value="NETBANK-V"  >NETBANK-V</option> 
+											   <option value="NETBANK-KM"  >NETBANK-KM</option>
+											   <option value="NETBANK-UPI" selected >NETBANK-UPI</option>    
+											   <option value="CHEQUE" >CHEQUE</option>
+											   <option value="CASH" >CASH</option>	
 										  <%  }else {%>   
 										       <option value="NA"></option>  
 										       <option value="NETBANK-V"  >NETBANK-V</option> 
 											   <option value="NETBANK-KM">NETBANK-KM</option>   
+											   <option value="NETBANK-UPI">NETBANK-UPI</option> 
 											   <option value="CHEQUE" >CHEQUE</option>
 											   <option value="CASH">CASH</option>	
 										   <% } 
@@ -267,7 +277,8 @@
 										  <%  }else {%> --%>   
 										       <option value="NA"></option>  
 										       <option value="NETBANK-V"  >NETBANK-V</option> 
-											   <option value="NETBANK-KM">NETBANK-KM</option>   
+											   <option value="NETBANK-KM">NETBANK-KM</option>  
+											   <option value="NETBANK-UPI">NETBANK-UPI</option> 
 											   <option value="CHEQUE" >CHEQUE</option>
 											   <option value="CASH">CASH</option>	
 										   <%/*  } 
