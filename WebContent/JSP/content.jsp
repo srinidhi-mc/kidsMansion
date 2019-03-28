@@ -102,8 +102,8 @@
 						      <option value="15"  >2015-16</option>
 						      <option value="16"  >2016-17</option>
 						       <option value="17"  >2017-18</option>
-						       <option value="18" selected="selected">2018-19</option>
-						       <option value="19" >2019-20</option>
+						       <option value="18" >2018-19</option>
+						       <option value="19" selected="selected" >2019-20</option>
 						      
 						</Select>	  
 				   <br><br>
@@ -130,8 +130,8 @@
 				 			  <option value="15" >2015-16</option>
 						      <option value="16"  >2016-17</option>
 						       <option value="17">2017-18</option>
-						      <option value="18" selected="selected" >2018-19</option>
-						       <option value="19" >2019-20</option>
+						      <option value="18"  >2018-19</option>
+						       <option value="19" selected="selected">2019-20</option>
 						</Select> <br><br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -166,8 +166,8 @@
 						      <option value="15"  >2015-16</option>
 						      <option value="16">2016-17</option>
 						       <option value="17" >2017-18</option> -->
-						       <option value="18" selected="selected">2018-19</option>
-						       <option value="19" >2019-20</option>
+						       <option value="18" >2018-19</option>
+						       <option value="19" selected="selected" >2019-20</option>
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -232,7 +232,8 @@
 			      			                  else if( rs.getInt("YEAR")== 15){ strYear = "2015-16" ; }
 			      			                else if( rs.getInt("YEAR")== 16){ strYear = "2016-17" ; }
 			      			              else if( rs.getInt("YEAR")== 17){ strYear = "2017-18" ; }
-			      			                  else  strYear ="2018-19"	; 
+			      			            else if( rs.getInt("YEAR")== 18){ strYear = "2018-19" ; }
+			      			                  else  strYear ="2019-20"	; 
 			      			             } 		
 		      			                 out.print(strYear);
 		      			                 %>
