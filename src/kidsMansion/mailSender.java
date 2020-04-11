@@ -16,7 +16,7 @@ public class mailSender {
 		
 		 System.out.println(" Invoking " + sdf.format(new Date()));
 		
-		 for (int i = 0 ; i< 5;i ++){
+		 for (int i = 0 ; i< 1;i ++){
 			 	try {
 					System.out.println("Before Sending --> iteration " + i + " " + sdf.format(new Date()));  
 					String subject = "Testing Mail Break Up Task";
@@ -24,10 +24,12 @@ public class mailSender {
 					String emails ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com,vinaya.srinidhi@gmail.ccom";
 					boolean isMailSent = new sendMailModified().sendMailContent(subject, emails, mailBody);
 					System.out.println("Mail sent  --> iteration " + i + " " + sdf.format(new Date()) + " --> " + isMailSent);
-					TimeUnit.MINUTES.sleep(5);
+					//TimeUnit.MINUTES.sleep(5);
 				
-			} catch (InterruptedException e) {
+			/*} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
+				e.printStackTrace();*/
+			} catch (Exception e){
 				e.printStackTrace();
 			}
 			 //	increment += 1000;

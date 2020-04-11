@@ -46,8 +46,11 @@ public class dailyReportServlet extends HttpServlet {
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
 		 String reportdate =req.getParameter("reportdate");
-		List DataSet =  fetchReportData(reportdate, classValue, req);
-		 if("PG".equalsIgnoreCase(classValue)){
+		 String isFetchRptData = req.getParameter("isFetchRptData");
+		 if(isFetchRptData != null && isFetchRptData.equalsIgnoreCase("true")){
+		   List<String> DataSet =  fetchReportData(reportdate, classValue, req);
+		   req.setAttribute("fetchReportData", DataSet);
+		 } else  if("PG".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,playGroup, req, "Play Group" ) ;
 		 }else if ("NURSERY".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,nursery, req, "NURSERY" ) ;
@@ -56,7 +59,6 @@ public class dailyReportServlet extends HttpServlet {
 		 } else if ("U.K.G".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,ukg, req, "U.K.G" ) ;
 		 }		 
-		
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
 	}
@@ -67,10 +69,10 @@ public class dailyReportServlet extends HttpServlet {
 	 StringBuilder sb = new StringBuilder();
 	 int counter = 1;
 	 String subject = classString +" Daily Report " + reportdate;
-	String sql = "select count(*) Counter from DAILY_REPORT where SEND_DATE ='" + reportdate + "'  AND  ( (TO_SEND =0 AND STATUS = 0) OR (TO_SEND =1 AND STATUS = 0) OR (TO_SEND =0 AND STATUS = 1) OR (TO_SEND =0 AND STATUS = -1)) AND SUBJECT LIKE '%" + classString+ "%' AND DELETED = 0";
+	String sql = "select count(*) Counter from DAILY_REPORT where SEND_DATE ='" + reportdate + "'  AND  ( (TO_SEND =0 AND STATUS = 0) OR (TO_SEND =1 AND STATUS = 0) OR (TO_SEND =1 AND STATUS = 1) OR (TO_SEND =0 AND STATUS = -1)) AND SUBJECT LIKE '%" + classString+ "%' AND DELETED = 0";
 		System.out.println("generateReport:SQL " + sql);
 	   if( new controllerDAO().returnPaymentId(sql) > 0 ){
-		   req.setAttribute("message", "Report is already generated, Please delete the existing report from <I>Daily Report Submit </I> and Resubmit.");
+		   req.setAttribute("message", "Either Report is sent or already Submitted for the selected Date, Please delete the existing report from <I>Daily Report Submit </I> and Resubmit.");
 	   } else {
 		
 		sb.append("<html> <body> <table border='1' width='100%' > <tr width = '100%'> <td align = 'center'>   <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> <br>");
@@ -158,14 +160,37 @@ public class dailyReportServlet extends HttpServlet {
 		   ResultSet  rsExecute =  new controllerDAO().getResult(sql.toString());
     	    try {
 				if(rsExecute.next())  reportData = rsExecute.getString("CONTENT");
+				System.out.println(" reportData " + reportData);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-    	    int startDataPoint = reportData.indexOf("<tr><td>");
-    	    System.out.println(" --> " + startDataPoint);
+    	    /* Iterate to fetch each data componenet */
+    	    int startDataPoint =0, endDataPoint =0 ;
+    	    String[] splitDataArray = reportData.split("<td>");
     	    
+    	        	    
+    	    for(int count = 1; count < splitDataArray.length; count++){
+    	    	
+    	    	returnReport.add(splitDataArray[count].substring(0, splitDataArray[count].indexOf("<")));
+    	    	
+    	    	//System.out.println(" --> " + splitDataArray[count].substring(0, splitDataArray[count].indexOf("<")));
+    	    	
+    	    }
+    	    
+    	    /*while ( reportData.indexOf("</td>")!= -1){
+    	    	   System.out.println(reportData.indexOf("</td>"));
+    	    	   startDataPoint = reportData.indexOf("<td>",startDataPoint);
+    	    	   endDataPoint = reportData.indexOf("</td>", startDataPoint);
+    	    	   System.out.println("reportData " + reportData);
+    	    	   System.out.println(" startDataPoint --> " + startDataPoint + " --> " + endDataPoint);
+    	    	   System.out.println(" data " + reportData.substring(startDataPoint, endDataPoint));
+    	    	   
+    	    	  reportData = reportData.substring(endDataPoint);
+    	    			   
+    	    }*/
     	}
+	   System.out.println(" returnReport --> " + returnReport);
     	return returnReport;
     	
     }

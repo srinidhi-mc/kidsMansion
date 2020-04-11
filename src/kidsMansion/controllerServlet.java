@@ -69,7 +69,7 @@ public class controllerServlet extends HttpServlet {
 				 			 		// Enter only when Search String is provided.
 			 		 if(searchString != null && searchString != "" && !searchString.equalsIgnoreCase("null")) {
 			 			sql.append(", PD.TOTAL,PD.PAID_DATE ,PD.TYPE, PD.STATUS, PD.MONTH  FROM KM.STUDENTS STU INNER JOIN PAYMENT_DETAILS PD ON STU.ID = PD.STUDENT_ID  AND STU.CLASS ='" + classValue + "'");
-						sql.append(" AND PD.MONTH LIKE '" + searchString + "%' and ACTIVE = " + active + "  and PD.ID >4001 "); 
+						sql.append(" AND PD.MONTH LIKE '" + searchString + "%' and ACTIVE = " + active + "  and  PD.ID >4900 "); 
 						sql.append(" order by STATUS, NAME asc");
 					 }else{
 						 sql.append(" FROM KM.STUDENTS STU  where STU.CLASS ='DayCare' and active = " + active +" order by  NAME asc");

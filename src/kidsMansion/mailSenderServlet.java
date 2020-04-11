@@ -17,6 +17,12 @@ public class mailSenderServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = -6990596740077647269L;
 	private mailThreadExecutor mTE = null;
+	
+	/**
+	 * TO_SEND : Report Creation Default 0 when Report submitted will set to 1
+	 * DELETED : Deleted report from the Daily Report Submit Option
+	 * STATUS:  Default 0 when successfully sent 1 and failed -1 
+	 */
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)

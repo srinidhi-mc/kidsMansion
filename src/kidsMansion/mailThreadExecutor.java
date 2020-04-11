@@ -26,6 +26,11 @@ public class mailThreadExecutor extends Thread  {
   public static String last_mail_sent = null;
   private String selectDate, iDs;
   
+  /**
+	 * TO_SEND : Report Creation Default 0 when Report submitted will set to 1
+	 * DELETED : Deleted report from the Daily Report Submit Option
+	 * STATUS:  Default 0 when successfully sent 1 and failed -1 
+	 */
   
   public mailThreadExecutor(String selectDate, String iDs){
 	  this.selectDate = selectDate;
@@ -40,16 +45,19 @@ public class mailThreadExecutor extends Thread  {
 		controllerDAO cDAO = new controllerDAO();
 		try {
 				SimpleDateFormat sdf = new SimpleDateFormat("HH.mm");
+				SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MMM-yyyy");
 				String curentTime = sdf.format(Calendar.getInstance().getTime());
-				String startTime = null;
+				String startTime = null, startDate = null;
 				long waitTime =0; ;
 				sql = "select * from KM.DAILY_REPORT where SEND_DATE = '" + selectDate + "' and ID in ("+ iDs + ") AND DELETED = 0 AND STATUS in (0,-1)  AND TO_SEND = 1 ORDER BY TIME ";
 				
 				ResultSet rs1 = cDAO.getResult(sql);
 				if(rs1.next()){
+					startDate = rs1.getString("SEND_DATE");
 					startTime = rs1.getString("TIME");
 					Date startingTime = sdf.parse(startTime);
 					Date currentTime = sdf.parse(curentTime);
+					if(startDate.equalsIgnoreCase(sdf1.format(Calendar.getInstance().getTime())))
 					 waitTime =  startingTime.getTime() - currentTime.getTime();
 					 System.out.println("wait time --> " + waitTime);
 				}
@@ -70,7 +78,7 @@ public class mailThreadExecutor extends Thread  {
 					rs.close();
 			    	sql = "UPDATE KM.DAILY_REPORT SET STATUS = 1 , UPDATED_DATE = NOW() WHERE ID =" + id;
 			    	 cDAO.addUser(sql); 
-			    	 Thread.sleep(900000); // 15 min = 900000 milliseconds
+			    	 Thread.sleep(120000); // Now set to 2 mins after migrtion to office 365 mail box
 			}	
 		} catch (InterruptedException e) {
 			sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
@@ -94,9 +102,9 @@ public class mailThreadExecutor extends Thread  {
 		System.out.println(" sendMailContent::Start...");
         
         final String username = "vinaya@kidsmansion.in";
-		final String password = "vin_sri_22";
+		final String password = "Hari$om01";
 		
-        Properties props = new Properties();
+        
         /* commented out as this port 465 is not working and pointin to pop3 25*/
       /*  props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
         props.put("mail.smtp.socketFactory.port", "465"); //SSL Port
@@ -105,12 +113,11 @@ public class mailThreadExecutor extends Thread  {
         props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
         props.put("mail.smtp.port", "465"); //SMTP Port
 */       
-        
-         props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
-         props.put("mail.smtp.starttls.enables", "true"); 
-         props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
-         props.put("mail.smtp.port", "25"); //SMTP Port
-
+        Properties props = new Properties();
+		props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
+		props.put("mail.smtp.starttls.enable", "true"); 
+        props.put("mail.smtp.host", "smtp.office365.com"); //SMTP Host smtp.gmail.com
+        props.put("mail.smtp.port", "587"); //SMTP Port
         
         Session session = Session.getInstance(props,
       		  new javax.mail.Authenticator(
