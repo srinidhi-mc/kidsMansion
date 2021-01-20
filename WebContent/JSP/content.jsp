@@ -104,7 +104,8 @@
 						       <option value="17"  >2017-18</option>
 						       <option value="18" >2018-19</option>
 						       <option value="19" >2019-20</option>
-						        <option value="20" selected="selected" >2020-21</option>
+						       <option value="20" selected="selected" >2020-21</option>
+						       <option value="21"  >2021-22</option>
 						      
 						</Select>	  
 				   <br><br>
@@ -133,7 +134,8 @@
 						       <option value="17">2017-18</option>
 						      <option value="18"  >2018-19</option>
 						       <option value="19" ">2019-20</option>
-						         <option value="20" selected="selected" >2020-21</option>
+						       <option value="20" >2020-21</option>
+						       <option value="21"  selected="selected"  >2021-22</option>  
 						</Select> <br><br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -170,7 +172,9 @@
 						       <option value="17" >2017-18</option> -->
 						       <option value="18" >2018-19</option>
 						        <option value="19"  >2019-20</option>
-						       <option value="20" selected="selected" >2020-21</option>
+						       <option value="20">2020-21</option>
+						       <option value="21" selected="selected" >2021-22</option>
+						       
 						</Select> <br>
 				Active: &nbsp;&nbsp;<Select id="active" name = "active">
 						      <option value="1">Active</option>
@@ -237,7 +241,8 @@
 			      			              else if( rs.getInt("YEAR")== 17){ strYear = "2017-18" ; }
 			      			            else if( rs.getInt("YEAR")== 18){ strYear = "2018-19" ; }
 			      			          else if( rs.getInt("YEAR")== 19){ strYear = "2019-20" ; }
-			      			                  else  strYear ="2020-21"	; 
+			      			        else if( rs.getInt("YEAR")== 20){ strYear = "2020-21" ; }
+			      			                  else  strYear ="2021-22"	; 
 			      			             } 		
 		      			                 out.print(strYear);
 		      			                 %>
