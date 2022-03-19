@@ -101,8 +101,11 @@ public class mailThreadExecutor extends Thread  {
 	    boolean sent = true;
 		System.out.println(" sendMailContent::Start...");
         
+
         final String username = "vinaya@kidsmansion.in";
-		final String password = "Hari$om01";
+		final String password = "XXXXX";
+
+      
 		
         
         /* commented out as this port 465 is not working and pointin to pop3 25*/
