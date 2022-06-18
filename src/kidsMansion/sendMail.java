@@ -47,7 +47,7 @@ public class sendMail {
 	 
 	 
 	    final String username = "vinaya@kidsmansion.in";
-		final String password = "Hari$om01";
+		final String password = "XXXX";
 		System.out.println("Start...");
         
         /* commented out as this port 465 is not working and pointing to pop3 25*/

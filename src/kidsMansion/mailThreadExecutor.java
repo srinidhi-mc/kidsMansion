@@ -103,24 +103,22 @@ public class mailThreadExecutor extends Thread  {
         
 
         final String username = "vinaya@kidsmansion.in";
-		final String password = "XXXXX";
+		final String password = "xxxx";
 
       
-		
+		/* To address this below authentication error the following changes are made
+		 *  https://stackoverflow.com/questions/47166425/how-to-force-javamailsenderimpl-to-use-tls1-2 
+		 * javax.mail.AuthenticationFailedException: 421 4.7.66 TLS 1.0 and 1.1 are not supported.
+		 *  Please upgrade/update your client to support TLS 1.2. Visit https://aka.ms/smtp_auth_tls. [MAXPR0101CA0021.INDPRD01.PROD.OUTLOOK.COM]
+		 */
         
-        /* commented out as this port 465 is not working and pointin to pop3 25*/
-      /*  props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com
-        props.put("mail.smtp.socketFactory.port", "465"); //SSL Port
-        props.put("mail.smtp.socketFactory.class",
-                "javax.net.ssl.SSLSocketFactory"); //SSL Factory Class
-        props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
-        props.put("mail.smtp.port", "465"); //SMTP Port
-*/       
+    
         Properties props = new Properties();
 		props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
 		props.put("mail.smtp.starttls.enable", "true"); 
         props.put("mail.smtp.host", "smtp.office365.com"); //SMTP Host smtp.gmail.com
         props.put("mail.smtp.port", "587"); //SMTP Port
+        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
         
         Session session = Session.getInstance(props,
       		  new javax.mail.Authenticator(

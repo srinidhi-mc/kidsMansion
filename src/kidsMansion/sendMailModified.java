@@ -36,7 +36,7 @@ public class sendMailModified {
 	 int daycare=2400, transport=400, snacks=0, breakfast=0, lunch=0,artClass = 0, danceClass=0, adhoc=0, total = 2800;
 	 
 	 final String username = "vinaya@kidsmansion.in";
-		final String password = "Hari$om01";
+		final String password = "xxxx";
 		System.out.println("Start...");
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication
@@ -121,7 +121,7 @@ public class sendMailModified {
 		System.out.println(" sendMailContent::Start...");
         
         final String username = "vinaya@kidsmansion.in";
-		final String password = "Hari$om01";
+		final String password = "xxxx";
 		
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true"); //Enabling SMTP Authentication

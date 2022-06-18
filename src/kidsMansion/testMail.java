@@ -23,7 +23,7 @@ public class testMail {
 	public boolean send(int id, String emails)	{
 		    boolean sent = true;
 		    final String username = "vinaya@kidsmansion.in";
-			final String password = "Hari$om01";
+			final String password = "xxxx";
 			System.out.println("Start...");
 	       /* Properties props = new Properties();
 	        props.put("mail.smtp.host", "lnx7sg-u.securehostdns.com"); //SMTP Host smtp.gmail.com

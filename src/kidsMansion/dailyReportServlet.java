@@ -43,10 +43,12 @@ public class dailyReportServlet extends HttpServlet {
 		String[] nursery = {"noneT","noneA" ,"ntwoT","ntwoA","nthreeT","nthreeA","nfourT","nfourA","nfiveT","nfiveA","nSixT","nSixA","nSevenT","nSevenA"};
 		String[] lkg = {"LoneT","LoneA" ,"LtwoT","LtwoA","LthreeT","LthreeA","LfourT","LfourA","LfiveT","LfiveA","LSixT","LSixA","LSevenT","LSevenA","LEightT","LEightA"};
 		String[] ukg ={"UoneT","UoneA" ,"UtwoT","UtwoA","UthreeT","UthreeA","UfourT","UfourA","UfiveT","UfiveA","USixT","USixA","USevenT","USevenA"};//,"UEightT","UEightA"
+		String[] first ={"FoneT","FoneA" ,"FtwoT","FtwoA","FthreeT","FthreeA","FfourT","FfourA","FfiveT","FfiveA","FSixT","FSixA","FSevenT","FSevenA"};
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
 		 String reportdate =req.getParameter("reportdate");
 		 String isFetchRptData = req.getParameter("isFetchRptData");
+		 System.out.println("classValue " + classValue + " reportdate " + reportdate);
 		 if(isFetchRptData != null && isFetchRptData.equalsIgnoreCase("true")){
 		   List<String> DataSet =  fetchReportData(reportdate, classValue, req);
 		   req.setAttribute("fetchReportData", DataSet);
@@ -58,7 +60,9 @@ public class dailyReportServlet extends HttpServlet {
 			 generateReport(reportdate, classValue,lkg, req, "L.K.G" ) ;
 		 } else if ("U.K.G".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,ukg, req, "U.K.G" ) ;
-		 }		 
+		 } else if ("I-STD".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,first, req, "I-STD" ) ;
+		 }
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
 	}
@@ -89,7 +93,7 @@ public class dailyReportServlet extends HttpServlet {
 		 }
 			 counter++;
 	 }
-	    sb.append("</table> <br> <b>Note:</b>  Daily Report is sent to entire class even if the child is absent. This helps to know the activity performed for the day.");
+	    sb.append("</table> <br> <b>Note:</b>  Daily Report is sent to entire class even if the student is absent. This helps to know the activity performed for the day.");
 		sb.append("</body> </html>");
 	    System.out.println("dailyReportServlet " + sb.toString());
 	  
