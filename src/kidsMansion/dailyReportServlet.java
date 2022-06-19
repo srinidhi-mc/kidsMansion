@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -56,12 +58,12 @@ public class dailyReportServlet extends HttpServlet {
 			 generateReport(reportdate, classValue,playGroup, req, "Play Group" ) ;
 		 }else if ("NURSERY".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,nursery, req, "NURSERY" ) ;
-		 }else if ("L.K.G".equalsIgnoreCase(classValue)){
-			 generateReport(reportdate, classValue,lkg, req, "L.K.G" ) ;
-		 } else if ("U.K.G".equalsIgnoreCase(classValue)){
-			 generateReport(reportdate, classValue,ukg, req, "U.K.G" ) ;
-		 } else if ("I-STD".equalsIgnoreCase(classValue)){
-			 generateReport(reportdate, classValue,first, req, "I-STD" ) ;
+		 }else if ("LKG".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,lkg, req, "LKG" ) ;
+		 } else if ("UKG".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,ukg, req, "UKG" ) ;
+		 } else if ("1-STD".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,first, req, "1-STD" ) ;
 		 }
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
@@ -79,39 +81,58 @@ public class dailyReportServlet extends HttpServlet {
 		   req.setAttribute("message", "Either Report is sent or already Submitted for the selected Date, Please delete the existing report from <I>Daily Report Submit </I> and Resubmit.");
 	   } else {
 		
-		sb.append("<html> <body> <table border='1' width='100%' > <tr width = '100%'> <td align = 'center'>   <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> <br>");
+		sb.append("<html> <body> <table border='1'  > <tr> <td align = 'center'>   <Font Face = 'Verdana' size = '4' color = 'Navy'>KIDS  </Font>  <Font Face = 'Verdana' size = '4' color = 'Green'>MANSION  </Font> <br>");
 		sb.append(" " + subject);
-		sb.append(" </td>  </tr> </table> <table border = '1'   width='100%'> <tr><th>Time</th> <th>Activity</th></tr>");
+		sb.append(" </td>  </tr> <tr><td align = 'center'><b>Activity </b></td></tr>");
 		 for(String reqParam: classDetails){
 			 if(req.getParameter(reqParam)!= null && req.getParameter(reqParam)!= "" ){
-				 
-				 if(counter % 2 != 0) {
+				 sb.append("<tr> <td>" + req.getParameter(reqParam) + "</td></tr>" );
+				/* if(counter % 2 != 0) {
 					 sb.append("<tr><td>" + req.getParameter(reqParam) + "</td>" );
 			     }else{
 			    	 sb.append("<td>" + req.getParameter(reqParam) + "</td></tr>" );
-			     }
+			     }*/
 		 }
 			 counter++;
 	 }
-	    sb.append("</table> <br> <b>Note:</b>  Daily Report is sent to entire class even if the student is absent. This helps to know the activity performed for the day.");
+	    sb.append("</table> <br> <b>Note:</b>  Daily Report is sent to entire class even if the student is absent. <Br> This helps to know the activity performed for the day.");
 		sb.append("</body> </html>");
 	    System.out.println("dailyReportServlet " + sb.toString());
+	    
+	  Map<String, String> eMailTiming = new HashMap<String, String>();
+	  eMailTiming.put("PG", "15.30");
+	  eMailTiming.put("NURSERY", "15.32");
+	  eMailTiming.put("LKG", "15.34");
+	  eMailTiming.put("UKG", "15.38");
+	  eMailTiming.put("1-STD", "15.40");
 	  
-	  sql = "Select * from email_id where CLASS = '" + classValue.toUpperCase() + "';";
+	  
+	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 22 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";
 	  System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 	  controllerDAO cDAO = new controllerDAO();
 	  ResultSet  rs =  cDAO.getResult(sql.toString());
 	  List<emailDetails> emailDetail = new ArrayList<emailDetails>();
-	//  emailDetails emailDet = new emailDetails();
+	  emailDetails emailDet = new emailDetails();
+	  StringBuffer emailString  = new StringBuffer();
 	  try{
 		  while(rs.next()){
-			  emailDetails emailDet = new emailDetails();
-			  emailDet.setCLASS(rs.getString("CLASS"));
-			  emailDet.setEMAIL_ID(rs.getString("EMAIL_ID"));
-			  emailDet.setSEND_TIME(rs.getString("SEND_TIME"));
-			  emailDetail.add(emailDet);
-			  emailDet = null;
+			  if(rs.getString("EMAIL_1") != null &&  rs.getString("EMAIL_1") != "" &&  !rs.getString("EMAIL_1").equalsIgnoreCase("null")){
+			      emailString.append(rs.getString("EMAIL_1"));
+			      emailString.append(",");
+			  }   
+			  if(rs.getString("EMAIL_2") != null &&  rs.getString("EMAIL_2") != "" &&  !rs.getString("EMAIL_2").equalsIgnoreCase("null")){
+				   emailString.append(rs.getString("EMAIL_2"));
+				   emailString.append(",");
+			  }else {
+				  emailString.append(",");
+			  }
+			  
 		  }
+		  
+		  emailDet.setCLASS(classValue.toUpperCase());
+		  emailDet.setEMAIL_ID(emailString.toString());
+		  emailDet.setSEND_TIME(eMailTiming.get(classValue.toUpperCase()));
+		  emailDetail.add(emailDet);
 		 rs.close();
 		  for(emailDetails e : emailDetail ){
 		   sql ="insert into KM.DAILY_REPORT (CONTENT,STATUS,SEND_DATE,CREATED_DATE,UPDATED_DATE,SUBJECT,MAIL_ID, TIME) values( '" + (sb.toString()).replaceAll("'", "''") +"' ,"

@@ -216,32 +216,32 @@ td{
 		 <% //System.out.println("entered 0 " + isPGDone  + " subject " + drTo.getSUBJECT() + " - " + (drTo.getSUBJECT()).indexOf("Group")); %>
 		 <% if(((drTo.getSUBJECT()).indexOf("Play")>-1) && !isPGDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
-					<%=drTo.getCONTENT() %> <hr><hr> <br><br>
+					<%=drTo.getCONTENT() %> <hr align = 'left' width ='70%'> <br><br>
 			 </div>
 		 <% isPGDone = true ;
 		 } %>
 		 
 		  <% if((drTo.getSUBJECT().indexOf("NURSERY")>-1) && !isNURDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
-					<%=drTo.getCONTENT() %> <hr><hr> <br><br>
+					<%=drTo.getCONTENT() %> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>
 		 <% isNURDone = true; } %>
 		 
-		 <% if((drTo.getSUBJECT().indexOf("L.K.G")>-1) && !isLKGDone && drTo.getDELETED() == 0){ %>
+		 <% if((drTo.getSUBJECT().indexOf("LKG")>-1) && !isLKGDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
-					<%=drTo.getCONTENT()%> <hr><hr> <br><br>
+					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'> <br><br>
 			 </div>
 		 <% isLKGDone = true; } %>
 		 
-		 <% if((drTo.getSUBJECT().indexOf("U.K.G")>-1) && !isUKGDone && drTo.getDELETED() == 0){ %>
+		 <% if((drTo.getSUBJECT().indexOf("UKG")>-1) && !isUKGDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
-					<%=drTo.getCONTENT()%> <hr><hr> <br><br>
+					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>
 		 <% isUKGDone = true; } %>
 		 
-		  <% if((drTo.getSUBJECT().indexOf("I-STD")>-1) && !isFirstDone && drTo.getDELETED() == 0){ %>
+		  <% if((drTo.getSUBJECT().indexOf("1-STD")>-1) && !isFirstDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
-					<%=drTo.getCONTENT()%> <hr><hr> <br><br>
+					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>
 		 <% isFirstDone = true; } %>
 		 

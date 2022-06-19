@@ -133,15 +133,20 @@ public class mailThreadExecutor extends Thread  {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 			//String recipient = emails;
-			System.out.println("actual recipients " + recipients);
+			
+			String finalReceipientList = recipients.substring(0, recipients.length() -1).replace(",,", ",");
+			finalReceipientList = finalReceipientList.replace(";",",");
+			System.out.println("finalReceipientList " +  finalReceipientList);
+			
 			// recipients ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
-			String[] recipientList = recipients.split(",");
+			String[] recipientList = finalReceipientList.split(",");
 			InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
 			int counter = 0;
 			for (String rec : recipientList) {
 			    recipientAddress[counter] = new InternetAddress(rec.trim());
 			    counter++;
 			}
+			 System.out.println( "recipientAddress " + recipientAddress.toString());
 			message.setRecipients(Message.RecipientType.BCC, recipientAddress);
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 		    message.setSentDate(new Date());

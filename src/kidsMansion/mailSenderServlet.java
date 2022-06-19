@@ -186,7 +186,8 @@ public class mailSenderServlet extends HttpServlet {
 
 public List<DailyReportTO> fetchData ( String selectDate){
 	List<DailyReportTO> dailReportTOList = new ArrayList<DailyReportTO>();
-	   String sql = "select * from KM.DAILY_REPORT where SEND_DATE = '"+selectDate +"' order by TIME" ;
+	   String sql = "select * from KM.DAILY_REPORT where SEND_DATE = '"+selectDate +"' and deleted = 0 order by TIME" ;
+	   System.out.println("fetchData  sql " + sql);
 	   controllerDAO cDAO = new controllerDAO();
 	 
 	  ResultSet rs = cDAO.getResult(sql);
