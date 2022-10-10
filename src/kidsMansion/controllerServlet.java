@@ -4,6 +4,13 @@ import java.io.IOException;
 import java.sql.ResultSet;
 
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Pattern;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 public class controllerServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -993456507836868036L;
+	private static String LINEBREAK = "\r\n";
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -37,8 +45,68 @@ public class controllerServlet extends HttpServlet {
 		if(request.equalsIgnoreCase("Search")) selList = cdao.generateListBox("NA");
 		
 			
-	 	 System.out.println( " controllerServlet:doPost::Request Type--> " + request);
-		 if(request != null && request.equalsIgnoreCase("searchSubmit")){
+		if(request.equalsIgnoreCase("emailList")) {
+			
+			  StringBuffer emailString = new StringBuffer();
+			  StringBuffer emailStringFinal = new StringBuffer();
+			  emailStringFinal.append("<HTML> <BODY>");
+
+			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD"};
+			
+			for (String class1 : classes) {
+
+				String sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 22 and ACTIVE = 1  AND CLASS = '"
+						+ class1.toUpperCase() + "';";
+				System.out.println(" dailyReportServlet:doPost: sql --" + sql);
+				controllerDAO cDAO = new controllerDAO();
+				ResultSet rs = cDAO.getResult(sql.toString());
+				emailString.append("<BR>" + class1 + ":: ");
+				//emailString.append(System.getProperty("line.separator"));
+				
+				try {
+					while (rs.next()) {
+						if (rs.getString("EMAIL_1") != null
+								&& rs.getString("EMAIL_1") != ""
+								&& !rs.getString("EMAIL_1").equalsIgnoreCase(
+										"null")) {
+							emailString.append(rs.getString("EMAIL_1"));
+							emailString.append(",");
+						}
+						if (rs.getString("EMAIL_2") != null
+								&& rs.getString("EMAIL_2") != ""
+								&& !rs.getString("EMAIL_2").equalsIgnoreCase(
+										"null")) {
+							emailString.append(rs.getString("EMAIL_2"));
+							emailString.append(",");
+						} else {
+							emailString.append(",");
+						}
+
+					}
+
+				} catch (SQLException se) {
+					se.printStackTrace();
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
+				//emailString.append(System.getProperty("line.separator"));
+				String t1 =emailString.toString().replaceAll("([\\,])\\1{2,}", "$1");
+				String t2 = t1.replaceAll(",,", ",");
+				String t3 = t2.replaceAll(";", ",");
+				System.out.println(" ** tempemailString " + t3);
+				emailStringFinal.append(t3);
+			//	System.out.println("finalReceipientList " +  emailStringFinal);
+				
+				//emailStringFinal.append(wrap(emailStringFinal.toString(), 80));
+		//		System.out.println("**** -->  " + wrap(emailStringFinal.toString(), 80));
+				emailString.delete(0, emailString.length());
+			}
+			req.setAttribute("message", "Listing Emails..");
+			req.setAttribute("emailDetails",emailStringFinal);
+			
+	  } else if(request != null && request.equalsIgnoreCase("searchSubmit")){
 			 
 			 String classValue = req.getParameter("group");
 			 String searchString = req.getParameter("searchData");
@@ -236,5 +304,37 @@ public class controllerServlet extends HttpServlet {
 		  System.out.println("selList " + selList);
 		  getServletContext().getRequestDispatcher("/JSP/content.jsp").forward(req, resp);
    	}
+	
+	
+	public static String wrap(String string, int lineLength) {
+	    StringBuilder b = new StringBuilder();
+	    for (String line : string.split(Pattern.quote(LINEBREAK))) {
+	        b.append(wrapLine(line, lineLength));
+	    }
+	    System.out.println("wrap " + b.toString());
+	    return b.toString();
+	}
+
+	private static String wrapLine(String line, int lineLength) {
+	    if (line.length() == 0) return LINEBREAK;
+	    if (line.length() <= lineLength) return line + LINEBREAK;
+	    String[] words = line.split(" ");
+	    StringBuilder allLines = new StringBuilder();
+	    StringBuilder trimmedLine = new StringBuilder();
+	    for (String word : words) {
+	        if (trimmedLine.length() + 1 + word.length() <= lineLength) {
+	            trimmedLine.append(word).append(" ");
+	        } else {
+	            allLines.append(trimmedLine).append(LINEBREAK);
+	            trimmedLine = new StringBuilder();
+	            trimmedLine.append(word).append(" ");
+	        }
+	    }
+	    if (trimmedLine.length() > 0) {
+	        allLines.append(trimmedLine);
+	    }
+	    allLines.append(LINEBREAK);
+	    return allLines.toString();
+	}
 	
 }

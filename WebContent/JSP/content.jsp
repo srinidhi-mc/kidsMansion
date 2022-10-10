@@ -58,6 +58,7 @@
 			ResultSet rs = (ResultSet) request.getAttribute("resultSet");
 			String searchString = (String) request.getAttribute("searchString");
 			String classValue = (String) request.getAttribute("classValue");
+			StringBuffer emailList = null;
 			String active = "1", yearClass = "", selList = "";
 			if (request.getAttribute("active") != null)
 				active = (String) request.getAttribute("active");
@@ -65,6 +66,9 @@
 				yearClass = (String) request.getAttribute("yearClass");
 			if (request.getAttribute("selList") != null)
 				selList = (String) request.getAttribute("selList");
+
+			if (request.getAttribute("emailDetails") != null)
+				emailList = (StringBuffer) request.getAttribute("emailDetails");
 
 			String studentId = (String) request.getAttribute("studentId");
 			DecimalFormat moneyFormat = new DecimalFormat("#,##,##0.00");
@@ -105,8 +109,9 @@
 			<option value="18">2018-19</option>
 			<option value="19">2019-20</option>
 			<option value="20">2020-21</option>
-			<option value="21" >2021-22</option>
+			<option value="21">2021-22</option>
 			<option value="22" selected="selected">2022-23</option>
+			<option value="23">2023-24</option>
 
 		</Select> <br> <br> <input type="submit" value="Search"
 			onclick="javascript:onSubmit('searchSubmit');" />
@@ -137,6 +142,7 @@
 			<option value="20">2020-21</option>
 			<option value="21">2021-22</option>
 			<option value="22" selected="selected">2022-23</option>
+			<option value="23">2023-24</option>
 		</Select> <br> <br> Active: &nbsp;&nbsp;<Select id="active"
 			name="active">
 			<option value="1">Active</option>
@@ -174,8 +180,9 @@
 			<option value="18">2018-19</option>
 			<option value="19">2019-20</option>
 			<option value="20">2020-21</option>
-			<option value="21" >2021-22</option>
+			<option value="21">2021-22</option>
 			<option value="22" selected="selected">2022-23</option>
+			<option value="23">2023-24</option>
 
 		</Select> <br> Active: &nbsp;&nbsp;<Select id="active" name="active">
 			<option value="1">Active</option>
@@ -297,8 +304,10 @@
 											strYear = "2020-21";
 										} else if (rs.getInt("YEAR") == 21) {
 											strYear = "2021-22";
-										} else
+										} else if (rs.getInt("YEAR") == 22) {
 											strYear = "2022-23";
+										} else
+											strYear = "2023-24";
 									}
 									out.print(strYear);
 					%> <!-- Generic Search no search String provided --> <%
@@ -568,6 +577,13 @@
 			%>
 		</table>
 		<br> <br>
+
+		<!--  Listing the Class Emails -->
+		<%
+			} else if (resp != null && resp.equalsIgnoreCase("emailList")) {
+
+				out.print(emailList);
+		%>
 
 
 
