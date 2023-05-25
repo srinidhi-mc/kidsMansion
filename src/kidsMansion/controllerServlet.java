@@ -51,11 +51,11 @@ public class controllerServlet extends HttpServlet {
 			  StringBuffer emailStringFinal = new StringBuffer();
 			  emailStringFinal.append("<HTML> <BODY>");
 
-			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD"};
+			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD","2-STD"};
 			
 			for (String class1 : classes) {
 
-				String sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 22 and ACTIVE = 1  AND CLASS = '"
+				String sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 23 and ACTIVE = 1  AND CLASS = '"
 						+ class1.toUpperCase() + "';";
 				System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 				controllerDAO cDAO = new controllerDAO();
@@ -129,7 +129,7 @@ public class controllerServlet extends HttpServlet {
 					if(searchString == null || searchString == "" || searchString.equalsIgnoreCase("null")) {
 						sql.append(" and STU.CLASS <>'DayCare' ");
 					}
-					sql.append(" order by NAME asc"); 
+					sql.append(" order by CLASS,  NAME asc"); 
 			//  sql.append( " FROM KM.STUDENTS STU where NAME like '%" + searchString + "%' and active =" + active + " order by STU.NAME ") ;
 			 
 			 }else if(classValue.equalsIgnoreCase("DayCare")) {

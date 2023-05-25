@@ -46,6 +46,7 @@ public class dailyReportServlet extends HttpServlet {
 		String[] lkg = {"LoneT","LoneA" ,"LtwoT","LtwoA","LthreeT","LthreeA","LfourT","LfourA","LfiveT","LfiveA","LSixT","LSixA","LSevenT","LSevenA","LEightT","LEightA"};
 		String[] ukg ={"UoneT","UoneA" ,"UtwoT","UtwoA","UthreeT","UthreeA","UfourT","UfourA","UfiveT","UfiveA","USixT","USixA","USevenT","USevenA"};//,"UEightT","UEightA"
 		String[] first ={"FoneT","FoneA" ,"FtwoT","FtwoA","FthreeT","FthreeA","FfourT","FfourA","FfiveT","FfiveA","FSixT","FSixA","FSevenT","FSevenA"};
+		String[] second  ={"SoneT","SoneA" ,"StwoT","StwoA","SthreeT","SthreeA","SfourT","SfourA","SfiveT","SfiveA","SSixT","SSixA","SSevenT","SSevenA"};
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
 		 String reportdate =req.getParameter("reportdate");
@@ -64,7 +65,9 @@ public class dailyReportServlet extends HttpServlet {
 			 generateReport(reportdate, classValue,ukg, req, "UKG" ) ;
 		 } else if ("1-STD".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,first, req, "1-STD" ) ;
-		 }
+		 } else if ("2-STD".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,first, req, "2-STD" ) ;
+		 }	 
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
 	}
@@ -105,6 +108,7 @@ public class dailyReportServlet extends HttpServlet {
 	  eMailTiming.put("LKG", "15.34");
 	  eMailTiming.put("UKG", "15.38");
 	  eMailTiming.put("1-STD", "15.40");
+	  eMailTiming.put("2-STD", "15.50");
 	  
 	  
 	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 22 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";

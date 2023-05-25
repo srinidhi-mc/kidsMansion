@@ -112,6 +112,7 @@ $( function() {
     <li><a href="#tabs-3">L.K.G</a></li>
     <li><a href="#tabs-4">U.K.G</a></li>
     <li><a href="#tabs-5">1-STD </a></li>
+     <li><a href="#tabs-6">2-STD </a></li>
     
   </ul>
   <%   String message = (String)request.getAttribute("message");  
@@ -255,7 +256,7 @@ $( function() {
      <hr><hr>
   </div>
   
-   <!--  1-STD -->
+ <!--  1-STD -->
   <div id="tabs-5">
   		Activity
      <br><br>
@@ -285,10 +286,40 @@ $( function() {
    	 	<br><br>
    	 		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('1-STD', 'datepicker3')"/>
      <hr><hr>
+ 
+  </div>
   
-  
-  
-  
+  <!--  2-STD -->
+  <div id="tabs-6">
+  		Activity
+     <br><br>
+    		Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    		<input type="text" name = 'datepicker5' id = 'datepicker5' class="datepicker"  <%if(selDate!= null) %> value = "<%=selDate%>"/>
+      <br><br>
+   			<!-- <input type= 'text' id='SoneT' name= 'SoneT' value='Assembly' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3"  id='SoneA' name = 'SoneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
+       <br><br>
+         <!--    <input type= 'text' id='StwoT' name= 'StwoT' value='ENGLISH' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3" id='StwoA' name = 'FtwoA'></textarea>
+		<br><br>
+   			<!-- <input type= 'text' id='SthreeT' name= 'SthreeT' value='KANNADA' length = 75/> &nbsp;&nbsp;&nbsp; -->
+    		 <textarea cols="80" rows="3" id='SthreeA' name = 'SthreeA'></textarea>
+ 		 <br><br>
+   			<!-- <input type= 'text' id='SfourT' name= 'SfourT' value='HINDI' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3" id='SfourA' name = 'SfourA'></textarea>
+     	<br><br>
+   			<!-- <input type= 'text' id='SfiveT' name= 'SfiveT' value='MATH' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   		 	<textarea cols="80" rows="3" id='SfiveA' name = 'SfiveA'></textarea>
+   		<br><br>
+   			<!-- <input type= 'text' id='SSixT' name= 'SSixT' value='General Awareness' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   			 <textarea cols="80" rows="3" id=SSixA' name = 'SSixA'></textarea>
+   		<br><br>
+   			<!-- <input type= 'text' id='SSevenT' name= 'SSevenT' value='EVS' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   			 <textarea cols="80" rows="3" id=SSevenA' name = 'SSevenA'></textarea>
+   	 	<br><br>
+   	 		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('2-STD', 'datepicker3')"/>
+     <hr><hr>
+ 
   </div>
   
 </div> <!--  Final Div -->
