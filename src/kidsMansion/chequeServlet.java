@@ -36,9 +36,9 @@ public class chequeServlet extends HttpServlet {
 		if(request.equalsIgnoreCase("addCheque")){
 			String sql = null;
 			controllerDAO cDAO = new controllerDAO();
-			  sql = "select distinct(UPPER(CHEQUE_NAME)) from cheques order by CHEQUE_NAME"  ;
+			  sql = "select distinct(UPPER(CHEQUE_NAME)) CHEQUE_NAME from cheques order by CHEQUE_NAME"  ;
 			  List<String> issuedBy = cDAO.createRSList(sql);
-			   sql = "select distinct(UPPER(name)) from students where active = 1 order by Name"  ;
+			   sql = "select distinct(UPPER(name)) name from students where active = 1 order by Name"  ;
 			   List<String> stuName = cDAO.createRSList(sql);
 			  sql = "select  distinct(UPPER (c.bank))BANK from cheques c order by c.bank";
 			   List<String> banks = cDAO.createRSList(sql);
