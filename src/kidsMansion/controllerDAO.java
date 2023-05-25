@@ -259,6 +259,12 @@ public class controllerDAO {
 				sb.append("<option value=\"1-STD\"> 1-STD </option>");
 			}
 			 
+			if(type.equalsIgnoreCase("2-STD")) {
+				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
+			}else {
+				sb.append("<option value=\"2-STD\"> 2-STD </option>");
+			}
+			
 			if(type.equalsIgnoreCase("NETBANKING")) {
 				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
 			}else {

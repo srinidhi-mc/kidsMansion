@@ -103,7 +103,7 @@ public class mailThreadExecutor extends Thread  {
         
 
         final String username = "vinaya@kidsmansion.in";
-		final String password = "xxxx";
+		final String password = "";
 
       
 		/* To address this below authentication error the following changes are made
@@ -134,9 +134,15 @@ public class mailThreadExecutor extends Thread  {
 			message.setFrom(new InternetAddress("vinaya@kidsmansion.in","Vinaya Srinidhi"));
 			//String recipient = emails;
 			
-			String finalReceipientList = recipients.substring(0, recipients.length() -1).replace(",,", ",");
+			String t1 =recipients.toString().replaceAll("([\\,])\\1{2,}", "$1");
+			String t2 = t1.replaceAll(",,", ",");
+			String finalReceipientList = t2.replaceAll(";", ",");
+			System.out.println(" ** finalReceipientList  " + finalReceipientList);
+			
+			
+			/*String finalReceipientList = recipients.substring(0, recipients.length() -1).replace(",,", ",");
 			finalReceipientList = finalReceipientList.replace(";",",");
-			System.out.println("finalReceipientList " +  finalReceipientList);
+			System.out.println("finalReceipientList " +  finalReceipientList);*/
 			
 			// recipients ="srinidhi.mc@gmail.com,srinidhi_mc@yahoo.com";
 			String[] recipientList = finalReceipientList.split(",");

@@ -1,0 +1,771 @@
+"ID","CHEQUE_NO","CHEQUE_NAME","BRANCH","CITY","STATUS","AMOUNT","NAME","BANK","CHEQUE_DATE","DEPOSITED_DATE","COMMENTS","PAYMENT_ID","CREATED_DATE","UPDATED_DATE"
+1,"000013","Sitharama Raju","ChandaNagar","Hyderbad","CREDITED",8650,"Shurti","HDFC","11/08/14","17/08/14","Vinaya account",,,
+2,"176687","Ranjith Kumar Avasarala","Jayanagar","BENGALURU","CREDITED",4550,"Sai Ameesh","ICICI","04/08/14","17/08/14","KM AC",,,
+3,"000007","Shubada","Kormangala","BENGALURU","CREDITED",7150,"Aaroohi & Sister","HDFC","04/08/14","17/08/14","Vinaya AC",,,
+4,"702403","Bhaskar Dutta","Secundrabad","Secunderbad","CREDITED",4500,"Ayushman","ICICI","02/08/14","17/08/14","Vinaya AC",,,
+5,"843959","Furqan Saberi","Indiranagar","BENGALURU","CREDITED",3750,"Husna","SBI","05/08/14","17/08/14","KM AC",,,
+6,"332284","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",4700,"JOANA MIRIAM VARGHEESE","SBT","04/08/14","17/08/14","KM AC",,,
+7,"607719","Vinod Varghese","Bangalore","BENGALURU","CREDITED",4000,"JOHAN VARGHEESE","Citi","04/08/14","17/08/14","KM AC",,,
+8,"000026","Dr Supriya R Bhat","Whitefield","BENGALURU","CREDITED",6500,"ANIVTHA","HDFC","02/08/14","17/08/14","KM AC",,,
+9,"464861","Madhuri Chandrasen Pardeshi","Pune","Pune","CREDITED",4850,"Atharva","IDBI","04/08/14","03/09/14","Vinaya A/C",,,
+10,"000004","Rajaganapathy Rajendran","Old Madras Road","BENGALURU","CREDITED",2950,"Keerthika","HDFC","20/08/14","03/09/14","Vinaya A/C",,,
+11,"911454","Datti Phani Kumar","JPNagar","BENGALURU","CREDITED",8350,"Jonty","SBI","20/08/14","03/09/14","KM AC LKG",,,
+12,"760326","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5000,"Aanchal","CITI","28/08/14","03/09/14","Vinaya AC",,,
+13,"884913","Shiva","Dwarka","New Delhi","CREDITED",23150,"Neev","Synidcate","01/09/14","03/09/14","KM AC",,,
+14,"861977","Saurabh Arya","Noida","Noida","CREDITED",850,"Armaan","ICICI","20/08/14","03/09/14","KM AC",,,
+15,"426556","Saurabh Arya","Nodia","Nodia","CREDITED",3188,"Armaan","ICICI","01/09/14","03/09/14","KM AC",,,
+16,"276197","Swati Sinha","Kormangala","BENGALURU","CREDITED",6000,"Aarohi Verma","ICICI","01/09/14","03/09/14","KM AC",,,
+17,"760332","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5000,"Aanchal","CITI","01/09/14","03/09/14","KM AC",,,
+18,"050390","Sridhar Chandran","Kormangala","BENGALURU","CREDITED",23450,"Diya","SBI","02/09/14","03/09/14","KM AC",,,
+19,"000005","Raja Ganapathy","Bangalore","BENGALURU","CREDITED",13950,"Keerthika","HDFC","02/09/14","03/09/14","Vinaya AC",,,
+20,"064975","Ranjit Kumar Avasarla","Jayanagar","BENGALURU","CREDITED",1850,"Sai Amish","ICICI","02/09/14","03/09/14","KM AC",,,
+21,"718449","Ipsita Sinha","Indiranagar","BENGALURU","CREDITED",2050,"Aditya Sinha","SBI","03/09/14","07/09/14","Vinaya AC",,,
+22,"000051","Lalit Sharm","Kodihalli","BENGALURU","CREDITED",4350,"Adwithiya Sharma","HDFC","07/09/14","07/09/14","KM AC",,,
+23,"000008","Shubhada","Kormangala","BENGALURU","CREDITED",9850,"Antara & Aroohi","HDVC","03/09/14","07/09/14","Vinaya AC",,,
+24,"291860","Bhaskar Dutta","Fathepura","Ahmedbad","CREDITED",15500,"Ayushman","ICICI","02/09/14","07/09/14","Vinaya AC",,,
+25,"000003","Prashwad Bansal","Whitefield","BENGALURU","CREDITED",12900,"Arjun","HDFC","06/09/14","07/09/14","KM AC",,,
+26,"911475","Datti Phani Kumar","JP Nagar","BENGALURU","CREDITED",15000,"Jonty","SBI","07/09/14","07/09/14","KM AC",,,
+27,"296799","Romel Goel","Hosur Road","BENGALURU","CREDITED",8500,"Anav","ICICI","05/09/14","15/09/14","Vinaya AC",,,
+28,"505738","Rajani","MARATHALLY","BENGALURU","CREDITED",14000,"Akshaj","SBI","04/09/14","15/09/14","KM AC",,,
+29,"464864","Madhuri Pardeshi","Pune","Pune","CREDITED",14850,"Atharva","IDBI","04/09/14","15/09/14","Vinaya AC",,,
+30,"522319","Anupama","Vishakapatnam","Vishakapatanam","CREDITED",11000,"Anajana","SBI","10/09/14","15/09/14","Vinaya AC",,,
+31,"332286","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",4700,"JOANA MIRIAM VARGHEESE","SBT","11/09/14","15/09/14","KM AC",,,
+36,"031513","Anupam Chakraborthy","Madhapur","Hyderbad","CREDITED",12100,"Shriyan","ICICI","08/08/14","15/09/14","KM AC",,,
+37,"703668","Vikas Kumar","Bangalore","BENGALURU","CREDITED",12900,"SHACHI SHARMA","CITi","13/09/14","15/09/14","KM AC",,,
+38,"626001","Mohammed Shahid Khan","Kormangala","BENGALURU","CREDITED",11900,"ARSHIYA KHAN","Standard Charted","13/09/14","15/09/14","KM AC",,,
+39,"004077","Sayanta Dandapat","Bangalore","BENGALURU","CREDITED",8500,"Shreyan","AXIS","13/09/14","15/09/14","KM AC",,,
+40,"759353","Renuka Reddy","Bangalore","BENGALURU","CREDITED",9000,"Jashitha","CITI","15/09/14","15/09/14","KM AC",,,
+41,"607722","Vinod Varghese","Bangalore","BENGALURU","CREDITED",4000,"Johan","CITI","16/09/14","28/08/14","KM AC",,,
+42,"106805","Samina Kapasi","R A Puram","Chennai","CREDITED",16800,"Hussain","HDFC","15/09/14","28/08/14","Vinaya AC",,,
+43,"354348","Shakti Shankar Senapati","Bangalore","BENGALURU","CREDITED",12600,"Shivangi","ICICI","18/09/14","28/08/14","KM AC",,,
+44,"276230","Pravinkkumar Parsa","Malleshwaram","BENGALURU","CREDITED",13400,"NEO","HDFC","15/09/14","28/08/14","Vinaya AC",,,
+45,"713044","Archana R","Bangalore","BENGALURU","CREDITED",9000,"Ishita Kiran","CITI","17/09/14","28/08/14","Vinaya AC",,,
+46,"526261","K Ramakrishna","Bangalore","BENGALURU","CREDITED",16050,"Shrayana","CITI","22/09/14","28/08/14","KM AC",,,
+47,"601992","Jaspreet Singh","MG Road","BENGALURU","CREDITED",13400,"Tanveer","HSBC","22/09/14","28/08/14","KM AC",,,
+48,"861978","Saurabh Arya","Noida","Noida","CREDITED",850,"Armaan","ICICI","23/09/14","28/08/14","Vinaya AC",,,
+49,"464867","Madhuri Chandrasen Pardeshi","Pune","Pune","CREDITED",6850,"Atharava","IDBI","01/10/14","12/10/14","Vinaya AC",,,
+50,"332287","Varghese Koshy","Bangalore","BENGALURU","CREDITED",4700,"JOANA MIRIAM VARGHEESE","SBT","06/10/14","12/10/14","KM AC",,,
+51,"276199","Swati Sinha","Kormangala","BENGALURU","CREDITED",4200,"Aarohi Verma","ICICI","06/10/14","12/10/14","KM AC",,,
+52,"000052","Lalit Sharma","Kodihalli","BENGALURU","CREDITED",1600,"ADWITHIYA SHARMA","HDFC","06/10/14","12/10/14","KM AC",,,
+53,"607726","Vinod Varghese","Bangalore","BENGALURU","CREDITED",4000,"Johan","CITI","05/10/2014","12/10/14","KM AC",,,
+54,"426557","Saurabh Arya","Noida","UP","CREDITED",3188,"Armaan","ICICI","10/10/14","12/10/14","KM AC",,,
+56,"718451","Ipsita Sinha","Indranagar","BENGALURU","CREDITED",4000,"Aditya Sinha","SBI","07/10/14","12/10/14","Vinaya AC",,,
+57,"794616","Bhaskar Dutta","S.D Road","Secunderbad","CREDITED",4500,"Ayushman","ICICI","02/10/14","12/10/14","Vinaya AC",,,
+58,"000028","NarayanaSetty","ITPL","BENGALURU","CREDITED",2700,"Shruthi","HDFC","10/10/14","12/10/14","Vinaya AC",,,
+59,"000010","Shubhada","Kormangala","BENGALURU","CREDITED",12550,"Antara & Aroohi","HDFC","08/10/14",,"Vinaya AC",,,
+60,"188450","Sandeep Nalawade","Bangalore","BENGALURU","CREDITED",12900,"Raje Nalawade","CitiBank","12/10/14","19/10/14","KM AC",,,
+61,"459724","Sachin Vijaykumar Sarode","Aundh","Pune","CREDITED",9000,"PRAJAS","ICICI","11/10/14","19/10/14","KM AC",,,
+62,"000005","Srinivas Kotha","Thipppasandra","BENGALURU","CREDITED",11000,"SRIHAAS PARDHA","Kotak","14/10/14",,"KM AC",,,
+63,"558364","sadhana","CV Raman Nagar","BENGALURU","CREDITED",1850,"Sai Ameesh","Corp Bank","14/10/14","19/10/14","KM AC",,,
+64,"000006","Raja Ganapathy","Bangalore","BENGALURU","CREDITED",2950,"Keerthika","HDFC","15/10/14",,"Vinaya AC",,,
+65,"760333","Bijoy Menon","Bangalore","BENGALURU","CREDITED",4500,"Aanchal","CITI","25/10/14","09/11/14","KM AC",,,
+66,"000011","Shubhada","Kormangala","BENGALURU","CREDITED",9850,"Antara & Aroohi","HDFC","04/11/14","09/11/14","VInaya AC",,,
+67,"607727","Vinod Varghese","Bangalore","BENGALURU","CREDITED",4000,"Johan","CITI","04/11/14","09/11/14","KM AC",,,
+68,"048402","Bhavin Gandhi","GIRI NAGAR","BENGALURU","CREDITED",14400,"Aryan","HDFC","01/11/14","09/11/14","KM AC",,,
+69,"260708","Harshit Kanubhai Thakkar","Kumarapark","BENGALURU","CREDITED",12400,"Anushka","ICICI","05/11/14","09/11/14","KM AC",,,
+70,"426558","Saurabh Arya","Sector 18","Noida","CREDITED",3188,"Armaan","ICICI","01/11/14","09/11/14","KM AC",,,
+71,"385712","Swati Sinha","Kormangala","BENGALURU","CREDITED",4200,"Aroohi Verma","ICICI","03/11/14","09/11/14","KM AC",,,
+72,"000001","Sushmita Dutta","Indiranagar","BENGALURU","CREDITED",6100,"Aahan Das","HDFC","03/11/14","09/11/14","KM AC",,,
+73,"000017","Tejinder Garg","K R Puram","BENGALURU","CREDITED",15500,"Kaashvi","HDFC","19/11/14","23/11/14","KM AC",,,
+74,"332290","Vargheese Koshy","Whitefield","BENGALURU","CREDITED",4100,"JOANA MIRIAM VARGHEESE","SBT","16/11/14","23/11/14","KM AC",,,
+75,"464869","Madhuri Chandrasen Pardeshi","Paduka Chowk","Pune","CREDITED",4850,"Atharva","IDBI","05/11/14","23/11/14","Vinaya AC",,,
+76,"000001","Sita","Jakkasandra","BENGALURU","CREDITED",5500,"Anchal Menon","KOtak","10/11/14","23/11/14","KM AC",,,
+78,"000029","SNS Murthy","Thippsandra","BENGALURU","CREDITED",10800,"Atul","Kotak","02/12/14","08/12/14","KM AC",,,
+79,"505739","Rajani","MARATHALLY","BENGALURU","CREDITED",12000,"Akshaj","SBI","03/12/14","08/12/14","KM AC",,,
+80,"000007","Raja Ganapaty","Bangalore","BENGALURU","CREDITED",16750,"Keerthika","HDFC","01/12/14","08/12/14","Vinaya AC",,,
+81,"000007","Praveen Kumar Parsa","Malleswaram","BENGALURU","CREDITED",12200,"Neo","HDFC","01/12/14","08/12/14","Vinaya AC",,,
+82,"526262","K Ramakrishna","Bangalore","BENGALURU","CREDITED",8500,"Radha Sarayna","CITII","03/12/14","08/12/14","Vinaya AC",,,
+83,"000014","Shubhada Thatte","Kormangala","BENGALURU","CREDITED",9850,"Antara & Aroohi","HDFC","02/12/14","08/12/14","Vinaya AC",,,
+84,"140935","People Combine Education","Visakhapatnam","Visakhapatanam","CREDITED",20000,"Vinaya","Axis","12/11/14","08/12/14","Vinaya AC",,,
+85,"332294","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",4100,"Joanna Mariam","SBT","08/12/14","08/12/14","KM AC",,,
+86,"010253","Shiny","MARATHALLY","BENGALURU","CREDITED",2800,"Johan","South Indian Bank","08/12/14","08/12/14","KM AC",,,
+87,"703669","Vikas Kumar","Bangalore","BENGALURU","CREDITED",12300,"Sachi Sharma","CITI","13/12/14","20/12/14","KM AC",,,
+88,"188456","Sandeep Nalawade","Bangalore","BENGALURU","CREDITED",12300,"Raje Nalawade","CITI","12/12/14","20/12/14","KM AC(over Sign)",,,
+89,"000004","Robina Gupta","Whitefield","BENGALURU","CREDITED",12300,"Arjun","HDFC","13/12/14","20/12/14","KM AC",,,
+90,"760335","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5000,"Aanchal Menon","CITI","08/12/14","20/12/14","KM AC",,,
+91,"718453","Ipsita Sinha","Indranagar","BENGALURU","CREDITED",8500,"Aditya Sinha","SBI","12/12/14","20/12/14","Vinaya AC",,,
+92,"341544","Tejinder Garg","Sector 27","Noida","CREDITED",7300,"Kaashvi & Krish Garg","ICICI","12/12/14","20/12/14","KM AC",,,
+93,"385713","Swati Sinha","Kormangala","BENGALURU","CREDITED",4200,"Aroohi Verma","ICICI","09/12/13","20/12/14","KM AC",,,
+94,"296800","Romil Goel","EC","BENGALURU","CREDITED",8500,"Anav Goel","ICICI","05/12/14","20/12/14","Vinaya AC",,,
+95,"626003","Mohammed Shahid Khan","Kormangala","BENGALURU","CREDITED",10300,"ARSHIYA KHAN","CBS","15/12/14","20/12/14","KM AC",,,
+96,"874058","Shiv","Dwarka","New Delhi","CREDITED",20000,"Neev","Synidcate Bank","16/12/14","20/12/14","KM AC",,,
+97,"426559","Saurabh Arya","K1","Noida","CREDITED",3188,"Armaan","ICICI","01/12/14","20/12/14","KM AC",,,
+98,"384199","Bhaskar Dutta",,,"CREDITED",13400,"Ayushman Dutta",,,"Rejected","Vinaya AC (Signature Mismatch)",,,
+99,"153902","Haimasree Pal",,,"CREDITED",21200,"ANYA",,,"21/12/14","KM AC",,,
+100,"000005","Susmita Dutta","Indranagar","BENGALURU","CREDITED",1800,"Ahaan","HDFC","22/12/13","27/12/14","KM AC",,,
+101,"035298","Abhishek Rai","MARATHALLY","BENGALURU","CREDITED",14000,"Ezone","Axis Bank","22/12/14","27/12/14","KM AC",,,
+102,"000003","Kishore K Reddy K","KRPUram","BENGALURU","CREDITED",9000,"Jasitha Reddy","HDFC","22/12/14","Rejected","KM AC",,,
+103,"426560","Saurabh Arya","Sector 18","Noida","CREDITED",3188,"Armaan","ICICI","01/01/15","03/01/15","KM AC",,,
+104,"464874","Madhuri Chandrasen Padeshi","Fergusson College","Pune","CREDITED",21700,"Atharva","IDBI","04/01/2015",,"Vinaya AC",,,
+105,"764304","Surabhi Pratap","ORR","BENGALURU","CREDITED",17000,"Mahi","SBI","05/01/14",,"KM AC",,,
+106,"000045","Sriram Krishnaswamy","Kormangala","BENGALURU","CREDITED",14000,"Vibha","Standard","05/01/15","12/01/15","KM AC",,,
+107,"607729","Vinod Varghese","Bangalore","BENGALURU","CREDITED",3400,"Johan Varghese","CITI","04/01/15","12/01/15","KM AC",,,
+108,"000016","Subhada Trivikram","Kormangala","BENGALURU","CREDITED",9850,"Antara & Aroohi","HDFC","05/01/14",,"Vinaya AC",,,
+109,"385715","Swati Sinha","Kormangala","BENGALURU","CREDITED",4200,"Aroohi Verma","ICICI","06/01/15","12/01/15","KM AC",,,
+110,"131622","Sudhakar Reddy Gali","Bangalore","BENGALURU","CREDITED",15950,"Tanush Reddy Gali","CITI","07/01/15",,"KM AC",,,
+111,"760318","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5500,"Aanchal Menon","CITIB","05/01/15",,"KM AC",,,
+112,"331116","Tridiv Das","Indranagar","BENGALURU","CREDITED",1800,"Aahan Das","Axis Bank","05/01/14","12/01/15","KM AC",,,
+113,"000008","Rajaganapathy","Bangalore","BENGALURU","CREDITED",3000,"Keerthika","HDFC","08/01/5",,"Vinaya AC",,,
+114,"048407","Bhavin Gandhi","GiriNagar","BENGALURU","CREDITED",13800,"Aryan","HDFC","19/01/15","27/01/15","KM AC",,,
+115,"911477","Datti Phani Kumar","JP Nagar","BENGALURU","CREDITED",11800,"Jonty","SBI","22/01/2015","27/01/15","KM AC",,,
+116,"000026","Farid S Kapasi","R A Puram","Chennai","CREDITED",13650,"Hussain","HDFC","20/01/15","25/01/15","Vinaya AC",,,
+117,"243514","Kiran Babu","Vittal Mallya Road","BENGALURU","CREDITED",9000,"Ishitha","RBS","20/01/15","25/01/15","Vinaya AC",,,
+118,"354349","Shakti Shankar Senapati","Bangalore","BENGALURU","CREDITED",11750,"Shivangi","ICICI","19/01/2015","2701/15","KM AC",,,
+119,"459728","Sachin Vijaykumar Sarode","Gulmohar Park","PUNE","CREDITED",11000,"Prajas","ICICI","28/01/15","04/02/15","KM AC",,,
+120,"000006","Sushmita Dutta","Indranagar","BENGALURU","CREDITED",600,"Aahan Das","HDFC","20/01/15","27/01/15","KM AC",,,
+121,"050392","Sridhar Chandran","Kormangala","BENGALURU","CREDITED",13400,"Diya","SBI","28/01/15","04/02/15","KM AC",,,
+122,"358252","Pawan Agrawal","Bangalore","BENGALURU","CREDITED",11200,"Darsh","Citi","31/01/2015","04/02/15","KM AC",,,
+123,"000017","Subhada Trivikram","Kormangala","BENGALURU","CREDITED",9850,"Antara & Aroohi","HDFC","02/02/14","04/02/15","Vinaya AC",,,
+124,"464876","Madhuri Chandrasen Pardeshi","PUNE","pune","CREDITED",4850,"Atharva","IDBI","01/02/15","04/02/15","Vinaya AC",,,
+125,"783866","Varghees Koshy","MARATHALLY","BENGALURU","CREDITED",4100,"JOANA MIRIAM VARGHEESE","SBT","02/02/15","04/02/15","KM AC",,,
+126,"000007","Sushmita Dutta","IndiraNagar","BENGALURU","CREDITED",2400,"Ahaan Das","HDFC","02/02/15","04/02/15","KM AC",,,
+127,"426561","Saurabh Arya","Sector 18","Noida","CREDITED",3188,"Armaan","ICICI","01/02/14","04/02/15","KM AC",,,
+128,"010256","Shiney","MARATHALLY","BENGALURU","CREDITED",3400,"JOHAN VARGHEESE","South Indian Bank","04/02/14","17/02/15","KM AC",,,
+129,"000006","Prathayusha Teja Inuganti","MG Road","BENGALURU","CREDITED",7000,"Jahnavi","HDFC","07/02/15","17/02/15","KM AC",,,
+130,"000040","Vipul Jain","Cavery Bhavan","BENGALURU","CREDITED",2400,"Arin","HDFC","07/02/14","17/02/15","KM AC",,,
+131,"760336","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5000,"Aanchal Menon","CITI","05/02/15","17/02/15","KM AC",,,
+132,"260709","Harshit Kanubhai Thakkar","Kumarapark","BENGALURU","CREDITED",11400,"Anushka (CHq Rejected)","HDFC","11/02/15","Rejected","KM AC",,,
+133,"000007","Srinivas Kota","Thippasandra","BENGALURU","CREDITED",11000,"Sri Paardha","Kotak","09/02/15","23/02/15","KM AC",,,
+134,"260712","Harshit Kanubhai Thakkar","Gandhi Bhavan","BENGALURU","CREDITED",11400,"Anushka","ICICI","23/02/15","04/03/15","KM AC",,,
+135,"607731","Vinod Varghese","CITI","BENGALURU","CREDITED",3400,"Johan","CITI","02/03/15","04/03/15","KM AC",,,
+136,"000003","Arnab Roy","RS Puram","Coimbatore","CREDITED",6200,"Tanisha","HDFC","02/03/15","04/03/15","KM AC",,,
+137,"426562","Saurabh Arya","Noida","Noida","CREDITED",3188,"Armaan","ICICI","01/03/15","04/03/15","KM AC",,,
+138,"338923","Sripada Kameswara Rao","Old Madras","BENGALURU","CREDITED",6200,"Saathwick","ICICI","04/03/15","09/03/15","KM AC",,,
+139,"530281","Avneet SIngh Chhabra","MG Road","BENGALURU","CREDITED",12850,"Antara & Aroohi","HSBC","03/03/15","09/03/15","Vinaya AC",,,
+140,"331042","Tridiv Das","Indiranagar","BENGALURU","CREDITED",2400,"Aahan Das","Axis","04/03/15","14/03/15","KM AC",,,
+141,"760338","Bijoy Menon","Bangalore","BENGALURU","CREDITED",5200,"Aanchal","CITI","08/03/15","14/03/15","KM AC",,,
+142,"000010","Raja Ganapathy","Old madras Raod","BENGALURU","CREDITED",6000,"Keerthika","HDFC","09/03/15","14/03/15","VInaya AC",,,
+143,"783874","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",4400,"JOANA MIRIAM VARGHEESE","SBT","09/03/15","14/03/15","KM AC",,,
+144,"000018","Subhada Trivikram","Kormangala","BENGALURU","CREDITED",11000,"Antara & Aroohi","HDFC","07/04/14","13/04/15","Vinaya AC",,,
+145,"783876","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3000,"JOANA MIRIAM VARGHEESE","SBT","07/04/14","14/04/15","KM AC",,,
+146,"718454","Ipsita Sinha","Indiranagar","BENGALURU","CREDITED",2500,"Aditya Sinha","SBI","05/04/15","13/04/15","Vinaya AC",,,
+147,"188466","Sandeep Nalwade","Bengaluru","BENGALURU","CREDITED",3100,"Raje","Citi","06/04/15","14/04/15","KM AC",,,
+148,"464879","Madhuri Chandrasen","Pune","Pune","CREDITED",9700,"Atharva","IDBI","05/04/15","13/04/15","Vinaya AC",,,
+149,"331051","Tridiv Das","Indranagar","BENGALURU","CREDITED",2400,"Aahan Das","Axis","03/03/15","14/04/15","KM AC",,,
+150,"338925","Sripada Kameswara Rao","old Madras Road","BENGALURU","CREDITED",6200,"Saathwick","ICICI","12/04/15","14/03/15","KM AC",,,
+151,"874062","Shiva","Dwaraka","New Delhi","CREDITED",15000,"Neev","Synidicate","03/05/15","03/05/15","KM AC",,,
+152,"000012","Rajaganapathy","Old Madras","BENGALURU","CREDITED",4450,"Keerthika","HDFC","07/05/15","10/05/15","Vinaya AC",,,
+153,"762747","Rahul Singh","Manyata Park","BENGALURU","CREDITED",10350,"Aditya Singh","SBI","06/05/15","10/05/15","KM AC",,,
+154,"000016","Ritu Guru","Kasturba Road","BENGALURU","CREDITED",3100,"Siddanth","HDFC","06/05/15","10/05/15","KM AC",,,
+155,"000046","Vipul Jain","Cavery Bhavan","BENGALURU","CREDITED",11700,"Arin","HDFC","04/05/15","10/05/15","KM AC",,,
+156,"000033","Jecin Arikkatt","MG Road","BENGALURU","CREDITED",8300,"Roshan & Ronith","HDFC","04/05/15","10/05/15","KM AC",,,
+157,"607732","Vinod Varghese","Bangalore","BENGALURU","CREDITED",3400,"JOhan","CITI","04/05/15","10/05/15","KM AC",,,
+158,"941851","Harshit K Thakkar","Maninagar","Ahmedabad","CREDITED",4700,"Anushka","ICICI","11/05/15","31/05/15","KM AC",,,
+159,"000002","B Venkatesh","Cambrdige Road","BENGALURU","CREDITED",10000,"Vedant Badam","HDFC","16/05/15","31/05/15","KM AC",,,
+160,"331057","Tridiv Das","Indiranagar","BENGALURU","CREDITED",2400,"Ahaan Das","AXIS","15/05/15","31/05/15","KM AC",,,
+161,"764306","Surabhi Pratap","ORR","BENGALURU","CREDITED",2500,"Mahi","SBI","13/05/15","31/05/15","KM AC",,,
+162,"097813","Preethish N","Bengaluru","BENGALURU","CREDITED",23000,"Aditri","CITI","22/05/15","31/05/15","KM AC",,,
+163,"000004","Sanjaya Kumar Sahu","Churchgate","Mumbai","CREDITED",11200,"Anushree Sahu","HDFC","28/05/15","31/05/15","KM AC",,,
+164,"703674","Vikas Kumar","Bangalore","BENGALURU","CREDITED",19000,"Shachi Sharma","CITI","30/05/15","31/05/15","KM AC",,,
+165,"020671","Ajoy Varghese Mathew","Electronic City","BENGALURU","CREDITED",11200,"Jake Mathew","ICICI","30/05/15","31/05/15","KM AC",,,
+166,"918031","Venugopal CH","Begaluru","BENGALURU","CREDITED",14000,"Shiva","CITI","30/05/15","31/05/15","Vinaya AC",,,
+167,"248151","Ajay Agarwal","dombivilli","Dombivli","CREDITED",7200,"PIHU AGARWAL","ICICI","03/06/15",,"KM AC",,,
+168,"758399","Abhishake Rai","MARATHALLY","BENGALURU","CREDITED",17200,"AARDHYA RA","Karnataka Bank","04/06/15",,"KM AC",,,
+169,"394522","Aravind Peketi","White field","BENGALURU","CREDITED",5000,"SARAN KARTIK PEKETI","SBI","04/06/15",,"KM AC",,,
+170,"000035","Jecin Arikkatt","MG Road","BENGALURU","CREDITED",6100,"ROSHAN & RONITH","HDFC","04/06/15",,"KM AC",,,
+171,"000019","Shubhada","Kormangala","BENGALURU","CREDITED",8650,"Antara & Aroohi","HDFC","04/06/15",,"Vinaya AC",,,
+172,"000001","Prithwiraj De","Bhangagarh","Guwahati","CREDITED",14000,"PRAKRUTI DE","HDFC","03/06/15",,"KM AC",,,
+173,"000197","Suryanarayana Chalam Cherla","Bengaluru","BENGALURU","CREDITED",21700,"SRIKAR","ICICI","02/06/15",,"KM AC",,,
+174,"764307","Surabh Pratap","ORR","BENGALURU","CREDITED",15950,"Mahi","SBI","05/05/15","16/06/15","KM AC",,,
+175,"8858738","Sukesh Kumar","C.V. Raman Nagar","BENGALURU","CREDITED",11000,"Anamika","SBI","09/06/15","16/06/15","KM AC",,,
+176,"762749","Rahul Singh","Manyata Tech Park","BENGALURU","CREDITED",9500,"Aditya Singh","SBI","10/06/15","15/06/15","KM AC",,,
+177,"607738","Vinod Varghese","Bengaluru","BENGALURU","CREDITED",3400,"JOHAN VARGHEESE","CITI","04/06/15","16/06/15","KM AC",,,
+178,"002037","Raje Nalwade","Bengaluru","BENGALURU","CREDITED",15000,"Raje Nalwade","CITI","08/06/15","16/06/15","KM AC",,,
+179,"436322","MD Axmathullah","Bengaluru","BENGALURU","CREDITED",15400,"Afsheen","CITI","08/06/15","16/06/15","KM AC",,,
+180,"354350","Shakti Sankar Senapati","Bengaluru","BENGALURU","CREDITED",16900,"Shivangi","ICICI","12/06/15","16/06/15","KM AC",,,
+181,"027452","Yalamanchili Srikrian","Indranagar","BENGALURU","CREDITED",22200,"Sahasya","ING","12/06/15","16/06/15","KM AC",,,
+182,"020672","Ajoy Varghese Mathew","Electronic City","BENGALURU","CREDITED",14300,"Jake","ICICI","08/06/15","24/06/15","KM AC",,,
+183,"783881","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3400,"JOANA MIRIAM VARGHEESE","SBT","15/06/15","24/06/15","KM AC",,,
+184,"296802","Romi Goel","EC","BENGALURU","CREDITED",11000,"Anav Goel","ICICI","16/06/15","25/06/16","Vinaya AC",,,
+185,"874064","Shiva","Dwarka","New Delhi","CREDITED",15450,"Neev","Syndicate","22/06/15","24/05/16","KM AC",,,
+186,"000012","Trupti Nambissan","SEctor 18","Noida","CREDITED",19850,"Trisha","HDFC","15/06/15","24/06/15","KM AC",,,
+187,"722658","Manish S Gundecha","Bengaluru","BENGALURU","CREDITED",10000,"Amour","CITI","26/06/15","05/07/15","KM AC",,,
+188,"000005","Robina Gupta","WhiteField","BENGALURU","CREDITED",11000,"Arjun","HDFC","26/06/15","05/07/15","KM AC",,,
+189,"281531","Tridiv","Indranagar","BENGALURU","CREDITED",2400,"Aahan Das","ICICI","01/07/15","05/07/15","KM AC",,,
+190,"000006","Robina Gupta","Whitefield","BENGALURU","CREDITED",1800,"Arjun","HDFC","03/07/15","05/07/15","KM AC",,,
+191,"885739","Sukesh Kumar","CV Raman Nagar","BENGALURU","CREDITED",14050,"Anamika","SBI","01/07/15","05/07/15","KM AC",,,
+192,"068602","Brindavathy R","Bengaluru","BENGALURU","CREDITED",16500,"Ananya Neog","CITI","04/07/15","05/07/15","KM AC",,,
+193,"127480","Ravindra Prakash Rathi","WhiteFiled","BENGALURU","CREDITED",19000,"Aanya Rathi","HDFC","04/07/15","05/07/15","KM AC",,,
+194,"245954","Suresh Palaparti","Bund Garden Road","Pune","CREDITED",19100,"SRIMUKTHA","ICICI","11/07/15","19/07/15","KM AC",,,
+195,"020674","Ajoy Varghese Mathew","EC Branch","BENGALURU","CREDITED",3800,"Jake Vargheese","ICICI","13/07/15","19/07/15","KM AC",,,
+196,"607740","Vinod Varghese","Bengaluru","BENGALURU","CREDITED",3400,"Johan Varghese","CITI","06/07/15","19/07/15","KM AC",,,
+197,"000038","Jecin Arikkatt","MG ROAD","BENGALURU","CREDITED",6100,"Roshan & Ronith","HDFC","06/07/15","19/07/15","KM AC",,,
+198,"783883","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3400,"JOANA MIRIAM","SBT","06/07/15","19/07/15","KM AC",,,
+199,"000020","Subhada Trivikram","Kormangala","BENGALURU","CREDITED",3600,"Antara & Aroohi","HDFC","06/07/15","19/07/15","KM AC",,,
+200,"394523","Aravind Peketi","Whitefiled","BENGALURU","CREDITED",16700,"SARAN KARTIK PEKETI","SBI","22/07/15",,"KM AC",,,
+201,"248152","Ajay Agrawal","Dombivli","Mumbai","CREDITED",11000,"Pihu Agrawal","ICICI","22/07/15",,"KM AC",,,
+202,"000002","Bhargavi R","Munnekollala","BENGALURU","CREDITED",14150,"LAKSHMI LAHARI","Andhra Bank","06/08/15","11/08/15","KM AC",,,
+203,"331067","Tridiv Das","Bengaluru","BENGALURU","CREDITED",3950,"Aahan Das","Axis","05/08/15","11/08/15","KM AC",,,
+204,"114274","Atanu Gosh","Bengaluru","BENGALURU","CREDITED",24600,"Anusha Ghosh","CITI","03/08/15","11/08/15","KM AC",,,
+205,"607747","Vinod Varghese","Bengaluru","BENGALURU","CREDITED",3400,"JOHAN VARGHEESE","CITI","03/08/15","11/08/15","KM AC",,,
+206,"216153","Santoshalakshmi","MG Road","BENGALURU","CREDITED",5550,"Vedansh & Hamsini","HSBC","04/08/15","11/08/15","KM AC",,,
+207,"000005","Sanjaya Kumar Sahu","Churchgate","Mumbai","CREDITED",11000,"ANUSHREE SAHU","HDFC","11/08/15","11/08/15","KM AC",,,
+208,"000040","Jecin Arikkati","MG Road","BENGALURU","CREDITED",6100,"Roshan & Ronith","HDFC","05/08/15","11/08/15","KM AC",,,
+209,"000005","Mandar Kulkarni","Whitefield","BENGALURU","CREDITED",14200,"SOHAM","HDFC","05/08/15","11/08/15","KM AC",,,
+210,"783885","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3400,"JOANA MIRIAM VARGHEESE","SBT","17/08/15","26/08/15","KM AC",,,
+211,"000011","Joydeep Mukhopadhyay","Salt Lake","Kolkata","CREDITED",4900,"Ryaan","HDFC","31/08/15","19/09/15","KM AC",,,
+212,"436325","Azmathullah","Bangalore","BENGALURU","CREDITED",13500,"Afsheen","CITI","08/09/15","19/09/15","KM AC",,,
+213,"240633","Rahul Singh","Manyata Tech","BENGALURU","CREDITED",12000,"Aditya Singh","SBI","08/09/15","19/09/15","KM AC",,,
+214,"000003","Prithiwiraj De","Bhanghagarh","Gwahati","CREDITED",12500,"Prakrithi","HDFC","08/09/15","19/09/15","KM AC",,,
+215,"320346","Okridge","Jubliee Hills","Hyderabad","CREDITED",20000,"Vinaya","Axis","25/08/15","19/09/15","Vinaya AC",,,
+216,"000043","Jecin Arikkatt","MG Road","BENGALURU","CREDITED",6100,"ROSHAN & RONITH","HDFC","07/09/15","19/09/15","KM AC",,,
+217,"000021","Shubhada","KOrmangala","BENGALURU","CREDITED",10000,"ANtara & Aroohi","HDFC","04/09/15","19/09/15","Vinaya AC",,,
+218,"903260","Suryanarayana","Bannerughatta","BENGALURU","CREDITED",12000,"Srikar","SBI","03/09/15","19/09/15","KM AC",,,
+219,"000015","Sanjay Nambeesan","Sector 18","NOida","CREDITED",9500,"Trisha","HDFC","04/09/15","19/09/15","KM AC",,,
+220,"097815","Preethish","Bengaluru","BENGALURU","CREDITED",11000,"Adithri","CITI","05/09/15","19/09/15","KM AC",,,
+221,"607745","Vinod Vargheese","Bengaluru","BENGALURU","CREDITED",3400,"Johan varghese","CITI","07/09/15","19/09/15","KM AC",,,
+222,"000049","Ashok Vamsi","Kodihalli","BENGALURU","CREDITED",10000,"Ajay","HDFC","10/09/15","19/09/15","KM AC",,,
+223,"434301","Mukti Jain","JP Nagar","BENGALURU","CREDITED",2500,"Aarav Jain","HDFC","25/08/15","19/09/15","KM AC",,,
+224,"331068","Tridiv Das","Indranagar","BENGALURU","CREDITED",3100,"Aahan Das","Axis","10/09/15","19/09/15","KM AC",,,
+225,"874067","Shiva","Dwaraka","New Delhi","CREDITED",20500,"Neev","Syndicate Bannk","16/09/15","19/09/15","KM AC",,,
+226,"838668","CHANDRASEKAR KUPPAN","Indranagar","BENGALURU","CREDITED",100000,"Srinidhi","ICICI","17/09/15","19/09/15","Srinidhi AC",,,
+227,"131880","Aravind Rambhadran","Kodihallli","BENGALURU","CREDITED",19150,"Akshara","HDFC","21/09/15","04/10/15","KM AC",,,
+228,"604565","Santoshalakshmi Tumuluri","MG Road","BENGALURU","CREDITED",4100,"Vedansh & Hamsini","HSBC","22/09/15","03/10/15","KM AC",,,
+229,"354351","Shakti Shankar Snapathi","Bengaluru","BENGALURU","CREDITED",10250,"Shivangi","ICICI","18/09/15","03/10/15","KM AC",,,
+230,"394524","Aravind Peketi","Whitefiled","BENGALURU","CREDITED",10000,"SARAN KARTIK","SBI","23/09/15","03/10/15","KM AC",,,
+231,"546268","Vikas Kumar","Bangalor","BENGALURU","CREDITED",14900,"Sachi Sharma","ICICI","28/09/15","03/10/15","KM AC",,,
+232,"063481","Abhishake Rai","MARATHALLY","BENGALURU","CREDITED",10000,"Aaradhya Rai","Karnataka","27/09/15","03/10/15","KM AC",,,
+233,"560555","Srikiran Yacahanachili","ORR","BENGALURU","CREDITED",12500,"Sahasya","SBI","01/01/10","03/10/15","KM AC",,,
+234,"236471","Swati Radhakrishnan","UB City","BENGALURU","CREDITED",17950,"Vivaan Singh","RBS","03/10/15","03/10/15","KM AC",,,
+235,"976149","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",6800,"JOANA MIRIAM VARGHEESE","SBT","05/10/15","13/10/15","KM AC",,,
+236,"000012","Joydeep Mukhopadhyay","Salt Lake","Kolkata","CREDITED",1200,"Rayaan","HDFC","05/10/15","13/10/15","KM AC",,,
+237,"000022","Subhada Thatte","Kormangala","BENGALURU","CREDITED",13300,"Antara & Aroohi","HDFC","05/10/15",,"Vinaya AC",,,
+238,"911486","Datti phani Kumar","JPNagar","BENGALURU","CREDITED",16000,"Jhonty","SBI","05/10/15","13/10/15","KM AC",,,
+239,"679811","Ajay Agarawal","Nariman Point","Mumbai","CREDITED",14000,"Pihu Agarawal","ICICI","04/10/15","13/10/15","KM AC",,,
+240,"331072","Tridiv Das","Indiranagar","BENGALURU","CREDITED",4200,"Aahan Das","Axis","06/10/15","13/10/15","KM AC",,,
+241,"000047","Jecin ARikkaat","MG Road","BENGALURU","CREDITED",5050,"ROSHAN & RONITH","HDFC","09/10/15","13/10/15","KM AC",,,
+242,"838672","Chandrasekar Kuppan","Indira Nagar","BENGALURU","CREDITED",200000,"Srinidhi","ICICI","18/10/2015","25/101/5","Srinidhi",,,
+243,"000007","Mandar Kulkarni","Whitefield","BENGALURU","CREDITED",16950,"Soham","HDFC","13/10/15","25/10/15","KM AC",,,
+244,"027829","Alok Ranjan","Kasturba Road","BENGALURU","CREDITED",2900,"Rachvik","Yes Bank","12/10/15","25/10/15","KM AC",,,
+245,"764308","Surabhi Pratap","ORR","BENGALURU","CREDITED",10500,"Mahi","SBI","07/10/2015","01/11/15","KM AC  (REJECTED)",,,
+246,"245956","Suresh Palaparti","Bund Garden Road","Pune","CREDITED",10000,"Srimuktha","ICICI","29/10/15","01/11/15","KM AC",,,
+247,"000003","Bhargavi R","Munekollala","BENGALURU","CREDITED",9500,"Lahari","Andara Bank","9500","01/11/15","KM AC",,,
+248,"764310","Surabhi Pratap","ORR","BENGALURU","CREDITED",10000,"Mahi","SBI","06/11/15","13/11/15","KM AC",,,
+249,"000011","Prajyna Tripathy","whitefield","BENGALURU","CREDITED",9800,"Sara & Swarna","HDFC","07/11/15","13/11/15","KM AC",,,
+250,"976150","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3900,"JOANA MIRIAM VARGHEESE","SBT","09/11/15","13/11/15","KM AC",,,
+251,"000002","Tridiv Das","MGRoad","BENGALURU","CREDITED",3000,"Aahan Das","HDFC","03/11/15","13/11/15","KM AC",,,
+252,"000023","Shubhada","KOrmangala","BENGALURU","CREDITED",6900,"Antara & Aroohi","HDFC","10/11/15","13/11/15","Vinaya AC",,,
+253,"027831","Alok Ranjan","Kasturba Road","BENGALURU","CREDITED",2900,"Richvik","YES","10/11/15","10/11/15","KM AC",,,
+254,"688392","Amt Bahl","MARATHALLY","BENGALURU","CREDITED",15100,"Anvi Bahl","ICICI","07/11/15","13/11/15","KM AC",,,
+255,"000053","Jecin Arikkatt","MGRoad","BENGALURU","CREDITED",5050,"ROSHAN & RONITH","HDFC","10/11/15","13/11/15","KM AC",,,
+256,"903259","Suryanarayana","Bannerghata","BENGALURU","CREDITED",12000,"Srikar","SBI","04/12/15","16/12/15","KM AC",,,
+257,"00004","Prithwiraj","JP Nagar","BENGALURU","CREDITED",12000,"Prakriti","HDFC","05/12/15","16/12/15","KM AC",,,
+258,"296803","Romi Goel","Infosys","BENGALURU","CREDITED",10000,"Anav","ICICI","04/12/15","16/12/15","Vinaya",,,
+259,"097814","Pritesh","Bengaluru","BENGALURU","CREDITED",12500,"Aditri","CITI","07/12/15","16/12/15","KM",,,
+260,"236479","Swathi","UB CITY","BENGALURU","CREDITED",9500,"Vivaan","RBS","07/12/15","16/12/15","KM AC",,,
+261,"560556","Srikiran","MARATHALLY","BENGALURU","CREDITED",12000,"Sahasya","SBI","07/12/15","16/12/15","KM",,,
+262,"976154","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3900,"Joanna Verghese","SBT","07/12/15","16/12/15","KM AC",,,
+263,"000055","Jecin","MGRoad","BENGALURU","CREDITED",5050,"Roshan & Ronit","HDFC","07/12/15","16/12/15","KM AC",,,
+264,"027832","Alok Ranjan","Kasturba Road","BENGALURU","CREDITED",5400,"Richivk","YES","02/12/15","16/12/15","KM AC",,,
+265,"679812","Ajay Agarwal","Nariman Point","Mumbai","CREDITED",12000,"Pihu","ICICI","08/12/15","16/12/15","KM",,,
+266,"354354","Shakthi Shankar","Bengaluru","BENGALURU","CREDITED",11000,"Shivangi","ICICI","08/12/15","16/12/15","KM",,,
+267,"000024","Subhada Thatte","Kormangala","BENGALURU","CREDITED",7500,"Antara & Aroohi","HDFC","08/12/15","16/12/15","Vinaya",,,
+268,"000017","Sanjay","Sector-18","NOIDA","CREDITED",11500,"Trisha","HDFC","10/12/15","16/12/15","KM",,,
+269,"394525","Aravind","Whitefield","BENGALURU","CREDITED",10000,"Saran","SBI","09/12/15","16/12/15","KM",,,
+270,"240636","Rahul Singh","Manyata Embassy","BENGALURU","CREDITED",11500,"Aditya Singh","SBI","11/12/15","31/12/15","KM AC",,,
+271,"000013","Prajyna Tripathy","Whitefield","BENGALURU","CREDITED",4800,"Sara & Swarna","HDFC","17/12/15","31/12/15","KM AC",,,
+272,"000009","Mandar Kularni","WhiteFiled","BENGALURU","CREDITED",14300,"Soham","HDFC","16/12/15","31/12/15","KM AC",,,
+273,"063484","Abhishek Rai","MARATHALLY","BENGALURU","CREDITED",10000,"Aaradhya Rai","Karnataka","16/12/15","31/12/15","KM AC",,,
+274,"000011","Sushmita Dutta","Indira Nagar","BENGALURU","CREDITED",3000,"Sushmita Dutta","HDFC","17/12/15","31/12/15","KM AC",,,
+275,"646468","Nivas Venkataramanan","AECS Layout","BENGALURU","CREDITED",10000,"Mukund","SBI","19/12/15","31/12/15","KM AC",,,
+276,"546272","Vikas Kumar","Bengaluru","BENGALURU","CREDITED",13800,"Sachi Sharma","ICICI","21/12/15","31/12/15","KM AC",,,
+277,"922257","Sandip Sanyal","Salt Lake","Kolkatta","CREDITED",16000,"PRIYISHA","HDFC","26/12/15","31/12/15","KM AC",,,
+278,"245959","Suresh Palaparti","Bund Garden Road","PUNE","CREDITED",10000,"Srimuktha","ICICI","23/12/15","31/12/15","KM",,,
+279,"000005","ALok Ranjan","ORR","BENGALURU","CREDITED",3900,"Rachvik","HDFC","13/01/16","20/01/16","KM AC",,,
+280,"000011","Sushimita dutta","MGRoad","BENGALURU","CREDITED",3000,"Aahan Das","HDFC","18/01/16","20/01/6","KM AC",,,
+281,"000059","Jecin","MGRaodi","BENGALURU","CREDITED",5050,"Rohan & Ronith","HDFC","05/01/16","20/01/16","KM AC",,,
+282,"099087","Sanjeev Dua","Bengaluru","BENGALURU","CREDITED",4900,"Dhriti","CITI","06/01/16","20/01/16","KM AC",,,
+283,"000006","Sanjay Kumar Sahu","Chruchgate","MUMBAI","CREDITED",10000,"Anushree Sahu","HDFC","06/01/16","20/01/16","KM AC",,,
+284,"000014","Prajyna Tripathy","Whitefiled","BENGALURU","CREDITED",4800,"Sara & Swarna","HDFC","06/01/16","20/01/16","KM",,,
+285,"000025","Subhada Trivakram","Kormangal","BENGALURU","CREDITED",7500,"Antara & Aroohi","HDFC","07/01/16","20/01/16","Vinaya",,,
+286,"044239","Gayathri B","RTNagar","BENGALURU","CREDITED",3250,"Siddanth","ICICI","20/01/16","29/01/16","KM",,,
+287,"976155","Varghese Koshy","MARATHALLY","BENGALURU","CREDITED",3900,"Joanna Verghese","SBT","18/01/16","29/01/16","KM",,,
+288,"436329","Md Azamathulla","Bengaluru","BENGALURU","CREDITED",11000,"Afsheen","CITI","20/01/16","29/01/16","KM",,,
+289,"033068","Nadkarni","Indira Nagara","BENGALURU","CREDITED",3100,"Anika","HDFC","27/01/16","29/01/16","KM AC",,,
+290,"099088","Sanjeev Dua","Bangalore","BENGALURU","CREDITED",2400,"Dhriti","CITI","03/02/16","14/02/16","KM",,,
+291,"000061","Jecin Arikkatt","MG Road","BENGALURU","CREDITED",5650,"roshan & Ronith","HDFC","05/02/16","14/02/16","KM",,,
+292,"000026","Subhada Trivikram","Kormangala","BENGALURU","CREDITED",7800,"Antara & Aroohi","HDFC","05/02/16","14/02/16","Vinaya",,,
+293,"599353","Varghese Koshy","Jayanagara","BENGALURU","CREDITED",3900,"Joannna","SBH","07/02/16","14/02/16","KM AC",,,
+294,"100482","Deba Priyo Das","DLF City","Gurgaon","CREDITED",6800,"Trollly Baby","ICICI","30/01/16","14/02/16","KM",,,
+295,"911489","Datti Phani Kumar","JPNagar","BENGALURU","CREDITED",16700,"Jhonty","SBI","02/02/16","14/02/16","KM",,,
+296,"436330","Md Azmathulla","Bengaluru","BENGALURU","CREDITED",2000,"Afsheen","CITI","02/02/16","14/02/16","KM",,,
+297,"526264","Ramakrishan","Bengaluru","BENGALURU","CREDITED",5650,"Shravya","CITIB","23/02/16","01/03/16","KM",,,
+298,"000013","Sushmita","Indranagar","BENGALURU","CREDITED",3000,"Aahan Das","HDFC","15/02/16","01/03/16","KM",,,
+299,"813145","Ravindra Prakash Rathi","WHitefield","BENGALURU","CREDITED",24900,"Aaanya Rathi","HDFC","16/02/16","01/03/16","KM",,,
+300,"000015","Prajyna Tripathi","Whitefield","BENGALURU","CREDITED",4800,"Sara & Swarna","HDFC","15/02/16","01/03/16","KM",,,
+301,"910169","Sanjay","Bangalore","BENGALURU","CREDITED",10000,"Anushree Sahu","HDFC","08/03/16","14/03/16","KM",,,
+302,"000063","Jecin Arikkatt","MG Road","BENGALURU","CREDITED",5650,"ROSHAN & RONITH","HDFC","08/03/16","14/03/16","KM",,,
+303,"000012","Robina Gupta","WhiteField","BENGALURU","CREDITED",16600,"Arjun","HDFC","08/03/16","14/03/16","KM",,,
+304,"262478","Shiva","Dwaraka","Delhi","CREDITED",26700,"Neev","Syndicate","03/03/16","14/03/15","KM",,,
+305,"000027","Subhada Thatte","Kormangala","BENGALURU","CREDITED",10200,"Antara & Aroohi","HDFC","04/03/16","11/03/16","Vinaya",,,
+306,"908391","Varsha Gupta","Vimanapura","BENGALURU","CREDITED",19350,"ANusha Ghosh","SBI","03/03/16","13/03/16","KM",,,
+307,"099094","Sajeev Dua","Bengaluru","BENGALURU","CREDITED",1200,"Dhiriti","CITI","05/03/16","13/03/16","KM",,,
+308,"000003","Tridiv Das","MG Road","BENGALURU","CREDITED",3000,"Aahan Das","HDFC","10/03/16","23/03/16","KM",,,
+309,"000016","Prajyna Tripathi","WhiteField","BENGALURU","CREDITED",4800,"Sara & Swarna","HDFC","11/03/16","23/03/16","KM",,,
+310,"000016","Sandeep Sanyal","Saltlake","Kolkatta","CREDITED",6800,"Priyasha","HDFC","12/03/16",,"KM",,,
+311,"000010","Mandar Kulkarni","WhiteField","BENGALURU","CREDITED",10250,"Soham","HDFC","16/03/16","23/03/16","KM",,,
+312,"075909","Navin Bishnoi","MARATHALLY","BENGALURU","CREDITED",2400,"Yash Bishnoi","Axis","15/03/16","23/03/16","KM",,,
+313,"560557","Srikiran","ORR","BENGALURU","CREDITED",5700,"Sahasya","SBI","18/03/16","REJECTED","KM",,,
+314,"000185","Girija Prasad Mishra","KG Road","BENGALURU","CREDITED",5000,"Shubhankar & Sonal","HDFC","02/04/16","05/03/16","KM",,,
+315,"000035","Sanjay Nambeesan","Sector 18","Noida","CREDITED",6200,"Trisha","HDFC","31/03/16",,"KM Nursery Ad",,,
+316,"526265","Ramakrishna","Bengaluru","BENGALURU","CREDITED",14600,"Shravya & Sharnaya","CITI","02/04/16","04/04/16","KM",,,
+317,"099100","Sanjeev Dua","BEngalrur","BENGALURU","CREDITED",1200,"Dhriti","CITI","05/04/16","15/04/16","KM",,,
+318,"000007","Sanjay Kumar Sahoo","PAREKH","MUMBAI","CREDITED",8500,"ANushree","HDFC","05/04/16","15/04/16","KM",,,
+319,"000186","Girija Prasad","KGROad","BENGALURU","CREDITED",14200,"Shubhankar & Sonal","HDFC","05/04/16","15/04/16","KM",,,
+320,"000017","Prajyna Tripathi","Whitefield","BENGALURU","CREDITED",7200,"Sara & Swarna","HDFC","04/04/16","15/04/16","KM",,,
+321,"000006","Tridiv Das","MG Road","BENGALURU","CREDITED",3000,"Aahan","HDFC","04/04/16","15/04/16","KM",,,
+322,"453373","Rahul","Sector 50","Nodia","CREDITED",6050,"Siya","ICICI","09/04/16","15/04/16","KM",,,
+323,"128151","Lalaitha Sivaraman","Bengaluru","BENGALURU","CREDITED",3300,"Charvi","CITI","06/04/16","15/04/16","KM",,,
+324,"000028","Subhada Thatte","Kormangala","BENGALURU","CREDITED",8300,"Antara & Aroohi","HDFC","06/04/16","16/04/16","Vinaya AC",,,
+325,"354358","Shakti Sankar","Bengaluru","BENGALURU","CREDITED",2800,"Shivangi","ICICI","04/04/16","15/04/16","KM",,,
+326,"000019","Kamalesh Bishnoi","Whitefield","BENGALURU","CREDITED",2400,"Yash Bishnoi","HDFC","12/04/16","15/04/16","KM",,,
+327,"000008","D K Radha Krishnan","vazhuthacaud","Trivandrum","PC",2600,,"HDFC","12/04/16","15/04/16","KM - CHQ RET AMOUNTS IN WORDS AND FIGURES DIF",,,"2016-05-05 19:28:55"
+328,"000007","Trdiv Das","M.G.Road","BENGALURU","PC",2000,"Aahan","HDFC","04/04/16","15/04/16","KM - CHQ RET CHEQUE STALE",,,"2016-05-05 19:28:44"
+329,"296804","Romil Goel","Hosur Road","BENGALURU","CREDITED",6450,"Anav Goel","ICICI","15/04/16","22/04/16","Vinaya AC",,,
+330,"000037","Pallav Mehta","Kasturba Road","BENGALURU","CREDITED",5100,"ANanya Mehta","HDFC","18/04/16","29/04/16","KM",,,
+331,"509361","Shantanu S Jamble","CITI","BENGALURU","CREDITED",4900,"Shashank","CITI","02/05/16","5-5-2016 20:18:52","KM",,,"2016-05-05 20:19:14"
+332,"000013","Robina Gupta","Whitefeild","BENGALURU","CREDITED",9000,"Arjun","HDFC","03/05/16","4-5-2016 21:8:0","KM AC",,,"2016-05-07 11:52:21"
+333,"000029","SHUBADA","KORMANGALA","BENGALURU","CREDITED",1400,"ANTARA & AAROOHI","HDFC","4-5-2016 21:13:52",,"VINAYA",0,"2016-05-05 21:13:59","2016-05-28 23:19:48"
+334,"354359","SHAKTHI SHANKAR","BENGALURU","BENGALURU","CREDITED",2800,"SHIVANGI","ICICI","5-5-2016 21:15:15","19-5-2016 22:45:27","KM AC",0,"2016-05-05 21:15:23","2016-05-22 22:45:33"
+335,"653246","G Bapi Bharati","KORMANGALA","BENGALURU","CREDITED",2400,"Shravya & Sarayna","SBI","4-5-2016 21:17:4","19-5-2016 22:43:56","KM AC",0,"2016-05-05 21:17:15","2016-05-22 22:44:02"
+336,"000018","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",7200,"SARA & SWARNA","HDFC","5-5-2016 16:16:12","19-5-2016 22:44:46","KM AC",0,"2016-05-07 16:16:17","2016-05-22 22:44:53"
+337,"075913","NAVIN BISHNOI","MARATHALLY","BENGALURU","CREDITED",5200,"YASH BISHNOI","AXIS BANK","6-5-2016 16:18:14","19-5-2016 22:43:17","KM AC",1958,"2016-05-07 16:18:23","2016-05-22 22:43:24"
+338,"145637","Ravi Choudhary","WHITE FIELD","BENGALURU","CREDITED",11600,"KAIRAV CHOUDHARY","SBI","16-4-2016 18:20:13","22-4-2016 18:20:42","KM AC",1982,"2016-05-07 18:20:30","2016-05-07 18:20:51"
+339,"296804","ROMI GOEL","ELECTRONIC CITY","BENGALURU","CREDITED",6450,"ANAV GOEL","ICICI","15-5-2016 18:29:5","22-4-2016 18:29:25","VINAYA",1983,"2016-05-07 18:29:19","2016-05-07 18:29:37"
+340,"262481","SHIVA","DWARAKA","NEW DELHI","CREDITED",5200,"NEEV","SYNDICATE","15-4-2016 18:33:17","22-4-2016 18:33:32","KM AC",0,"2016-05-07 18:33:29","2016-05-07 18:33:39"
+341,"679815","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",5700,"PIHU AGARWAL","ICICI","18-4-2016 18:36:18","22-4-2016 18:36:38","KM AC",1984,"2016-05-07 18:36:30","2016-05-07 18:36:45"
+342,"099101","SANJEEV DUA","BENGALURU","BENGALURU","CREDITED",7200,"DHRITI","CITI","10-5-2016 22:43:11","19-5-2016 22:44:20","KM AC",1988,"2016-05-11 22:43:22","2016-05-22 22:44:27"
+343,"000015","SUSHIMITA DUTTA","INDIRA NAGAR","BENGALURU","CREDITED",3000,"AAHAN DAS","HDFC","18-5-2016 23:14:59","8-6-2016 21:50:17","KM AC",1901,"2016-05-28 23:15:15","2016-06-14 17:50:33"
+344,"114285","ATANU GOSH","BENGALURU","BENGALURU","CREDITED",6200,"ANUSHA GHOSH","CITI","28-5-2016 23:17:4","10-6-2016 21:50:17","KM AC",2009,"2016-05-28 23:17:12","2016-06-13 16:58:24"
+345,"000038","PALLAV MEHTA","KASTURBA ROAD","BENGALURU","CREDITED",3400,"ANAYA MEHTA","HDFC","25-5-2016 23:18:14","8-6-2016 21:50:17","KM AC",0,"2016-05-28 23:18:23","2016-06-14 17:50:21"
+346,"764311","SURABH PRATAP","MARATHALLY","BENGALURU","CREDITED",17700,"MAHI","SBI","1-6-2016 22:50:43","8-6-2016 21:50:17","KM AC",2049,"2016-05-31 22:50:54","2016-06-14 17:49:09"
+347,"703673","VIKAS KUMAR","BENGALURU","BENGALURU","CREDITED",20100,"SHACHI SHARMA","CITI","31-5-2016 22:52:36","8-6-2016 21:50:17","KM AC",2050,"2016-05-31 22:52:44","2016-06-14 17:46:17"
+348,"000012","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",17000,"SOHAM","HDFC","4-6-2016 13:50:13","8-6-2016 21:50:17","KM AC",2057,"2016-06-05 13:50:20","2016-06-14 17:50:10"
+349,"280079","NIRAIMATHI","K H Road","BENGALURU","CREDITED",22600,"NIVIN","HDFC","3-6-2016 13:56:2","8-6-2016 21:50:17","KM AC REJECTED",1975,"2016-06-05 13:56:12","2016-06-14 17:47:24"
+350,"164306","Sanoj V Abraham","M.G.ROAD","BENGALURU","CREDITED",21950,"ADITYA SANOJ","HSBC","3-6-2016 13:58:25","8-6-2016 21:50:17","KM AC REJECTED",2114,"2016-06-05 13:58:32","2016-06-14 17:47:14"
+351,"587556","SATYAJIT KR GUPTA","BENGALURU","BENGALURU","CREDITED",5900,"ARGHYA","CITI","2-6-2016 14:4:49","8-6-2016 21:50:17","KM AC",0,"2016-06-05 14:04:58","2016-06-14 17:46:33"
+352,"044250","Gayathiri","RTNAGAR","BENGALURU","CREDITED",19600,"SIDDANTH","ICICI","2-6-2016 14:6:8","8-6-2016 21:50:17","KM AC",2115,"2016-06-05 14:06:13","2016-06-14 17:49:50"
+353,"000019","SANDIP SANYAL","SALT LAKE","KOLKATA","CREDITED",24000,"PRIYASHA SANYAL","HDFC","6-6-2016 14:51:55","8-6-2016 21:50:17","KM AC",2100,"2016-06-06 14:52:02","2016-06-14 17:50:46"
+354,"262484","SHIV","DWARAKA","NEW DELHI","CREDITED",19000,"NEEV","SYNDICATE","6-6-2016 14:53:12","8-6-2016 21:50:17","KM AC",2092,"2016-06-06 14:53:18","2016-06-14 17:48:17"
+355,"076860","Sireesha Dagudubiyam","Sarajapura Branch","BENGALURU","CREDITED",11600,"JENITH VENKATA","ICICI","6-6-2016 14:56:35","8-6-2016 21:50:17","KM AC",2139,"2016-06-06 14:56:41","2016-06-14 17:49:33"
+356,"000020","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",4800,"SARA & SWARNA","HDFC","7-6-2016 21:57:32","8-6-2016 21:50:17","KM AC",1896,"2016-06-07 21:57:38","2016-06-14 17:49:59"
+357,"296805","ROMI GOEL","EC","BENGALURU","CREDITED",12000,"ANAV GOEL","ICICI","6-6-2016 21:58:13","8-6-2016 21:50:17","VINAYA",2022,"2016-06-07 21:58:22","2016-06-11 18:21:12"
+358,"099103","SANJEEV DUA","CITI","BENGALURU","CREDITED",1200,"DHRITI","CITI","11-6-2016 22:22:0","17-6-2016 10:17:47","KM AC",2124,"2016-06-12 22:22:10","2016-06-26 10:17:53"
+359,"027453","YALAMANCHILI SRIKRIAN","INDIRA NAGAR","BENGALURU","CREDITED",12000,"SAHASYA","ING","13-6-2016 22:23:3","17-6-2016 10:18:25","KM AC",2116,"2016-06-12 22:23:09","2016-06-26 10:18:33"
+360,"653247","Bappi Bharathi","KORMANGAL","BENGALURU","CREDITED",6300,"SRAVYA & SHARANYA","SBI","7-6-2016 22:26:9","17-6-2016 10:17:24","KM AC",2171,"2016-06-12 22:26:18","2016-06-26 10:17:36"
+361,"000076","JECIN","MG ROAD","BENGALURU","CREDITED",4450,"RONITH & ROSHAN","HDFC","8-6-2016 22:27:15","17-6-2016 10:19:3","KM AC",2172,"2016-06-12 22:27:23","2016-06-26 10:19:13"
+362,"535551","Shawn Mathew","MARATHALLY","BENGALURU","CREDITED",22100,"ISABELLA SHAWN","SOUTH INDIAN BANK","14-6-2016 15:13:55","17-6-2016 10:18:4","KM AC",2179,"2016-06-13 15:14:02","2016-06-26 10:18:14"
+363,"005082","LB Publishers (ETL Learning)","MG ROAD","BENGALURU","CREDITED",12277,"Vinaya","HDFC","7-6-2016 15:14:58",,"VINAYA",0,"2016-06-13 15:15:10","2016-06-20 16:26:45"
+364,"000437","T Srinivasan","Jamnagar","Jamnagar","CREDITED",5000,"T. KIRTHIK","ICICI","15-6-2016 16:26:50","17-6-2016 10:18:43","KM AC",2226,"2016-06-15 16:26:57","2016-06-26 10:18:49"
+365,"000021","Ananthamalar","OLD MADRAS","BENGALURU","CREDITED",6400,"KEERTHIKA","HDFC","14-6-2016 16:28:50",,"VINAYA",0,"2016-06-15 16:28:57","2016-06-20 16:26:36"
+366,"097817","PREETHISH","CITI","BENGALURU","CREDITED",15000,"AADITRI","CITI","16-6-2016 17:41:14","24-6-2016 10:20:32","KM AC",2062,"2016-06-16 17:41:21","2016-06-26 10:20:39"
+367,"500654","KURMA KUMAR MDABATHULA","GANDHI BHAVAN","BENGALURU","PC",12350,"RAVI TEJA","ICICI","16-6-2016 17:44:0","24-6-2016 10:20:7","KM AC REJECTED",2228,"2016-06-16 17:44:14","2016-07-02 18:14:14"
+368,"500653","KURMA KUMAR MDABATHULA","GANDHI BHAVAN","BENGALURU","PC",12000,"RAVI TEJA","ICICI","16-6-2016 17:44:47","24-6-2016 10:20:20","KM AC",0,"2016-06-16 17:44:56","2016-07-02 18:14:05"
+369,"000031","SHUBHADA","KORMANGALA","BENGALURU","CREDITED",10300,"ANTARA & AAROOHI","HDFC","20-6-2016 18:21:3",,"VINAYA",2236,"2016-06-21 18:21:12","2016-06-26 10:14:55"
+370,"000010","BHARGAVI R","MUNNEKOLLALA","BENGALURU","CREDITED",13750,"LAKSHMI LAHARI","ANDARA BANK","22-6-2016 18:37:52","4-7-2016 9:39:41","KM AC",2219,"2016-06-23 18:37:58","2016-07-07 10:59:10"
+371,"140521","Smitha Vidyarthi","MARATHALLY","BENGALURU","CREDITED",10050,"AARYAV  VIDYARTHI","ICICI","23-6-2016 18:39:41","4-7-2016 9:39:46","KM AC",0,"2016-06-23 18:39:52","2016-07-07 10:59:01"
+372,"404597","SANJAY","Qutb Plaza","GURGAON","CREDITED",12000,"TRISHA","ICICI","27-6-2016 17:54:42","4-7-2016 9:39:51","KM AC",2240,"2016-06-28 17:54:52","2016-07-07 10:58:50"
+373,"500655","KURMA KUMAR MDABATHULA","GANDHI BHAVAN","BENGALURU","CREDITED",12350,"RAVI TEJA","ICICI","30-6-2016 18:15:29","4-7-2016 9:39:57","KM AC",0,"2016-07-02 18:15:38","2016-07-07 10:58:41"
+374,"000054","KAPIL KLER","JAYANAGAR","BENGALURU","CREDITED",24650,"SURVEEN KLER","KOTAK","4-7-2016 18:19:38","8-7-2016 12:46:10","KM AC",2248,"2016-07-02 18:19:45","2016-07-13 09:26:18"
+375,"000008","SANJAYA KUMAR SAHU","CHRUCHGATE","MUMBAI","CREDITED",12000,"ANUSHREE SAHU","HDFC","7-7-2016 11:44:14","8-7-2016 12:46:0","KM AC",2265,"2016-07-07 11:44:25","2016-07-13 09:27:05"
+376,"705074","SANJEEV DUA","AECS LAYOUT","BENGALURU","CREDITED",1200,"DHRITI","SBI","5-7-2016 11:45:29","8-7-2016 12:45:52","KM AC",2266,"2016-07-07 11:45:38","2016-07-13 09:26:29"
+377,"125041","NAVIN BISHNOI","MARATHALLY","BENGALURU","CREDITED",2400,"YASH BISHNOI","AXIS","6-7-2016 18:21:38","13-7-2016 9:22:59","KM AC",2267,"2016-07-07 18:21:46","2016-07-15 09:34:12"
+378,"073258","Ankit Rastogi","VIMANAPURA","BENGALURU","CREDITED",15000,"LARANYA","SBI","7-7-2016 15:17:22","13-7-2016 9:23:11","KM AC",2264,"2016-07-09 15:17:27","2016-07-15 09:34:08"
+379,"000022","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",4800,"SARA & SWARNA","HDFC","11-7-2016 21:21:41","13-7-2016 9:22:37","KM AC",2291,"2016-07-11 21:21:48","2016-07-15 09:34:19"
+380,"908396","ATANU GOSH","VIMANAPURA","BENGALURU","CREDITED",14400,"ANUSHA GHOSH","SBI","11-7-2016 21:29:51","13-7-2016 9:22:50","KM AC",2208,"2016-07-11 21:30:00","2016-07-15 09:34:15"
+381,"000014","ROBINA GUPTA","WHITE FIELD","BENGALURU","CREDITED",14400,"ARJUN","HDFC","26-7-2016 11:45:11","4-8-2016 11:48:42","KM AC",2027,"2016-08-05 11:45:22","2016-08-05 11:48:47"
+382,"000076","JECIN","MG ROAD","BENGALURU","CREDITED",4450,"RONITH & ROSHAN","HDFC","20-7-2016 11:46:36","4-8-2016 11:48:20","KM AC",2289,"2016-08-05 11:46:51","2016-08-05 11:48:39"
+383,"000041","PALLAV MEHTA","KASTURBA ROAD","BENGALURU","CREDITED",1600,"ANAYA MEHTA","HDFC","22-7-2016 11:47:50","4-8-2016 11:48:13","KM AC",0,"2016-08-05 11:47:59","2016-08-05 11:48:18"
+384,"000080","JECIN","MG ROAD","BENGALURU","CREDITED",4450,"RONITH & ROSHAN","HDFC","3-8-2016 18:49:57","17-8-2016 23:5:41","KM AC",2321,"2016-08-08 18:50:06","2016-08-20 12:16:17"
+385,"000023","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",5400,"SARA & SWARNA","HDFC","3-8-2016 18:51:41","17-8-2016 23:5:55","KM AC",2322,"2016-08-08 18:51:49","2016-08-20 12:16:04"
+386,"099104","SAJEEV DUA","CITI","BENGALURU","CREDITED",1200,"DHRITI","CITI","6-8-2016 18:52:28","17-8-2016 23:5:49","KM AC",2323,"2016-08-08 18:52:34","2016-08-20 12:15:51"
+387,"000032","SHUBADA","KORMANGALA","BENGALURU","CREDITED",6800,"ANTARA & AAROOHI","HDFC","15-8-2016 9:4:32","31-8-2016 10:10:47","VINAYA",2351,"2016-08-30 09:04:57","2016-09-02 10:10:54"
+388,"000013","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",14200,"SOHAM","HDFC","1-9-2016 10:51:42","12-9-2016 22:57:45","KM AC",2452,"2016-09-02 10:51:49","2016-09-15 23:07:43"
+389,"908397","ATANU GOSH","VIMANAPURA","BENGALURU","CREDITED",14200,"ANUSHA GHOSH","SBI","4-9-2016 12:32:14","12-9-2016 22:57:45","KM AC",2424,"2016-09-03 12:32:20","2016-09-15 23:08:32"
+390,"000439","T SRINIVASAN","JAMNAGAR","JAMNAGAR","CREDITED",18800,"T. KIRTHIK","ICICI","5-9-2016 17:33:49","12-9-2016 22:57:45","KM AC",2411,"2016-09-06 17:33:57","2016-09-15 23:08:43"
+391,"615652","SANJEEV DUA","AECS LAYOUT","BENGALURU","CREDITED",1760,"DHRITI","SBI","6-9-2016 17:36:53","12-9-2016 22:57:45","KM AC",2504,"2016-09-06 17:36:58","2016-09-20 23:46:56"
+393,"000009","SANJAY KUMAR SAHOO","CHRUCHGATE","MUMBAI","CREDITED",12000,"ANUSHREE SAHU","HDFC","10-9-2016 14:48:24","12-9-2016 22:57:45","KM AC",2469,"2016-09-10 14:48:30","2016-09-15 23:04:51"
+394,"125045","NAVIN BISHNOI","MARATHALLY","BENGALURU","CREDITED",2400,"YASH BISHNOI","AXIS","5-9-2016 14:49:20","12-9-2016 22:57:45","KM AC",2515,"2016-09-10 14:49:27","2016-09-15 23:08:19"
+395,"164462","Richa Ankit","WHITE FIELD","BENGALURU","CREDITED",14000,"LARANYA","AXIS","8-9-2016 22:35:21","12-9-2016 22:57:45","KM AC",2432,"2016-09-10 22:35:29","2016-09-15 23:07:56"
+396,"703677","VIKAS KUMAR","BENGALURU","BENGALURU","CREDITED",15200,"SHACHI SHARMA","CITI","6-9-2016 22:36:12","12-9-2016 22:57:45","KM AC",2494,"2016-09-10 22:36:18","2016-09-15 23:08:55"
+397,"000011","KAMALPREET KLER","VASHI","NAVI MUMBAI","CREDITED",11000,"SURVEEN KLER","HDFC","6-9-2016 22:38:13","12-9-2016 22:57:45","KM AC",2459,"2016-09-10 22:38:19","2016-09-15 23:07:29"
+398,"262501","SHIV","DWARAKA","NEW DELHI","CREDITED",22400,"NEEV","SYNDICATE","7-9-2016 22:39:12","12-9-2016 22:57:45","KM AC",2482,"2016-09-10 22:39:19","2016-09-15 23:08:08"
+399,"535569","SHAWN MATHEW","MARATHALLY","BENGALURU","CREDITED",10500,"ISABELLA SHAWN","SOUTH INDIAN BANK","12-9-2016 23:0:9","14-9-2016 22:33:43","KM AC",2389,"2016-09-13 23:00:17","2016-09-15 23:09:08"
+400,"296898","Rumil Goel","ELECTRONIC CITY","BENGALURU","CREDITED",12000,"ANAV GOEL","ICICI","12-9-2016 23:1:11","14-9-2016 22:33:36","VINAYA",2467,"2016-09-13 23:01:21","2016-09-15 22:56:55"
+401,"500659","KURMA KUMAR MDABATHULA","KUMARAPARK","BENGALURU","CREDITED",14200,"RAVI TEJA","ICICI","15-9-2016 21:22:33","20-9-2016 23:47:0","KM AC",2447,"2016-09-15 21:22:42","2016-09-26 01:01:14"
+402,"000033","SHUBADA","KORMANGAL","BENGALURU","CREDITED",6800,"ANTARA & AAROOHI","HDFC","12-9-2016 21:23:42","20-9-2016 23:47:5","VINAYA",2536,"2016-09-15 21:23:51","2016-09-21 21:01:51"
+403,"000082","JECIN","MG ROAD","BENGALURU","CREDITED",5050,"RONITH & ROSHAN","HDFC","20-9-2016 23:49:42","20-9-2016 21:22:26","KM AC",2551,"2016-09-20 23:49:48","2016-09-21 21:22:38"
+404,"000025","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",4200,"SARA & SWARNA","HDFC","16-9-2016 23:50:51","21-9-2016 21:22:47","KM AC",2554,"2016-09-20 23:50:59","2016-09-21 21:22:55"
+405,"719416","Rajyalakshmi Anumala","AECS LAYOUT","BENGALURU","CREDITED",12000,"SAHASYA","SBI","20-9-2016 23:52:24","21-9-2016 21:23:12","KM AC",2493,"2016-09-20 23:52:31","2016-09-26 01:01:28"
+406,"000011","BHARGAVI R","MUNEKOLLALA","BENGALURU","CREDITED",15000,"LAKSHMI LAHARI","ANDHRA BANK","21-9-2016 21:56:51","3-10-2016 23:27:33","KM AC",2431,"2016-09-27 21:57:05","2016-10-03 23:27:41"
+407,"102602","Aasheesh Arjun Singh","MG ROAD","BENGALURU","CREDITED",20000,"ADHIRAJ ARJUN SINGH","HSBC","3-10-2016 22:57:1","6-10-2016 23:7:23","KM AC",2568,"2016-10-03 22:57:11","2016-10-05 23:07:30"
+408,"097818","PRITESH","BENGALURU","BENGALURU","CREDITED",13800,"AADITRI","CITI","1-10-2016 22:57:59","6-10-2016 23:7:16","KM AC",2509,"2016-10-03 22:58:06","2016-10-08 12:23:12"
+409,"092437","Insight Education Trust","GANDHI Nagar","BENGALURU","CREDITED",10000,"Vinaya","Bank of Maharashtra","19-9-2016 23:9:49","30-9-2016 23:10:20","Vinaya AC",0,"2016-10-03 23:09:58","2016-10-03 23:10:31"
+410,"000038","Amit Chhabra","KORMANGALA","BENGALURU","CREDITED",22300,"NEHAL CHHABRA","HDFC","13-10-2016 22:39:52","18-10-2016 21:8:3","KM AC",2594,"2016-10-13 22:40:01","2016-10-19 23:05:39"
+411,"764312","SURABH PRATAP","ORR","BENGALURU","CREDITED",12000,"MAHI","SBI","13-10-2016 22:40:43","18-10-2016 21:7:54","KM AC",2481,"2016-10-13 22:40:52","2016-10-19 22:07:20"
+412,"000084","JECIN","MG ROAD","BENGALURU","CREDITED",5650,"RONITH & ROSHAN","HDFC","12-10-2016 22:41:45","18-10-2016 21:7:40","KM AC",2595,"2016-10-13 22:41:51","2016-10-19 23:05:56"
+413,"000023","SANDIP SANYAL","SALT LAKE","KOLKATA","CREDITED",12800,"PRIYASHA SANYAL","HDFC","12-10-2016 22:42:59","18-10-2016 21:7:22","KM AC",2489,"2016-10-13 22:43:09","2016-10-19 23:05:27"
+414,"248155","AJAY AGARAWAL","DOMBIVILLI","DOMBIVLI","CREDITED",12000,"PIHU AGARWAL","ICICI","18-10-2016 21:6:32","20-10-2016 23:13:5","KM AC",2484,"2016-10-18 21:06:38","2016-10-23 12:56:34"
+415,"099108","SANJEEV DUA","CITI","BENGALURU","CREDITED",1800,"DHRITI","CITI","19-10-2016 22:38:42","20-10-2016 23:13:21","KM AC",2607,"2016-10-19 22:38:50","2016-10-23 12:56:22"
+416,"044303","PRAJYNA TRIPATHI","Bhubaneshwar","Bhubaneshwar","CREDITED",4800,"SARA & SWARNA","ICICI","19-10-2016 22:40:8","20-10-2016 23:13:14","KM AC",2622,"2016-10-19 22:40:17","2016-10-23 12:56:13"
+417,"000015","ROBINA GUPTA","WHITE FIELD","BENGALURU","CREDITED",15200,"ARJUN","HDFC","20-10-2016 9:46:39","25-10-2016 22:30:0","KM AC",2471,"2016-10-21 09:46:49","2016-11-06 11:18:02"
+418,"000012","Venkatesh Hosur","MALLESHWARAM","BENGALURU","CREDITED",16850,"NEW CHILD","HDFC","28-9-2016 9:41:23","3-11-2016 11:18:22","KM AC",2632,"2016-11-02 09:41:31","2016-11-06 11:22:36"
+419,"404605","SANJAY NAMBEESAN","DLF CITY","GURGAON","CREDITED",11000,"TRISHA","ICICI","27-10-2016 9:42:15","2-11-2016 11:25:50","KM AC",2460,"2016-11-02 09:42:24","2016-11-06 11:25:54"
+420,"000034","SHUBADA","KORMANGALA","BENGALURU","CREDITED",10600,"ANTARA & AAROOHI","HDFC","10-11-2016 22:49:7","19-11-2016 12:51:54","VINAYA",2658,"2016-11-13 22:49:30","2016-11-20 12:52:04"
+421,"000086","JECIN","M.G.ROAD","BENGALURU","CREDITED",5050,"RONITH & ROSHAN","HDFC","5-11-2016 23:2:43","19-11-2016 22:37:9","KM AC",2680,"2016-11-13 23:02:52","2016-11-21 22:37:20"
+422,"073265","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",3000,"LARANYA","SBI","10-11-2016 23:7:43","19-11-2016 22:38:30","KM AC",2684,"2016-11-13 23:07:54","2016-11-21 22:38:35"
+423,"167206","Devleena Sengupta","CAMBRDIGE ROAD","BENGALURU","CREDITED",5000,"Aarohi Sengupta","ICICI","9-11-2016 23:12:50","19-11-2016 22:37:31","KM AC",0,"2016-11-13 23:13:00","2016-11-21 22:37:39"
+424,"799277","VALSA V K","M.G.ROAD","ERNAKULAM","CREDITED",13000,"ADITYA SANOJ","SBT","16-11-2016 10:53:33","19-11-2016 22:38:43","KM AC",2417,"2016-11-18 10:53:41","2016-11-21 22:38:52"
+425,"044302","PRAJYNA TRIPATHI","BHUBANESHWAR","BHUBANESHWAR","CREDITED",4800,"SARA & SWARNA","ICICI","15-11-2016 10:54:32","19-11-2016 22:37:47","KM AC",2668,"2016-11-18 10:54:39","2016-11-21 22:38:22"
+426,"000030","Arti Chhabra","KORMANGALA","BENGALURU","CREDITED",21300,"NEHAL CHHABRA","HDFC","28-11-2016 9:54:43","30-11-2016 9:47:18","KM AC",2722,"2016-11-30 09:54:50","2016-12-04 00:50:52"
+427,"000014","BHARGAVI R","MUNNEKOLLALA","BENGALURU","CREDITED",14750,"LAKSHMI LAHARI","ANDARA BANK","2-12-2016 9:47:43","14-12-2016 17:7:41","KM AC",2777,"2016-12-02 09:47:52","2016-12-18 17:07:53"
+428,"000020","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",13400,"SOHAM","HDFC","9-12-2016 10:20:25","15-12-2016 17:18:32","KM AC",2790,"2016-12-12 10:20:32","2016-12-18 17:18:37"
+429,"114288","ATANU GOSH","BENGALURU","BENGALURU","CREDITED",13400,"ANUSHA GHOSH","CITI","8-12-2016 10:22:24","14-12-2016 17:14:2","KM AC",2763,"2016-12-12 10:22:31","2016-12-18 17:14:10"
+430,"000012","SANJAY KUMAR SAHU","CHURCHGATE","MUMBAI","CREDITED",12000,"ANUSHREE SAHU","HDFC","7-12-2016 10:23:21","15-12-2016 17:18:5","KM AC",2709,"2016-12-12 10:23:28","2016-12-18 17:18:10"
+431,"073266","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",14000,"LARANYA","SBI","6-12-2016 10:26:37","14-12-2016 17:10:45","KM AC",2778,"2016-12-12 10:26:46","2016-12-18 17:10:56"
+432,"125328","Anil Kumar Reddy Chichili","MARATHALLY","BENGALURU","CREDITED",15200,"RISHITH SAI REDDY","SBM","9-12-2016 10:30:43","14-12-2016 17:8:48","KM AC",2490,"2016-12-12 10:30:56","2016-12-18 17:08:53"
+433,"000015","Ramesh Matavishnu Plnaya","M.G.ROAD","BENGALURU","CREDITED",22200,"AYUSH","HDFC","12-12-2016 10:32:45","15-12-2016 17:18:47","KM AC",2868,"2016-12-12 10:33:03","2016-12-18 17:18:52"
+434,"559984","SHAWN MATHEW","MARATHALLY","BENGALURU","CREDITED",10500,"ISABELLA SHAWN","SOUTH INDIAN BANK","6-12-2016 10:34:45","14-12-2016 17:8:21","KM AC",2813,"2016-12-12 10:34:51","2016-12-18 17:08:28"
+435,"537282","Jagdish","MARATHALLY","BENGALURU","CREDITED",19700,"JEESHVI","SOUTH INDIAN BANK","5-12-2016 10:36:52","14-12-2016 17:8:5","KM AC",2869,"2016-12-12 10:37:00","2016-12-18 17:08:10"
+436,"360180","Veera Chandrapal Pichka","HOSUR ROAD","BENGALURU","CREDITED",4500,"AKSHAJ & VENKAT","SBI","5-12-2016 10:38:8","14-12-2016 17:10:19","KM AC",2870,"2016-12-12 10:38:13","2016-12-18 17:10:31"
+437,"000010","Manisha Paul","KASTURBA ROAD","BENGALURU","CREDITED",5750,"Jeet","HDFC","4-12-2016 10:38:56","15-12-2016 17:17:52","KM AC",0,"2016-12-12 10:39:03","2016-12-18 17:17:57"
+438,"703680","VIKAS KUMAR","BENGALURU","BENGALURU","CREDITED",14400,"SHACHI SHARMA","CITI","5-12-2016 10:39:50","14-12-2016 17:9:13","KM AC",2733,"2016-12-12 10:39:57","2016-12-18 17:09:19"
+439,"000091","JECIN","M.G.ROAD","BENGALURU","CREDITED",5050,"RONITH & ROSHAN","HDFC","5-12-2016 10:40:34","15-12-2016 17:18:17","KM AC",2871,"2016-12-12 10:40:39","2016-12-18 17:18:23"
+440,"000032","Apurva Kumar","MARATHALLY","BENGALURU","CREDITED",13400,"ANAYAA","HDFC","10-12-2016 10:41:24","15-12-2016 17:14:50","KM AC",2762,"2016-12-12 10:41:30","2016-12-18 17:14:56"
+441,"000023","Deb Priyo Das","DLF CITY","GURGAON","CREDITED",10500,"SANJUKTHA","ICICI","9-12-2016 10:42:22","14-12-2016 17:7:16","KM AC",2827,"2016-12-12 10:42:29","2016-12-18 17:07:22"
+442,"000026","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",4800,"SARA & SWARNA","HDFC","16-12-2016 12:44:12","3-1-2017 0:17:39","KM AC",2901,"2016-12-31 12:44:22","2017-01-04 00:17:44"
+444,"000012","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",280,"JEET","HDFC","13-12-2016 12:46:24","3-1-2017 0:17:22","KM AC",2902,"2016-12-31 12:46:32","2017-01-04 00:17:30"
+445,"133532","Anu Kuraikose","MARATHALLY","BENGALURU","CREDITED",13000,"JOHN ANU","Federal Bank","14-12-2016 12:50:46","3-1-2017 23:51:27","KM AC",2744,"2016-12-31 12:50:54","2017-01-03 23:51:31"
+446,"000001","RAJYALAKSHMI ANUMALA","SARAJAPURA BRANCH","BENGALURU","CREDITED",12000,"SAHASYA","KOTAK","20-12-2016 12:51:58","2-1-2017 23:50:56","KM AC",2732,"2016-12-31 12:52:11","2017-01-03 23:51:09"
+447,"299898","Madhavan Pradeesh","AIRPORT Road","BENGALURU","CREDITED",4500,"ANIRUDH","SBI","16-12-2016 12:53:40","3-1-2017 23:52:1","KM AC",2878,"2016-12-31 12:53:49","2017-01-03 23:52:15"
+448,"686550","ABHISHAKE RAI","MARATHALLY","BENGALURU","PC",10000,"AAHANA","KARNATAKA","22-12-2016 12:55:15","3-1-2017 23:52:25","KM AC",2903,"2016-12-31 12:55:23","2017-01-03 23:52:50"
+449,"000031","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3000,"SANJUKTHA","ICICI","3-1-2017 23:35:30","9-1-2017 10:5:7","KM AC",2955,"2017-01-05 23:36:06","2017-01-11 10:05:16"
+450,"795232","VEERA CHANDRAPAL PICHKA","HOSUR ROAD","BENGALURU","CREDITED",4500,"AKSHAJ & VENKAT","SBI","2-1-2017 23:36:56","9-1-2017 10:5:26","KM AC",2917,"2017-01-05 23:37:05","2017-01-11 10:05:34"
+451,"000098","JECIN","MG ROAD","BENGALURU","CREDITED",5050,"RONITH & ROSHAN","HDFC","5-1-2017 23:37:59","9-1-2017 10:4:42","KM AC",2956,"2017-01-05 23:38:07","2017-01-11 10:04:51"
+452,"595854","VIMAL GEORGE","VIMANAPURA","BENGALURU","CREDITED",9600,"RYAN","SBI","4-1-2017 23:39:22","9-1-2017 10:5:53","KM AC",2619,"2017-01-05 23:39:29","2017-01-11 10:05:58"
+453,"000016","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",3900,"JEET","HDFC","5-1-2017 9:34:26","9-1-2017 10:4:11","KM AC",2970,"2017-01-11 09:35:10","2017-01-11 10:04:19"
+454,"000024","Mahathi Pateel","WHITE FIELD","BENGALURU","CREDITED",4300,"LAKSHMI ADITHI","HDFC","6-1-2017 9:39:3","9-1-2017 10:4:30","KM AC",2972,"2017-01-11 09:39:11","2017-01-11 10:04:36"
+455,"073269","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",3000,"LARANYA","SBI","10-1-2017 9:40:28","12-1-2017 15:54:57","KM AC",2973,"2017-01-11 09:40:32","2017-01-14 15:55:09"
+456,"000016","ROBINA GUPTA","WHITE FIELD","BENGALURU","CREDITED",14400,"ARJUN","HDFC","11-1-2017 9:41:9","12-1-2017 15:54:27","KM AC",2712,"2017-01-11 09:41:15","2017-01-14 15:54:35"
+457,"000028","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",4800,"SARA & SWARNA","HDFC","10-1-2017 9:41:56","12-1-2017 15:54:41","KM AC",2974,"2017-01-11 09:42:01","2017-01-14 15:54:45"
+458,"312248","Sarada G B","BENGALURU","BENGALURU","CREDITED",14000,"N. G. NIHIRA REDDY","CITI","10-1-2017 9:44:7","16-1-2017 22:38:18","KM AC",2781,"2017-01-11 09:44:14","2017-01-17 22:38:24"
+459,"021725","KURMA KUMAR MDABATHULA","GANDHI BHAVAN","BENGALURU","CREDITED",13400,"RAVI TEJA","ICICI","10-1-2017 9:46:12","12-1-2017 15:55:19","KM AC",2785,"2017-01-11 09:46:19","2017-01-14 15:55:24"
+460,"000045","Munner A K","SARAJAPURA BRANCH","BENGALURU","CREDITED",18450,"AYAAN RABI","HDFC","9-1-2017 9:47:23","12-1-2017 15:54:6","KM AC",2968,"2017-01-11 09:47:31","2017-01-14 15:54:19"
+461,"000003","SUNIL PACHORI","KG ROAD","BENGALURU","PC",17000,"VARTIKA PACHORI","HDFC","12-1-2017 21:12:57","12-1-2017 21:13:10","KM AC",3002,"2017-01-22 21:13:05","2017-01-22 21:13:16"
+462,"000074","TRUPTI NAMBISSAN","SECTOR 18","NOIDA","CREDITED",11000,"TRISHA","HDFC","19-1-2017 9:48:55","30-1-2017 10:20:0","KM AC",2795,"2017-01-30 09:49:03","2017-02-02 09:19:49"
+463,"000034","SANOJ V ABRAHAM","MARATHALLY","BENGALURU","CREDITED",13700,"ADITYA SANOJ","CITI UNION BANK LTD","20-1-2017 9:51:32","30-1-2017 10:19:53","KM AC",2755,"2017-01-30 09:51:41","2017-02-02 09:19:24"
+464,"154111","Mohan Chakravarthy Bhadradri","AECS LAYOUT","BENGALURU","CREDITED",10500,"SWAPNIKA BHADRADRI","ICICI","17-1-2017 9:52:54","30-1-2017 10:19:43","KM AC",2829,"2017-01-30 09:53:02","2017-02-02 09:19:02"
+465,"097820","PREETHISH N","CITI","BENGALURU","CREDITED",13000,"AADITRI","CITI","16-1-2017 9:54:3","30-1-2017 10:19:34","KM AC",2741,"2017-01-30 09:54:11","2017-02-02 09:19:13"
+466,"102621","AASHEESH ARJUN SINGH","MG ROAD","BENGALURU","CREDITED",10500,"ADHIRAJ ARJUN SINGH","HSBC","16-1-2017 9:55:9","30-1-2017 10:19:26","KM AC",2807,"2017-01-30 09:55:16","2017-02-02 09:19:37"
+467,"007178","SIREESHA DAGUDUBIYAM","Bellandur","BENGALURU","CREDITED",10500,"JENITH VENKATA","ICICI","31-1-2017 10:19:12","7-2-2017 1:4:35","KM AC",2815,"2017-01-31 10:19:19","2017-02-13 20:26:17"
+468,"603736","Mahesh K C","MARATHALLY","BENGALURU","CREDITED",12000,"SHIVANANDAN","SBM","5-2-2017 12:21:56","7-2-2017 1:5:18","KM AC",2495,"2017-02-05 12:22:02","2017-02-13 20:26:00"
+469,"000029","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",9600,"SARA & SWARNA","HDFC","3-2-2017 12:25:25","7-2-2017 1:5:10","KM AC",3018,"2017-02-05 12:25:31","2017-02-09 15:56:07"
+470,"000019","SWAJI DOGUPARTHI","EC","BENGALURU","CREDITED",6800,"VEDA ABHUDHAY","HDFC","2-2-2017 12:29:13","7-2-2017 1:5:2","KM AC",3019,"2017-02-05 12:29:20","2017-02-09 15:56:17"
+471,"000025","MAHATHI PATEEL","WHITE FIELD","BENGALURU","CREDITED",1800,"LAKSHMI ADITHI","HDFC","3-2-2017 12:30:13","7-2-2017 1:4:55","KM AC",3020,"2017-02-05 12:30:21","2017-02-09 15:56:27"
+472,"073270","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",3000,"LARANYA","SBI","31-1-2017 12:31:11","7-2-2017 1:4:48","KM AC",3021,"2017-02-05 12:31:16","2017-02-09 16:03:13"
+473,"679543","SHERIN MOHAN CHEERAN","MARATHALLY","BENGALURU","CREDITED",4700,"YOHAN","SYNDICATE","31-1-2017 12:33:33","7-2-2017 1:4:42","KM AC",3022,"2017-02-05 12:33:39","2017-02-09 16:03:43"
+474,"100818","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3000,"SANJUKTHA","ICICI","6-2-2017 23:30:10","7-2-2017 1:4:28","KM AC",3037,"2017-02-06 23:30:18","2017-02-09 16:03:32"
+475,"764313","SURABH PRATAP","ORR","BENGALURU","CREDITED",12000,"MAHI","SBI","6-2-2017 23:30:59","7-2-2017 1:4:16","KM AC",2720,"2017-02-06 23:31:05","2017-02-09 16:03:24"
+476,"000101","JECIN","MG ROAD","BENGALURU","CREDITED",5050,"RONITH & ROSHAN","HDFC","9-2-2017 16:40:45","15-2-2017 23:19:25","KM AC",3064,"2017-02-09 16:40:53","2017-02-17 23:19:38"
+477,"349761","Navin S Kutte","CITI","BENGALURU","CREDITED",5000,"SWASTHI NAVIN","CITI","12-2-2017 19:52:48","14-2-2017 23:19:7","KM AC",3076,"2017-02-13 19:52:56","2017-02-17 23:19:13"
+478,"268891","MANAS AGarwal","South Extension","NEW DELHI","CREDITED",2500,"MANASVI AGARWAL","ICICI","13-2-2017 20:17:50","14-2-2017 23:18:16","KM AC",3077,"2017-02-13 20:17:56","2017-02-17 23:18:23"
+479,"570405","Arun Kumar Arigela","ELECTRONIC CITY","BENGALURU","CREDITED",6200,"TRIPURA SARANYA ARIGELA","ICICI","10-2-2017 20:20:15","14-2-2017 23:18:34","KM AC",3078,"2017-02-13 20:20:26","2017-02-17 23:18:40"
+480,"262489","SHIVA","DWARAKA","NEW DELHI","CREDITED",19800,"NEEV","SYNDICATE","14-2-2017 20:21:12","14-2-2017 23:18:49","KM AC",2721,"2017-02-13 20:21:19","2017-02-17 23:18:56"
+481,"086709","Roja","MARATHALLY","BENGALURU","CREDITED",11000,"Roja","CANANRA","14-2-2017 20:26:53","15-2-2017 9:52:16","VINAYA",0,"2017-02-13 20:27:04","2017-02-16 09:52:24"
+482,"000022","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",3450,"JEET","HDFC","20-2-2017 9:44:21","28-2-2017 21:30:19","KM AC",3050,"2017-02-27 09:44:28","2017-02-28 21:30:26"
+483,"040027","ABHISHAKE RAI","MARATHALLY","BENGALURU","CREDITED",10000,"AAHANA","KARNATAKA","17-2-2017 9:47:38","28-2-2017 21:30:29","KM AC",0,"2017-02-27 09:47:45","2017-02-28 21:30:35"
+484,"570406","ARUN KUMAR ARIGELA","ELECTRONIC CITY","BENGALURU","CREDITED",1200,"TRIPURA SARANYA ARIGELA","ICICI","6-3-2017 9:37:0","6-3-2017 10:1:50","KM AC",3111,"2017-03-06 09:37:06","2017-03-07 10:01:55"
+485,"000022","K RAMAKRISHNA","WHITE FIELD","BENGALURU","CREDITED",11500,"SOHAM","HDFC","14-3-2017 9:52:33","16-3-2017 22:27:18","KM AC",3176,"2017-03-16 09:52:38","2017-03-20 22:27:24"
+486,"268893","MANAS AGARWAL","SOUTH EXTENSION","NEW DELHI","CREDITED",3000,"MANASVI AGARWAL","ICICI","9-3-2017 9:55:13","16-3-2017 22:28:32","KM AC",3177,"2017-03-16 09:55:22","2017-03-20 22:28:38"
+487,"000029","MAHATHI PATEEL","WHITE FIELD","BENGALURU","CREDITED",1800,"LAKSHMI ADITHI","HDFC","8-3-2017 9:56:9","16-3-2017 22:27:33","KM AC",3145,"2017-03-16 09:56:17","2017-03-20 22:27:53"
+488,"000027","DEBA PRIYO DAS","DLF CITY","GURGAON","CREDITED",3600,"SANJUKTHA","ICICI","16-3-2017 9:58:4","16-3-2017 22:28:16","KM AC",3178,"2017-03-16 09:58:09","2017-03-20 22:28:23"
+489,"000103","JECIN","M.G.ROAD","BENGALURU","CREDITED",6000,"RONITH & ROSHAN","HDFC","6-3-2017 9:58:59","16-3-2017 22:27:58","KM AC",3179,"2017-03-16 09:59:09","2017-03-20 22:28:06"
+490,"681715","SANOJ V ABRAHAM","MARATHALLY","BENGALURU","CREDITED",7700,"ADITYA SANOJ","SOUTH INDIAN BANK","11-3-2017 10:0:20","16-3-2017 22:28:45","KM AC",3180,"2017-03-16 10:00:28","2017-03-20 22:28:51"
+491,"000067","Rupesh Gaur","M.G.ROAD","BENGALURU","CREDITED",7400,"APRA GAUR","HDFC","18-3-2017 9:48:8","22-3-2017 21:13:26","KM AC",3181,"2017-03-22 09:48:15","2017-03-24 21:13:33"
+492,"559994","SHAWN MATHEW","MARATHALLY","BENGALURU","CREDITED",7740,"ISABELLA SHAWN","SOUTH INDIAN BANK","20-3-2017 9:51:33","22-3-2017 21:13:40","KM AC",3182,"2017-03-22 09:51:43","2017-03-24 21:13:47"
+493,"463687","Shivalika Gaur","JAYANAGAR","BENGALURU","CREDITED",3800,"APRA GAUR","ICICI","5-4-2017 9:32:51","6-4-2017 12:2:34","KM AC",0,"2017-04-06 09:33:18","2017-04-09 12:02:40"
+494,"164463","RICHA ANKIT","WHITE FIELD","BENGALURU","CREDITED",6000,"LARANYA","AXIS","3-4-2017 9:34:59","6-4-2017 11:56:27","KM AC",3193,"2017-04-06 09:35:09","2017-04-09 11:56:39"
+495,"000014","Kuldeep Kumar","M.G.ROAD","BENGALURU","CREDITED",3000,"Kavya","HDFC","3-4-2017 9:36:22","6-4-2017 11:54:57","KM AC",0,"2017-04-06 09:36:29","2017-04-09 11:55:09"
+496,"000046","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3000,"SANJUKTHA","ICICI","27-3-2017 9:37:30","6-4-2017 12:0:19","KM AC",0,"2017-04-06 09:37:51","2017-04-09 12:00:25"
+497,"000049","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3600,"SANJUKTHA","ICICI","27-3-2017 9:38:29","6-4-2017 12:1:4","KM AC",3194,"2017-04-06 09:38:41","2017-04-09 12:01:14"
+498,"000017","Amirta Mukherjee","SARAJAPURA BRANCH","BENGALURU","CREDITED",9200,"DRISTI MUKHERJEE","HDFC","28-3-2017 9:43:7","6-4-2017 12:3:4","KM AC",3195,"2017-04-06 09:43:15","2017-04-09 12:03:09"
+499,"614733","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",9000,"PIHU AGARWAL","ICICI","28-3-2017 9:45:59","6-4-2017 12:1:26","KM AC",3196,"2017-04-06 09:46:05","2017-04-09 12:01:35"
+500,"679548","SHERIN MOHAN CHEERAN","MARATHALLY","BENGALURU","CREDITED",5800,"YOHAN","SYNDICATE","3-4-2017 9:49:0","6-4-2017 11:58:28","KM AC",3197,"2017-04-06 09:49:07","2017-04-09 11:58:35"
+501,"000030","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",7800,"SARA & SWARNA","HDFC","5-4-2017 9:49:46","6-4-2017 11:55:38","KM AC",0,"2017-04-06 09:49:54","2017-04-09 11:55:45"
+502,"000009","Hitesh Chadha","WHITE FIELD","BENGALURU","CREDITED",6000,"KABIR","HDFC","11-4-2017 10:17:49","18-4-2017 10:3:44","KM AC",3233,"2017-04-17 10:17:59","2017-04-20 10:03:51"
+503,"0000111","JECIN","M.G.ROAD","BENGALURU","CREDITED",7450,"RONITH & ROSHAN","HDFC","6-4-2017 10:20:57","18-4-2017 10:3:31","KM AC",3234,"2017-04-17 10:21:05","2017-04-20 10:03:38"
+504,"262492","SHIVA","DWARAKA","NEW DELHI","CREDITED",12900,"NEEV","SYNDICATE","7-4-2017 10:23:32","17-4-2017 9:44:14","KM AC",3235,"2017-04-17 10:24:06","2017-04-20 09:44:20"
+505,"000031","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",7600,"SARA & SWARNA","HDFC","3-5-2017 10:48:5","4-5-2017 10:33:43","KM AC",0,"2017-05-03 10:48:11","2017-05-05 10:33:47"
+506,"000036","Amrita Rajeshkumar","MG ROAD","BENGALURU","CREDITED",5100,"Sakshat","HDFC","26-4-2017 10:49:14","5-5-2017 10:35:15","KM AC",0,"2017-05-03 10:49:28","2017-05-05 10:36:44"
+507,"000029","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3600,"SANJUKTHA","ICICI","3-5-2017 10:51:34","3-5-2017 10:22:4","KM AC",3250,"2017-05-03 10:51:40","2017-05-05 10:22:12"
+508,"000052","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3000,"SANJUKTHA","ICICI","26-4-2017 10:52:8","3-5-2017 10:21:29","KM AC",0,"2017-05-03 10:52:17","2017-05-05 10:21:59"
+509,"603716","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",3000,"LARANYA","SBI","5-5-2017 23:44:38","15-5-2017 23:18:59","KM AC",3260,"2017-05-11 23:44:45","2017-05-16 23:19:03"
+510,"000006","VIMAL GEORGE","DOMLUR","BENGALURU","CREDITED",9600,"RYAN","HDFC","11-5-2017 23:47:10","15-5-2017 23:22:33","KM AC",3066,"2017-05-11 23:47:17","2017-05-16 23:22:39"
+511,"679552","SHERIN MOHAN CHEERAN","MARATHALLY","BENGALURU","CREDITED",5800,"YOHAN","SYNDICATE","5-5-2017 23:48:15","15-5-2017 23:19:17","KM AC",3261,"2017-05-11 23:48:21","2017-05-16 23:19:22"
+512,"679817","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",3000,"PIHU AGARWAL","ICICI","4-5-2017 23:50:26","15-5-2017 23:18:33","KM AC",0,"2017-05-11 23:50:32","2017-05-16 23:18:38"
+513,"000113","JECIN ARIKKAAT","M.G.ROAD","BENGALURU","CREDITED",7450,"RONITH & ROSHAN","HDFC","10-5-2017 23:24:38","16-5-2017 23:23:15","KM AC",3263,"2017-05-12 23:24:45","2017-05-16 23:23:19"
+514,"000091","Ruchika Mittal","BELLANDUR","BENGALURU","CREDITED",3800,"Gauri Mittal","HDFC","8-5-2017 23:26:11","16-5-2017 23:23:49","KM AC",0,"2017-05-12 23:26:20","2017-05-16 23:23:52"
+515,"764314","SURABH PRATAP","MARATHALLY","BENGALURU","CREDITED",42000,"MAHI PRATHAP","SBI","23-5-2017 23:22:8","5-6-2017 22:23:9","KM AC",3292,"2017-05-31 23:22:17","2017-06-07 22:23:22"
+516,"026815","MANAS AGARWAL","Cannought Palace","NEW DELHI","CREDITED",5800,"MANASVI (CHERRY)","ICICI","16-5-2017 23:24:30","5-6-2017 22:30:38","KM AC",3293,"2017-05-31 23:24:38","2017-06-07 22:30:43"
+517,"145648","RAVI CHOUDHARY","WHITE FIELD","BENGALURU","CREDITED",21550,"KAIRAV CHOUDHARY","SBI","1-6-2017 23:29:49","5-6-2017 22:29:23","KM AC",3294,"2017-05-31 23:30:00","2017-06-07 22:29:29"
+518,"000025","BHARGAVI R","MUNEKOLLALA","BENGALURU","CREDITED",22600,"LAKSHMI LAHARI","ANDARA BANK","27-5-2017 23:31:16","5-6-2017 22:30:16","KM AC",3295,"2017-05-31 23:31:43","2017-06-07 22:30:24"
+519,"167212","Saurab Sen Gupta","Commissariat Road","BENGALURU","CREDITED",21850,"AAROHI SENGUPTA","ICICI","27-5-2017 23:32:38","5-6-2017 22:30:3","KM AC",3296,"2017-05-31 23:34:07","2017-06-07 22:30:09"
+520,"021729","KURMA KUMAR MDABATHULA","KUMARAPARK","BENGALURU","CREDITED",21100,"RAVI TEJA","ICICI","1-6-2017 23:35:10","5-6-2017 22:24:10","KM AC",3297,"2017-05-31 23:35:47","2017-06-07 22:24:23"
+521,"543512","A S Reddy","MARATHALLY","BENGALURU","CREDITED",12500,"SONITH . S. REDDY","SOUTH INDIAN BANK","29-5-2017 23:36:39","5-6-2017 22:30:53","KM AC",3298,"2017-05-31 23:37:48","2017-06-07 22:31:15"
+522,"296648","Rabindra Behera","WHITE FIELD","BENGALURU","CREDITED",26850,"LIKHITH BEHERA","ICICI","2-6-2017 23:39:27","5-6-2017 22:24:37","KM AC",3299,"2017-05-31 23:39:35","2017-06-07 22:24:42"
+524,"000018","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",7700,"DRISTI MUKHERJEE","HDFC","27-5-2017 23:40:47","5-6-2017 22:19:22","KM AC",3300,"2017-05-31 23:41:30","2017-06-07 22:19:28"
+525,"647434","Saswati Chanda","SECTOR 27","NODIA","CREDITED",3500,"SANJUKTHA","YES","2-6-2017 0:32:57","5-6-2017 22:31:40","KM AC",3316,"2017-06-05 00:33:05","2017-06-07 22:31:44"
+526,"000026","Amitabha Majumdar","INFANTRY ROAD","BENGALURU","CREDITED",20000,"SHAGNIK MAJUMDAR","HDFC","1-6-2017 0:35:37","5-6-2017 22:19:54","KM AC",3317,"2017-06-05 00:35:42","2017-06-07 22:20:00"
+527,"000017","VENKATESH HOSUR","MALLESHWARAM","BENGALURU","CREDITED",17250,"SAMVIT","HDFC","3-6-2017 22:59:10","12-6-2017 21:12:52","KM AC",3318,"2017-06-05 22:59:19","2017-06-17 15:45:57"
+528,"343569","ROMEL GOEL","EC","BENGALURU","CREDITED",20700,"ANAV GOEL","AXIS","3-6-2017 23:1:4","12-6-2017 20:26:23","VINAYA",3319,"2017-06-05 23:01:35","2017-06-17 15:16:45"
+529,"587162","Deepak Kumar Biswal","Bangalore[KT]","BENGALURU","CREDITED",20100,"DAIVIK","AXIS","5-6-2017 23:3:26","12-6-2017 21:11:32","KM AC",3320,"2017-06-05 23:03:32","2017-06-17 15:46:35"
+530,"719337","SHAWN MATHEW","INDIRA NAGAR","BENGALURU","CREDITED",14100,"ISABELLA SHAWN","ICICI","5-6-2017 23:4:18","19-6-2017 23:3:37","KM AC",3321,"2017-06-05 23:04:44","2017-06-19 23:03:49"
+531,"609413","Shwetha M H","Halasuru","BENGALURU","CREDITED",19450,"SWASTHI NAVIN","HDFC","27-5-2017 15:33:26","5-6-2017 22:19:38","KM AC",3336,"2017-06-06 15:33:38","2017-06-07 22:19:44"
+532,"014351","Zahid Shaik","Contonment","BENGALURU","CREDITED",19650,"RAYYAN","CANANRA","7-6-2017 23:7:5","12-6-2017 21:11:4","KM AC",3345,"2017-06-07 23:07:13","2017-06-17 15:46:52"
+533,"000116","JECIN ARIKKAAT","MG ROAD","BENGALURU","CREDITED",27100,"RONITH  & ROSHAN","HDFC","6-6-2017 23:11:52","12-6-2017 21:11:47","KM AC",3347,"2017-06-07 23:11:59","2017-06-17 15:46:05"
+534,"000002","ARUN KUMAR ARIGELA","INDIRA NAGAR","BENGALURU","CREDITED",19450,"TRIPURA SARANYA ARIGELA","KOTAK","8-6-2017 14:56:40","12-6-2017 21:11:15","KM AC",3349,"2017-06-11 14:56:52","2017-06-17 15:47:02"
+535,"046704","Penugonda Nagaswara Rao","CHANDANAGAR","HYDERABAD","CREDITED",24450,"MOKSHA PENUGONDA","ICICI","14-6-2017 15:32:6","20-6-2017 21:52:31","KM AC",3401,"2017-06-18 15:32:14","2017-06-27 22:34:28"
+536,"000155","KRISHNA SAMANTH LELLA","MARATHALLY","BENGALURU","CREDITED",18250,"SHRIHAN LELLA","ICICI","12-6-2017 23:6:38","20-6-2017 21:52:3","KM AC",3423,"2017-06-19 23:06:46","2017-06-27 22:33:53"
+537,"000023","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",15400,"SOHAM","HDFC","19-6-2017 23:20:12","20-6-2017 21:51:48","KM AC",3379,"2017-06-19 23:20:18","2017-06-27 22:33:43"
+538,"262504","SHIVA","DWARAKA","NEW DELHI","CREDITED",22400,"NEEV","SYNDICATE","19-6-2017 23:21:7","20-6-2017 21:52:18","KM AC",3408,"2017-06-19 23:21:15","2017-06-27 22:34:01"
+539,"000019","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",14400,"DRISTI MUKHERJEE","HDFC","13-6-2017 23:34:2","20-6-2017 21:51:36","KM AC",3372,"2017-06-19 23:34:10","2017-06-27 22:33:33"
+540,"256647","Nancy Rastogi","AIRPORT ROAD","BENGALURU","CREDITED",15400,"ANAYAA RASTOGI","SBI","12-6-2017 23:35:7","20-6-2017 21:52:48","KM AC",3371,"2017-06-19 23:35:16","2017-06-27 22:34:38"
+541,"614734","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",14000,"PIHU AGARWAL","ICICI","22-6-2017 22:30:45","29-7-2017 9:20:58","KM AC",3410,"2017-06-27 22:30:54","2017-07-02 09:21:14"
+542,"000002","RAJYALAKSHMI ANUMALA","SARAJAPURA BRANCH","BENGALURU","CREDITED",14000,"SAHASYA","KOTAK","20-6-2017 22:31:52","27-7-2017 9:20:43","KM AC",3413,"2017-06-27 22:31:58","2017-07-02 09:20:48"
+543,"048463","ABHISHAKE RAI","MARATHALLY","BENGALURU","CREDITED",18150,"AAHANA","KARNATAKA","4-7-2017 15:8:15","12-7-2017 8:5:11","KM AC",3481,"2017-07-08 15:09:06","2017-07-18 10:01:49"
+544,"000028","DEBA PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","4-7-2017 15:10:6","12-7-2017 8:4:56","KM AC",3482,"2017-07-08 15:10:11","2017-07-18 10:01:42"
+545,"159065","SIREESHA DAGUDUBIYAM","SARAJAPURA BRANCH","BENGALURU","CREDITED",19450,"JENITH VENKATA","ICICI","17-7-2017 10:20:19","18-7-2017 23:32:32","KM AC",3516,"2017-07-17 10:20:44","2017-07-19 23:32:37"
+546,"805390","V Prakash","Mayur Vihar Phase II","NEW DELHI","CREDITED",15000,"SIDDHARTH","SBI","9-7-2017 10:24:5","18-7-2017 23:32:45","KM AC",3517,"2017-07-17 10:24:14","2017-07-31 22:00:23"
+547,"423410","Poornima Raman","Dilshad Garden","DELHI","DEPOSITED",5900,"SIDDHARTH(REJECTED)","SBI","10-7-2017 10:25:11","18-7-2017 23:33:7","KM AC",0,"2017-07-17 10:26:47","2017-07-31 22:35:43"
+548,"805391","V PRAKASH","MAYUR VIHAR PHASE II","NEW DELHI","CREDITED",5900,"SIDDHARTH","SBI","21-7-2017 10:24:19","27-7-2017 22:0:10","KM AC",0,"2017-07-21 10:24:28","2017-07-31 22:00:16"
+549,"164464","RICHA ANKIT","WHITE FIELD","BENGALURU","CREDITED",2800,"LARANYA","AXIS","22-7-2017 17:48:47","27-7-2017 21:59:46","KM AC",3498,"2017-07-22 17:48:53","2017-07-31 21:59:52"
+550,"055763","Preeti Vajpai","GWALIOR","GWALIOR","CREDITED",16800,"ARYAHI DIKSHIT","ICICI","31-7-2017 22:29:47","4-8-2017 13:33:55","KM AC",3534,"2017-07-31 22:29:53","2017-08-06 13:33:59"
+551,"800092","Sudish Kapoor","WHITE FIELD","BENGALURU","CREDITED",19350,"ARJUN KAPOOR","STANDARD","31-7-2017 22:34:37","4-8-2017 13:34:7","KM AC",3535,"2017-07-31 22:34:43","2017-08-06 13:34:34"
+552,"000055","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","31-7-2017 22:35:22","4-8-2017 13:34:42","KM AC",3536,"2017-07-31 22:35:27","2017-08-06 13:34:47"
+553,"000054","SANOJ V ABRAHAM","Ashwath Nagar","BENGALURU","CREDITED",13000,"ADITYA SANOJ","CITI UNION BANK LTD","10-8-2017 10:24:15","21-8-2017 22:52:2","KM AC",3368,"2017-08-10 10:24:23","2017-08-27 22:52:07"
+554,"655889","Ramesh A","MARATHALLY","BENGALURU","CREDITED",14000,"MOHITH","SBM","7-8-2017 11:38:9","21-8-2017 22:52:20","KM AC",3560,"2017-08-14 11:38:18","2017-08-27 22:52:24"
+555,"119361","Gurunath Reddy N","BENGALURU","BENGALURU","CREDITED",21700,"N. G. NIHIRA REDDY","CITI","22-8-2017 8:40:40","28-8-2017 22:30:46","KM AC",3375,"2017-08-28 08:40:48","2017-08-31 21:17:37"
+556,"000059","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","6-9-2017 21:49:35","13-9-2017 23:53:22","KM AC",3668,"2017-09-11 21:49:40","2017-09-14 23:53:26"
+557,"119362","GURUNATH REDDY N","CITI","BENGALURU","CREDITED",19850,"N. G. NIHIRA REDDY","CITI","12-9-2017 10:35:3","13-9-2017 23:52:24","KM AC",3658,"2017-09-12 10:35:24","2017-09-14 23:52:30"
+558,"800095","SUDISH KAPOOR","WHITE FIELD","BENGALURU","CREDITED",14000,"ARJUN KAPOOR","STANDARD","12-9-2017 10:36:44","13-9-2017 23:51:39","KM AC",3608,"2017-09-12 10:36:51","2017-09-14 23:51:45"
+559,"000020","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",14400,"DRISTI MUKHERJEE","HDFC","12-9-2017 10:37:51","13-9-2017 23:50:33","KM AC",3656,"2017-09-12 10:38:10","2017-09-14 23:50:43"
+560,"000026","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",16200,"SOHAM","HDFC","19-9-2017 22:23:34","3-10-2017 12:46:1","KM AC",3651,"2017-10-01 22:23:44","2017-10-05 23:44:30"
+561,"000058","SANOJ V ABRAHAM","ASHWATH NAGAR","BENGALURU","CREDITED",16200,"ADITYA SANOJ","CITI UNION BANK LTD","20-9-2017 22:26:50","3-10-2017 12:45:48","KM AC",3638,"2017-10-01 22:27:06","2017-10-05 23:44:53"
+562,"719338","SHAWN MATHEW","INDIRA NAGAR","BENGALURU","CREDITED",15200,"ISABELLA SHAWN","ICICI","4-10-2017 12:44:47","9-10-2017 20:4:2","KM AC",3770,"2017-10-05 12:44:55","2017-10-12 11:01:16"
+563,"679818","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",14000,"PIHU AGARWAL","ICICI","4-10-2017 12:45:36","10-10-2017 20:4:14","KM AC",3682,"2017-10-05 12:45:41","2017-10-15 21:26:24"
+564,"570409","ARUN KUMAR ARIGELA","EC BRANCH","BENGALURU","CREDITED",12000,"TRIPURA SARANYA ARIGELA","ICICI","10-10-2017 10:57:17","17-10-2017 11:40:40","KM AC",3796,"2017-10-12 10:57:25","2017-10-19 11:40:53"
+565,"164467","RICHA ANKIT","WHITE FIELD","BENGALURU","CREDITED",5600,"LARANYA","AXIS","10-10-2017 10:58:9","17-10-2017 11:40:7","KM AC",3576,"2017-10-12 10:58:14","2017-10-19 11:40:11"
+566,"339486","Mansoor Alam K","KRPURAM","BENGALURU","CREDITED",17600,"HAYA","SBI","12-10-2017 11:36:49","17-10-2017 11:40:21","KM AC",3617,"2017-10-15 11:37:01","2017-10-19 11:40:25"
+567,"000030","BHARGAVI R","MUNEKOLLALA","BENGALURU","CREDITED",16200,"LAKSHMI LAHARI","ANDARA BANK","11-10-2017 11:37:46","17-10-2017 11:39:52","KM AC",3643,"2017-10-15 11:37:57","2017-10-19 11:39:58"
+568,"609415","SHWETHA M H","HALASURU","BENGALURU","CREDITED",12000,"SWASTHI NAVIN","HDFC","11-10-2017 11:39:29","17-10-2017 11:41:16","KM AC",3792,"2017-10-15 11:39:37","2017-10-19 11:41:23"
+569,"000029","AMITABHA MAJUMDAR","INFANTRY ROAD","BENGALURU","CREDITED",14200,"SHAGNIK MAJUMDAR","HDFC","10-10-2017 11:40:33","17-10-2017 11:41:3","KM AC",3719,"2017-10-15 11:40:41","2017-10-19 11:41:08"
+570,"764317","SURABH PRATAP","ORR","BENGALURU","DEPOSITED",26000,"MAHI PRATAP (REJECTED","SBI","16-10-2017 20:33:27","25-10-2017 10:6:22","KM AC",3702,"2017-10-23 20:33:33","2017-10-30 10:06:32"
+571,"065363","AMIT","SECTOR 16","FARIDABAD","CREDITED",11000,"MANAN JAIN","AXIS","23-10-2017 20:55:24","25-10-2017 10:6:13","KM AC",3715,"2017-10-23 20:55:32","2017-10-30 10:06:17"
+572,"021734","KURMA KUMAR MDABATHULA","KUMARAPARK","BENGALURU","CREDITED",16200,"RAVI TEJA","ICICI","2-11-2017 21:57:13","9-11-2017 20:50:21","KM AC",3646,"2017-11-02 21:57:20","2017-11-11 20:50:27"
+573,"089480","RAMESH A","MARATHALLY","BENGALURU","CREDITED",12000,"MOHITH","SBI","2-11-2017 21:58:29","9-11-2017 20:50:6","KM AC",3777,"2017-11-02 21:58:36","2017-11-11 20:50:11"
+574,"000038","RABINDRA BEHERA","SECTOR 27A","PUNE","CREDITED",15200,"LIKHITH BEHERA","HDFC","4-11-2017 23:11:25","9-11-2017 20:49:43","KM AC",3776,"2017-11-08 23:11:34","2017-11-11 20:49:48"
+575,"000062","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","3-11-2017 23:12:47","9-11-2017 20:49:53","KM AC",3839,"2017-11-08 23:12:54","2017-11-11 20:50:00"
+576,"038887","KAVERI HOLIDAYS","KARTHIKNAGAR","BENGALURU","CREDITED",12000,"JOSHITHA REDDY","AXIS","12-11-2017 20:38:6","15-11-2017 19:38:55","KM AC",3773,"2017-11-11 20:38:46","2017-11-17 19:39:00"
+577,"932202","SHIVA GOEL","AIRPORT ROAD","BENGALURU","CREDITED",26800,"NEEV","SBI","24-11-2017 22:11:27","27-11-2017 21:0:38","KM AC",3680,"2017-11-23 22:11:38","2017-11-27 21:01:20"
+578,"603720","ANKIT RASTOGI","VIMANAPURA","BENGALURU","CREDITED",3600,"LARANYA","SBI","16-11-2017 22:13:58","27-11-2017 21:1:28","KM AC",3849,"2017-11-23 22:14:05","2017-11-27 21:02:42"
+579,"034572","VenkataSubash Kone","SARAJAPURA BRANCH","BENGALURU","CREDITED",13800,"JENITH VENKATA","ICICI","23-11-2017 22:16:28","27-11-2017 21:2:48","KM AC",3772,"2017-11-23 22:16:36","2017-11-27 21:02:58"
+580,"119365","GURUNATH REDDY N","BENGALURU","BENGALURU","CREDITED",24550,"N. G. NIHIRA REDDY","CITI","30-11-2017 22:1:8","6-12-2017 21:15:19","KM AC",3878,"2017-12-05 22:01:15","2017-12-07 19:33:27"
+581,"000021","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",14400,"DRISTI MUKHERJEE","HDFC","5-12-2017 22:2:56","6-12-2017 21:15:28","KM AC",3876,"2017-12-05 22:03:03","2017-12-07 19:32:46"
+582,"719341","SHAWN MATHEW","INDIRA NAGAR","BENGALURU","CREDITED",14400,"ISABELLA SHAWN","ICICI","9-12-2017 21:52:54","12-12-2017 20:10:12","KM AC",3932,"2017-12-11 21:53:03","2017-12-14 18:24:46"
+583,"609416","SHWETHA M H","HALASURU","BENGALURU","CREDITED",12000,"SWASTHI NAVIN","HDFC","9-12-2017 21:54:3","12-12-2017 20:10:3","KM AC",3955,"2017-12-11 21:54:26","2017-12-14 18:24:17"
+584,"000032","BHARGAVI R","MUNEKOLLALA","BENGALURU","CREDITED",15400,"LAKSHMI LAHARI","ANDARA BANK","7-12-2017 21:56:8","12-12-2017 20:9:56","KM AC",3862,"2017-12-11 21:56:16","2017-12-14 18:24:34"
+585,"000046","ARUN KUMAR ARIGELA","INDIRA NAGAR","BENGALURU","CREDITED",12000,"TRIPURA SARANYA ARIGELA","KOTAK","6-12-2017 21:57:18","12-12-2017 20:9:46","KM AC",3956,"2017-12-11 21:57:27","2017-12-14 18:24:59"
+586,"000034","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",15400,"SOHAM","HDFC","8-12-2017 21:58:7","12-12-2017 20:9:40","KM AC",3869,"2017-12-11 21:58:15","2017-12-14 18:24:27"
+587,"614735","AJAY AGARAWAL","NARIMAN POINT","MUMBAI","CREDITED",14000,"PIHU AGARWAL","ICICI","12-12-2017 19:3:34","15-12-2017 11:25:32","KM AC",3900,"2017-12-14 19:03:42","2017-12-18 19:19:52"
+588,"782032","SANOJ V ABRAHAM","PATTIKAD","PATTIKAD","CREDITED",15400,"ADITYA SANOJ","Thrissur Bank","12-12-2017 19:8:30","15-12-2017 19:19:58","KM AC",3854,"2017-12-14 19:08:36","2017-12-19 20:34:55"
+589,"262506","SHIVA","DWARAKA","NEW DELHI","CREDITED",17600,"NEEV","SYNDICATE","14-12-2017 19:31:21","19-12-2017 20:35:19","KM AC",4005,"2017-12-18 19:31:31","2017-12-27 20:12:00"
+590,"243584","ZAHID SHAIK","CONTONMENT","BENGALURU","CREDITED",19650,"RAYYAN","CANANRA","15-12-2017 19:32:49","19-12-2017 20:35:13","KM AC",3701,"2017-12-18 19:32:58","2017-12-27 20:11:49"
+591,"000003","RAJYALAKSHMI ANUMALA","SARAJAPURA BRANCH","BENGALURU","CREDITED",14000,"SAHASYA","KOTAK","18-12-2017 9:55:45","19-12-2017 20:35:6","KM AC",3906,"2017-12-19 09:55:52","2017-12-27 20:12:09"
+592,"000032","AMITABHA MAJUMDAR","INFANTRY ROAD","BENGALURU","CREDITED",13400,"SHAGNIK MAJUMDAR","HDFC","19-12-2017 9:59:7","19-12-2017 20:35:0","KM AC",3973,"2017-12-19 09:59:26","2017-12-27 20:12:34"
+593,"763272","Umashankar Mukhrjee","JAYANAGAR","BENGALURU","CREDITED",1400,"DRISTI MUKHERJEE","ICICI","4-1-2018 19:31:56","16-1-2018 22:23:41","KM AC",4065,"2018-01-09 19:32:04","2018-01-17 22:23:49"
+594,"000071","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","2-1-2018 19:33:0","16-1-2018 22:23:59","KM AC",4066,"2018-01-09 19:33:07","2018-01-17 22:24:04"
+595,"347497","OKRIDGE","JUBLIEE HILLS","HYDERABAD","CREDITED",19000,"Vinaya","AXIS","14-12-2017 19:34:42","16-1-2018 22:26:32","VINAYA",0,"2018-01-09 19:34:57","2018-01-17 22:26:39"
+596,"008371","DEEPAK KUMAR BISWAL","BTM Layout","BENGALURU","CREDITED",14200,"DAIVIK","ICICI","9-1-2018 19:41:2","16-1-2018 22:24:11","KM AC",4047,"2018-01-09 19:41:10","2018-01-17 22:24:17"
+597,"095936","SUDISH KAPOOR","MARATHALLY","BENGALURU","CREDITED",13500,"ARJUN KAPOOR","SOUTH INDIAN BANK","10-1-2018 21:40:37","23-1-2018 11:46:1","KM AC",3920,"2018-01-10 21:40:46","2018-01-25 11:46:08"
+598,"356955","ABHISHAKE RAI","MARATHALLY","BENGALURU","CREDITED",12000,"AAHANA","KARNATAKA","10-1-2018 22:2:25","16-1-2018 22:24:52","KM AC",3912,"2018-01-15 22:02:31","2018-01-17 22:24:57"
+599,"339492","MANSOOR ALAM K","KRPURAM","BENGALURU","CREDITED",6400,"HAYA","SBI","18-1-2018 20:53:51","24-1-2018 12:2:10","KM AC",3927,"2018-01-19 20:54:02","2018-01-25 12:02:19"
+600,"764318","SURABH PRATAP","ORR","BENGALURU","CREDITED",26000,"MAHI PRATAP","SBI","19-1-2018 21:10:9","24-1-2018 12:1:9","KM AC",3897,"2018-01-19 21:10:16","2018-01-25 12:01:14"
+601,"344294","Rajasekar Reddy D","ORR","BENGALURU","CREDITED",12000,"JOSHITHA REDDY","SBI","22-1-2018 21:13:24","24-1-2018 12:1:57","KM AC",3936,"2018-01-19 21:13:33","2018-01-25 12:02:02"
+602,"167996","Rajul Shrivastava","KORMANGALA","BENGALURU","CREDITED",14000,"PAARTH SHRIVASTAVA","AXIS BANK","22-1-2018 9:10:18","24-1-2018 12:1:43","KM AC",3899,"2018-01-23 09:10:26","2018-01-25 12:01:48"
+603,"021736","KURMA KUMAR MDABATHULA","GANDHI BHAVAN","BENGALURU","CREDITED",13800,"RAVI TEJA","ICICI","31-1-2018 11:5:24","2-2-2018 12:14:23","KM AC",3865,"2018-02-01 11:05:33","2018-02-13 12:14:28"
+604,"89485","RAMESH A","MARATHALLY","BENGALURU","CREDITED",12000,"MOHITH","SBI","8-2-2018 12:16:4","14-2-2018 20:7:23","KM AC",4114,"2018-02-13 12:16:08","2018-02-18 20:07:33"
+605,"312249","SARADA G B","BENGALURU","BENGALURU","CREDITED",8500,"N. G. NIHIRA REDDY","CITI","5-2-2018 12:17:36","20-2-2018 20:7:36","KM AC",4087,"2018-02-13 12:17:45","2018-03-05 15:51:52"
+606,"000068","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","4-2-2018 12:18:54","14-2-2018 20:7:1","KM AC",4115,"2018-02-13 12:19:02","2018-02-18 20:07:08"
+607,"000045","RABINDRA BEHERA","SECTOR 27","PUNE","CREDITED",14400,"LIKHITH BEHERA","HDFC","2-2-2018 12:20:10","14-2-2018 20:6:35","KM AC",3940,"2018-02-13 12:20:20","2018-02-18 20:06:53"
+608,"034574","VENKATASUBASH KONE","SARAJAPURA BRANCH","BENGALURU","CREDITED",18600,"JENITH VENKATA","ICICI","23-2-2018 18:9:48","28-2-2018 15:52:22","KM AC",3935,"2018-02-26 18:09:58","2018-03-05 15:52:27"
+609,"042534","Rajib Roy","MARATHALLY","BENGALURU","CREDITED",9300,"Arnayak","YES","17-2-2018 18:11:20","28-2-2018 15:52:35","KM AC",0,"2018-02-26 18:11:29","2018-03-05 15:52:42"
+610,"239620","Sujata Sundaram","MARATHALLY","BENGALURU","CREDITED",5000,"RIA RANE","SBM","6-3-2018 23:8:51","13-3-2018 19:47:19","KM AC",4204,"2018-03-12 23:09:00","2018-03-14 21:08:12"
+611,"366429","Amandeep Singh","INDRANAGAR","BENGALURU","CREDITED",14600,"PAHUL KAUR","ICICI","9-3-2018 23:20:40","13-3-2018 19:47:11","KM AC",4205,"2018-03-12 23:20:53","2018-03-14 21:08:16"
+612,"000081","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","9-3-2018 23:21:49","13-3-2018 19:47:26","KM AC",4206,"2018-03-12 23:21:59","2018-03-14 21:08:09"
+613,"000035","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",9800,"SOHAM","HDFC","24-3-2018 8:9:10","27-3-2018 22:20:54","KM AC",4222,"2018-03-27 08:09:17","2018-03-28 20:44:48"
+614,"078163","SUJATHA SOWMYANARAYAN","Hirandahalli","BENGALURU","CREDITED",3800,"SURYA","FEDERAL BANK","29-3-2018 21:43:49","3-4-2018 21:1:16","KM AC",0,"2018-04-02 21:43:56","2018-04-12 18:57:04"
+615,"000020","Kshitij","WHITE FIELD","BENGALURU","CREDITED",2500,"Reviria New Girl","HDFC","7-4-2018 20:36:16","17-4-2018 21:23:45","KM AC",0,"2018-04-09 20:36:23","2018-04-17 20:51:09"
+616,"000069","Anuradha","AECS LAYOUT","BENGALURU","CREDITED",3800,"ARIN DAS","HDFC","4-4-2018 20:37:10","17-4-2018 21:23:51","KM AC",0,"2018-04-09 20:37:16","2018-04-17 20:59:17"
+617,"055760","PREETI VAJPAI","GWALIOR","GWALIOR","CREDITED",3800,"ARYAHI DIKSHIT","ICICI","10-4-2018 19:0:30","17-4-2018 21:23:37","KM AC",0,"2018-04-12 19:00:38","2018-04-17 20:50:56"
+618,"690279","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",11600,"KRISHNA PANDEY","HDFC","14-4-2018 9:56:3","17-4-2018 21:23:31","KM AC",4243,"2018-04-16 09:56:11","2018-04-17 20:59:26"
+619,"000087","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",6500,"SANJUKTHA","ICICI","9-4-2018 9:56:51","17-4-2018 21:23:25","KM AC",4238,"2018-04-16 09:56:56","2018-04-17 20:50:48"
+620,"000088","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",6500,"SANJUKTHA","ICICI","2-5-2018 22:15:51","7-5-2018 21:47:20","KM AC",4271,"2018-05-06 22:15:57","2018-05-16 21:11:53"
+621,"514182","Anandhi P","AIRPORT ROAD","BENGALURU","CREDITED",12600,"Q BLOCK BROTHERS","SBI","4-5-2018 22:24:22","7-5-2018 21:46:14","KM AC",4272,"2018-05-06 22:24:30","2018-05-16 21:11:32"
+622,"000056","Ashish K Shah","MALAD WEST","MUMBAI","CREDITED",25450,"DIYAAN","HDFC","7-5-2018 22:26:32","7-5-2018 21:46:0","KM AC",4273,"2018-05-06 22:26:43","2018-05-16 21:11:18"
+623,"424364","POOJA ASHOK SHIVALKAR","CITI","BENGALURU","CREDITED",7200,"IRA","CITI","4-5-2018 22:27:33","7-5-2018 21:47:33","KM AC",0,"2018-05-06 22:27:42","2018-05-16 21:12:32"
+624,"000003","S Sudheer babu","WHITE FIELD","BENGALURU","CREDITED",11600,"ROCHAN KRISHNA SAI","HDFC","10-5-2018 21:5:7","17-5-2018 19:33:10","KM AC",4287,"2018-05-16 21:05:21","2018-05-21 19:04:34"
+625,"000038","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",15000,"Sara & Swarna","HDFC","9-5-2018 21:8:56","17-5-2018 19:33:19","KM AC",0,"2018-05-16 21:09:07","2018-05-21 19:04:44"
+626,"000022","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",21000,"DRISTI MUKHERJEE","HDFC","28-5-2018 11:5:14","29-5-2018 21:32:33","KM AC",4298,"2018-05-28 11:05:20","2018-05-31 20:31:59"
+627,"366431","AMANDEEP SINGH","INDIRA NAGAR","BENGALURU","CREDITED",12000,"PAHUL KAUR","ICICI","28-5-2018 12:5:17","29-5-2018 21:32:23","KM AC",4300,"2018-05-28 12:05:25","2018-05-31 20:31:50"
+628,"609280","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",14700,"KRISHNA PANDEY","HDFC","28-5-2018 12:6:29","29-5-2018 21:32:6","KM AC",4301,"2018-05-28 12:06:38","2018-05-31 20:31:39"
+629,"366432","AMANDEEP SINGH","INDIRA NAGAR","BENGALURU","CREDITED",2750,"PAHUL KAUR","ICICI","29-5-2018 21:16:33","4-6-2018 20:39:15","KM AC",4325,"2018-05-31 21:16:39","2018-06-05 18:57:54"
+630,"000063","RABINDRA BEHERA","SECTOR 27A","PUNE","CREDITED",24000,"LIKHITH BEHERA","HDFC","1-6-2018 20:54:24","4-6-2018 20:40:18","KM AC",4331,"2018-06-01 20:54:31","2018-06-05 18:57:45"
+631,"339496","MANSOOR ALAM K","KRPURAM","BENGALURU","CREDITED",22400,"HAYA","SBI","1-6-2018 20:55:31","4-6-2018 20:39:30","KM AC",4332,"2018-06-01 20:55:42","2018-06-05 18:57:51"
+632,"356334","RAJIB ROY","Borivili West)","MUMBAI","CREDITED",24400,"ARANYAK ROY","ICICI","31-5-2018 20:57:54","4-6-2018 20:39:58","KM AC",4333,"2018-06-01 20:58:03","2018-06-05 18:57:48"
+633,"377921","SANJIB PAUL","PRASANTHNAGAR","HYDERABAD","CREDITED",28450,"SUDITI PAUL","SBI","4-6-2018 21:3:25","6-6-2018 20:39:37","KM AC",4373,"2018-06-04 21:03:31","2018-06-07 20:59:04"
+634,"055771","PREETI VAJPAI","GWALIOR","GWALIOR","CREDITED",18050,"ARYAHI DIXIT","ICICI","4-6-2018 21:6:6","6-6-2018 20:39:25","KM AC",4374,"2018-06-04 21:06:21","2018-06-07 20:58:53"
+635,"000089","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","5-6-2018 18:53:51","6-6-2018 20:39:10","KM AC",4382,"2018-06-05 18:53:58","2018-06-07 20:59:12"
+636,"108715","Sudharshan Reddy","BELLANDUR","BENGALURU","CREDITED",39000,"SANKETH  REDDY","KARNATAKA","7-6-2018 21:58:52","11-6-2018 19:35:47","KM AC",4395,"2018-06-07 21:59:00","2018-06-11 19:35:52"
+637,"000001","Syed Inayatulla K","AECS LAYOUT","BENGALURU","CREDITED",25000,"ISHRAT","ICICI","11-6-2018 22:0:54","15-6-2018 10:57:20","KM AC",4414,"2018-06-13 22:01:02","2018-06-16 10:57:23"
+638,"092983","Sudheer Babu S","Kalidasa Road","Mysuru","CREDITED",12000,"ROCHAN KRISHNA SAI","ICICI","12-6-2018 22:2:44","14-6-2018 10:57:10","KM AC",4415,"2018-06-13 22:02:51","2018-06-16 10:57:14"
+639,"000088","Vidya K","M.G.ROAD","BENGALURU","CREDITED",12000,"AKASH","HDFC","18-6-2018 21:18:57","21-6-2018 20:57:18","KM AC",4427,"2018-06-20 21:19:02","2018-06-21 20:57:28"
+640,"000006","Gokul Ram Elapavuluru","JIGANI","BENGALURU","CREDITED",26600,"SHRIHAN RAM","HDFC","16-6-2018 21:21:29","21-6-2018 20:57:12","KM AC",4428,"2018-06-20 21:21:36","2018-06-21 20:57:32"
+641,"392541","Sanjeev","MUMBAI","MUMBAI","CREDITED",20000,"MANYATHA","CITI","16-6-2018 21:24:30","21-6-2018 20:57:4","KM AC",4429,"2018-06-20 21:24:37","2018-06-21 20:57:36"
+642,"089490","Ramesh A","ORR","BENGALURU","CREDITED",21500,"MOHITH","SBI","25-7-2018 22:29:58","29-7-2018 22:30:11","KM AC",4435,"2018-07-01 22:30:04","2018-07-01 22:30:24"
+643,"587166","DEEPAK KUMAR BISWAL","BENGALURU","BENGALURU","CREDITED",26150,"DAIVIK","AXIS","7-7-2018 22:4:18","11-7-2018 20:22:18","KM AC",4472,"2018-07-09 22:04:34","2018-07-11 20:22:24"
+644,"557264","Vijay Singh","MARATHALLY","BENGALURU","DEPOSITED",16950,"ARYAN (REJECTED)","AXIS","30-7-2018 21:17:7","1-8-2018 21:15:37","KM AC",4496,"2018-07-31 21:17:22","2018-08-02 20:17:03"
+645,"000023","Amrita Mukherjee","MARATHALLY","BENGALURU","CREDITED",1400,"DRISTI MUKHERJEE","HDFC","6-8-2018 10:23:48","17-8-2018 10:24:6","KM AC",4510,"2018-08-22 10:23:56","2018-08-22 10:24:11"
+646,"000092","DEB PRIYO DAS","DLF CITY","BENGALURU","CREDITED",3500,"SANJUKTHA","ICICI","8-8-2018 10:25:12","20-8-2018 10:25:37","KM AC",4525,"2018-08-22 10:25:21","2018-08-22 10:25:41"
+647,"000036","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",36300,"SOHAM","HDFC","30-8-2018 9:5:20","3-9-2018 9:6:56","KM AC",4601,"2018-09-03 09:05:29","2018-09-04 09:07:03"
+648,"000094","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","1-9-2018 9:6:8","4-9-2018 9:7:5","KM AC",4602,"2018-09-03 09:06:15","2018-09-05 09:01:00"
+649,"000024","AMRITA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",16400,"DRISTI MUKHERJEE","HDFC","3-9-2018 9:21:47","5-9-2018 22:6:59","KM AC",4567,"2018-09-05 09:21:55","2018-09-07 09:04:53"
+650,"366433","AMANDEEP SINGH","INDIRA NAGAR","BENGALURU","CREDITED",15600,"PAHUL KAUR","ICICI","8-9-2018 22:42:10","18-9-2018 23:9:27","KM AC",4655,"2018-09-13 22:42:17","2018-09-20 23:09:31"
+651,"092982","SUDHEER BABU S","KALIDASA ROAD","MYSURU","CREDITED",12000,"ROCHAN KRISHNA SAI","ICICI","7-9-2018 22:43:28","18-9-2018 23:9:37","KM AC",4656,"2018-09-13 22:43:36","2018-09-20 23:09:44"
+652,"690281","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",15600,"KRISHNA PANDEY","HDFC","24-9-2018 9:36:10","26-9-2018 21:44:30","KM AC",4686,"2018-09-25 09:36:16","2018-09-27 21:44:37"
+653,"000057","Ashish K Shah","MALAD WEST","MUMBAI","CREDITED",19300,"DHIYAAN SHAH ","HDFC","19-9-2018 9:37:32","26-9-2018 21:44:47","KM AC",4583,"2018-09-25 09:37:39","2018-09-27 21:44:53"
+654,"00005","SYED INAYATULLA K","INDIRA NAGAR","BENGALURU","CREDITED",13000,"ISHRAT FATIMA","RBL Bank","17-9-2018 9:39:6","26-9-2018 21:44:39","KM AC",4589,"2018-09-25 09:39:35","2018-09-27 21:44:45"
+655,"000097","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","1-10-2018 9:55:10","8-10-2018 19:39:43","KM AC",4708,"2018-10-08 09:55:17","2018-10-11 19:39:58"
+656,"339497","MANSOOR ALAM K","KRPURAM","BENGALURU","CREDITED",17600,"HAYA","SBI","5-10-2018 9:57:28","8-10-2018 19:40:21","KM AC",4542,"2018-10-08 09:57:35","2018-10-11 19:41:07"
+657,"000064","RABINDRA BEHERA","SECTOR 27A","PUNE","CREDITED",17600,"LIKHITH BEHERA","HDFC","15-10-2018 22:25:16","22-10-2018 9:4:42","KM AC",4548,"2018-10-21 22:25:27","2018-10-23 09:04:54"
+658,"000025","AMRITA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",1400,"DRISTI MUKHERJEE","HDFC","15-10-2018 9:24:4","22-10-2018 9:5:2","KM AC",4721,"2018-10-22 09:24:10","2018-10-23 09:05:07"
+659,"020451","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",17600,"ARANYAK ROY","YES","23-10-2018 19:22:58","25-10-2018 21:43:27","KM AC",4539,"2018-10-24 19:23:05","2018-10-29 10:15:15"
+660,"000009","GOKUL RAM ELAPAVULURU","JIGANI","BENGALURU","CREDITED",16000,"SHRIHAN RAM","HDFC","27-10-2018 10:19:56","29-10-2018 20:55:24","KM AC",4679,"2018-10-29 10:20:03","2018-10-30 20:55:29"
+661,"229249","Raj Travels & Holidays","H S R Layout","BENGALURU","DEPOSITED",14000,"JOSHITHA REDDY(REJECTED","Union Bank","27-10-2018 10:22:1","29-10-2018 20:55:0","KM AC",4545,"2018-10-29 10:22:07","2018-10-30 20:55:05"
+662,"173539","Vinod V V","Mercy College","Palakkad","CREDITED",2500,"NEW BABY DAY CARE","SBI","31-10-2018 9:10:5","6-11-2018 10:6:12","KM AC",4748,"2018-11-05 09:10:10","2018-11-08 10:06:18"
+663,"020455","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",950,"ARANYAK ROY","YES","6-11-2018 9:0:18","9-11-2018 21:7:49","KM AC",0,"2018-11-09 09:00:32","2018-11-15 09:00:47"
+664,"522353","Ramesh Kumar Sahoo","Bajrakabati","CUTTAK","CREDITED",17800,"REYANSH SAHOO","ICICI","5-11-2018 9:34:49","9-11-2018 21:8:0","KM AC",4774,"2018-11-09 09:34:56","2018-11-15 09:00:57"
+665,"000101","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","5-11-2018 9:36:0","9-11-2018 21:7:36","KM AC",4775,"2018-11-09 09:36:06","2018-11-15 09:00:38"
+666,"000011","Alok Ranjan Choudhury","OLD MADRAS","BENGALURU","CREDITED",17800,"SHIVANSH CHOUDHURY","HDFC","9-11-2018 9:48:49","9-11-2018 21:7:18","KM AC",4776,"2018-11-09 09:48:59","2018-11-15 09:00:31"
+667,"000028","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",14350,"JEET","HDFC","13-11-2018 8:59:34","15-11-2018 8:58:42","KM AC",4514,"2018-11-15 08:59:43","2018-11-16 08:59:04"
+668,"020456","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",18300,"ARANYAK ROY","YES","29-11-2018 9:46:9","4-12-2018 20:9:59","KM AC",4798,"2018-11-30 09:46:16","2018-12-04 20:10:06"
+669,"173541","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",5600,"ADVIKA","SBI","4-12-2018 9:17:12","6-12-2018 20:18:42","KM AC",4877,"2018-12-06 09:17:19","2018-12-07 20:18:47"
+670,"024552","Sandeep Kumar","BTM LAYOUT","BENGALURU","CREDITED",22900,"SHIPRA KUMARI","ICICI","3-12-2018 9:20:31","6-12-2018 20:18:25","KM AC",4878,"2018-12-06 09:20:38","2018-12-07 20:18:29"
+671,"000104","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",2800,"SANJUKTHA","ICICI","3-12-2018 9:21:16","6-12-2018 20:18:52","KM AC",4879,"2018-12-06 09:21:22","2018-12-07 20:18:56"
+672,"756036","Atul Aggarwal","Barakhamba Road","NEW DELHI","CREDITED",26500,"AAHANA AGGARWAL","HDFC","3-12-2018 9:23:58","6-12-2018 20:16:21","KM AC",4880,"2018-12-06 09:24:07","2018-12-07 20:16:25"
+673,"089500","RAMESH A","AIRPORT ROAD","BENGALURU","CREDITED",32900,"MOHITH","SBI","10-12-2018 22:12:52","14-12-2018 21:11:33","KM AC",4550,"2018-12-13 22:12:58","2018-12-16 21:11:41"
+674,"366434","AMANDEEP SINGH","INDIRA NAGAR","BENGALURU","CREDITED",20700,"PAHUL KAUR","ICICI","8-12-2018 22:15:33","14-12-2018 21:10:58","KM AC",4920,"2018-12-13 22:15:39","2018-12-16 21:11:05"
+675,"766008","Ashok Kumar Behera","AIRPORT ROAD","BENGALURU","CREDITED",14000,"AYUSHMAN BEHERA","SBI","11-12-2018 22:18:12","14-12-2018 21:11:10","KM AC",4799,"2018-12-13 22:18:19","2018-12-16 21:11:14"
+676,"000004","(Rejected) SUDHEER BABU S","WHITE FIELD","BENGALURU","DEPOSITED",12000,"ROCHAN KRISHNA SAI","HDFC","10-12-2018 22:20:20","14-12-2018 20:58:34","KM AC",4921,"2018-12-13 22:20:26","2018-12-16 20:59:00"
+677,"000038","MANDAR KULARNI","WHITE FIELD","BENGALURU","CREDITED",17700,"SOHAM","HDFC","13-12-2018 22:22:11","14-12-2018 21:10:25","KM AC",4832,"2018-12-13 22:22:17","2018-12-16 21:10:49"
+678,"000282","Knowledge C","Kanakapura Road","BENGALURU","CREDITED",18000,"Vinaya","HDFC","10-12-2018 22:24:8","14-12-2018 21:11:46","Vinaya",0,"2018-12-13 22:24:14","2018-12-17 17:27:22"
+679,"392544","AMIT","MUMBAI","MUMBAI","DEPOSITED",15000,"MANYATA (Rejected)","CITI","14-12-2018 9:32:20","3-1-2019 8:46:55","KM AC",4829,"2019-01-02 09:32:27","2019-01-04 08:47:00"
+680,"020458","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",950,"ARANYAK ROY","YES","17-12-2018 9:33:0","","KM AC",0,"2019-01-02 09:33:10","2019-01-04 08:47:29"
+681,"701768","GURUNATH REDDY N","BENGALURU","BENGALURU","CREDITED",19500,"DEETYA REDDY","CITI","20-12-2018 9:34:21","3-1-2019 8:47:14","KM AC",4945,"2019-01-02 09:34:28","2019-01-04 08:47:19"
+682,"180249","ALOK RANJAN CHOUDHURY","Sundargarh","SUNDARGARH","CREDITED",14400,"SHIVANSH CHOUDHURY","SBI","19-12-2018 9:35:50","3-1-2019 8:47:34","KM AC",4917,"2019-01-02 09:35:58","2019-01-04 08:47:40"
+683,"0000109","DEB PRIYO DAS","DLF CITY","FARIDABAD","CREDITED",2800,"SANJUKTHA","ICICI","2-1-2019 9:16:21","8-1-2019 9:34:53","KM AC",4954,"2019-01-07 09:16:30","2019-01-10 09:34:57"
+684,"000002","Pritishree","SARAJAPURA BRANCH","BENGALURU","CREDITED",17300,"DAIVIK","KOTAK","4-1-2019 9:19:34","8-1-2019 9:34:47","KM AC",4934,"2019-01-07 09:19:43","2019-01-10 09:34:51"
+685,"522354","RAMESH KUMAR SAHOO","BAJRAKABATI","CUTTAK","CREDITED",13800,"REYANSH SAHOO","ICICI","5-1-2019 9:23:31","8-1-2019 9:34:37","KM AC",4918,"2019-01-07 09:23:39","2019-01-10 09:34:45"
+686,"173545","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",4200,"ADVIKA","SBI","9-1-2019 9:18:27","16-1-2019 9:23:16","KM AC",4991,"2019-01-14 09:18:34","2019-01-18 09:03:58"
+687,"000010","AMIRTA MUKHERJEE","SARAJAPURA BRANCH","BENGALURU","CREDITED",15000,"DRISTI MUKHERJEE","HDFC","14-1-2019 9:24:20","16-1-2019 9:23:27","KM AC",4825,"2019-01-16 09:24:28","2019-01-18 09:04:05"
+688,"000065","ASHISH K SHAH","MALAD WEST","MUMBAI","CREDITED",15700,"DHIYAAN SHAH ","HDFC","15-1-2019 9:23:1","17-1-2019 9:4:12","KM AC",4839,"2019-01-17 09:23:12","2019-01-18 09:04:42"
+689,"000007","SYED INAYATULLA K","INDIRA NAGAR","BENGALURU","CREDITED",13000,"ISHRAT FATIMA","RBL BANK","21-1-2019 9:20:27","23-1-2019 9:28:39","KM AC",4844,"2019-01-23 09:20:34","2019-01-25 09:11:30"
+690,"000029","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",5000,"JEET","HDFC","20-1-2019 17:21:28","24-1-2019 9:11:36","KM AC",4901,"2019-01-23 17:21:35","2019-01-25 09:11:41"
+691,"000014","ALOK RANJAN CHOUDHURY","OLD MADRAS","BENGALURU","CREDITED",5450,"SHIVANSH CHOUDHURY","HDFC","8-2-2019 16:36:37","12-2-2019 22:51:16","KM AC",5031,"2019-02-08 16:36:45","2019-02-13 22:51:24"
+692,"690282","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",14700,"KRISHNA PANDEY","HDFC","3-2-2019 16:38:4","12-2-2019 22:51:0","KM AC",4913,"2019-02-08 16:38:12","2019-02-13 22:51:05"
+693,"173546","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",3500,"ADVIKA","SBI","6-2-2019 16:39:32","11-2-2019 22:43:41","KM AC",5032,"2019-02-08 16:39:41","2019-02-13 22:43:46"
+694,"000112","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","1-2-2019 16:40:44","12-2-2019 22:43:57","KM AC",5033,"2019-02-08 16:40:53","2019-02-13 22:44:02"
+695,"000011","GOKUL RAM ELAPAVULURU","JIGANI","BENGALURU","DEPOSITED",15000,"SHRIHAN RAM (REJECTED)","HDFC","9-2-2019 9:29:1","11-2-2019 9:28:5","KM AC",4919,"2019-02-11 09:29:09","2019-02-13 09:28:13"
+696,"339500","MANSOOR ALAM K","KRPURAM","BENGALURU","CREDITED",16000,"HAYA","SBI","18-2-2019 9:15:23","22-2-2019 9:20:6","KM AC",4801,"2019-02-21 09:15:30","2019-02-26 09:34:32"
+697,"000012","GOKUL RAM ELAPAVULURU","JIGANI","BENGALURU","CREDITED",15000,"SHRIHAN RAM","HDFC","20-2-2019 9:17:10","22-2-2019 9:20:12","KM AC",0,"2019-02-21 09:17:19","2019-02-26 09:34:21"
+698,"690283","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",7450,"KRISHNA PANDEY","HDFC","21-2-2019 9:38:37","27-2-2019 9:19:50","KM AC",5074,"2019-02-26 09:38:46","2019-02-27 09:19:54"
+699,"020463","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",600,"ARANYAK ROY","YES","26-2-2019 17:16:26","7-3-2019 9:32:52","KM AC",0,"2019-03-05 17:16:33","2019-03-11 09:32:57"
+700,"000115","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","4-3-2019 9:19:44","14-3-2019 20:30:28","KM AC",5136,"2019-03-14 09:19:53","2019-03-16 20:30:33"
+701,"173547","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",3500,"ADVIKA","SBI","6-3-2019 9:21:25","14-3-2019 20:30:16","KM AC",5137,"2019-03-14 09:21:34","2019-03-16 20:30:24"
+702,"000030","MANISHA PAUL","KASTURBA ROAD","BENGALURU","CREDITED",5000,"JEET","HDFC","22-3-2019 9:7:38","25-3-2019 9:15:0","KM AC",5044,"2019-03-25 09:07:45","2019-03-26 09:15:08"
+703,"000040","MANDAR KULKARNI","WHITE FIELD","BENGALURU","CREDITED",4400,"SOHAM","HDFC","28-3-2019 9:15:31","3-4-2019 9:1:48","KM AC",0,"2019-04-01 09:15:42","2019-04-04 09:01:52"
+704,"000013","GOKUL RAM ELAPAVULURU","JIGANI","BENGALURU","CREDITED",4500,"SHRIHAN RAM","HDFC","8-4-2019 9:12:1","9-4-2019 9:9:13","KM AC",0,"2019-04-08 09:12:10","2019-04-10 20:15:15"
+705,"690284","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",4400,"KRISHNA PANDEY","HDFC","8-4-2019 9:13:39","9-4-2019 9:9:29","KM AC",0,"2019-04-08 09:13:46","2019-04-10 20:15:18"
+706,"000118","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",3500,"SANJUKTHA","ICICI","4-4-2019 9:17:15","9-4-2019 9:9:24","KM AC",0,"2019-04-08 09:17:24","2019-04-10 20:15:21"
+707,"000044","PRAJYNA TRIPATHY","WHITE FIELD","BENGALURU","CREDITED",8800,"SARA & SWARNA","HDFC","11-4-2019 9:5:37","11-4-2019 9:22:24","KM AC",0,"2019-04-11 09:05:44","2019-04-12 09:22:29"
+708,"024557","SANDEEP KUMAR","BTM LAYOUT","BENGALURU","CREDITED",10950,"SHIPRA KUMARI","ICICI","26-4-2019 11:47:1","30-4-2019 9:24:57","KM AC",5171,"2019-04-27 11:47:07","2019-04-30 21:56:41"
+709,"000119","DEB PRIYO DAS","DLF CITY","GURGAON","CREDITED",5600,"SANJUKTHA","ICICI","3-5-2019 9:24:14","8-5-2019 9:26:32","KM AC",5182,"2019-05-07 09:24:21","2019-05-09 20:40:28"
+710,"173550","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",2800,"ADVIKA","SBI","2-5-2019 9:27:31","8-5-2019 9:26:27","KM AC",5183,"2019-05-07 09:27:37","2019-05-09 20:40:31"
+711,"000045","PRAJYNA TRIPATHI","WHITE FIELD","BENGALURU","CREDITED",8800,"SARA & SWARNA","HDFC","6-5-2019 9:26:13","8-5-2019 9:26:23","KM AC",0,"2019-05-09 09:26:18","2019-05-09 20:40:25"
+712,"003036","ANIRUDHA JADI","AECS LAYOUT","BENGALURU","CREDITED",9570,"ALHAD","ICICI","10-5-2019 9:30:5","13-5-2019 9:22:11","KM AC",5195,"2019-05-13 09:30:25","2019-05-14 09:22:17"
+713,"701769","GURUNATH REDDY N","BEGALURU","BENGALURU","CREDITED",21250,"DEETYA REDDY","CITI","25-5-2019 9:16:4","29-5-2019 9:8:24","KM AC",5221,"2019-05-29 09:16:13","2019-05-31 09:01:53"
+714,"690285","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",16700,"KRISHNA PANDEY","HDFC","27-5-2019 9:17:23","29-5-2019 9:8:17","KM AC",5222,"2019-05-29 09:17:30","2019-05-31 09:01:56"
+715,"000001","AMARNATH DIWATE","PADMANABHAM","TRIVANDRUM","CREDITED",27850,"ADITI DIWATE","HDFC","29-5-2019 9:13:27","30-5-2019 9:1:41","KM AC",5227,"2019-05-30 09:13:36","2019-05-31 09:01:50"
+716,"204696","Jyoti Rupa Karmakar","BEGALURU","BENGALURU","CREDITED",18200,"DRISH KARMAKAR","CITI","1-6-2019 9:0:34","3-6-2019 9:7:25","KM AC",5236,"2019-06-03 09:00:41","2019-06-06 08:59:32"
+717,"398029","Santhosh Basappa Allapure","Rajaji Nagar","BENGALURU","CREDITED",24700,"LIKHITH BEHERA","SBI","1-6-2019 9:9:16","3-6-2019 9:7:37","KM AC",5238,"2019-06-03 09:09:23","2019-06-06 08:59:29"
+718,"275496","Roopa R","MARATHALLY","BENGALURU","CREDITED",15000,"AAYUSH","SYNDICATE","4-6-2019 8:48:22","10-6-2019 22:47:39","KM AC",5241,"2019-06-06 08:48:28","2019-06-11 09:31:44"
+719,"259934","Subrat Kumar Nayak","CITI","BENGALURU","CREDITED",24600,"AARVI","CITI","4-6-2019 8:57:19","10-6-2019 22:47:57","KM AC",5242,"2019-06-06 08:57:26","2019-06-11 09:31:53"
+720,"000008","Deepali Dhaval Prajapathi","MG ROAD","BENGALURU","CREDITED",4900,"Manya","HDFC","3-6-2019 8:58:58","","KM AC",0,"2019-06-06 08:59:06","2019-06-11 09:32:35"
+721,"020469","RAJIB ROY","MUNEKOLLALA","BENGALURU","CREDITED",25400,"ARANYAK ROY","YES","5-6-2019 9:29:14","10-6-2019 22:48:22","KM AC",5249,"2019-06-06 09:29:29","2019-06-11 09:32:03"
+722,"000012","Sajan SL","Seshadripuram","BENGALURU","CREDITED",5650,"DIYA SAJAN","HDFC","6-6-2019 16:30:34","10-6-2019 9:33:9","KM AC",5251,"2019-06-06 16:30:42","2019-06-11 09:33:23"
+723,"00005","SUDHEER BABU S","WHITE FIELD","BENGALURU","DEPOSITED",14000,"ROCHAN KRISHNA SAI (REJECT) ","HDFC","7-6-2019 9:18:27","11-6-2019 9:14:20","KM AC",5261,"2019-06-07 09:18:32","2019-06-11 09:14:50"
+724,"963417","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",10000,"ADVIKA","SBI","10-6-2019 9:27:46","19-6-2019 9:33:26","KM AC",5312,"2019-06-18 09:27:53","2019-06-24 08:52:08"
+725,"024558","SANDEEP KUMAR","BTM LAYOUT","BENGALURU","CREDITED",14000,"SHIPRA KUMARI","ICICI","19-6-2019 9:43:25","19-6-2019 8:51:47","KM AC",5310,"2019-06-19 09:43:33","2019-06-24 08:51:51"
+726,"241596","Prasanth","MARATHALLY","BENGALURU","CREDITED",23950,"PARVATHY","FEDERAL BANK","19-6-2019 8:54:2","25-6-2019 10:53:54","KM AC",5335,"2019-06-24 08:54:10","2019-06-27 08:58:42"
+727,"000014","GOKUL RAM ELAPAVULURU","JIGANI","BENGALURU","CREDITED",20400,"SHRIHAN RAM","HDFC","22-6-2019 9:1:51","25-6-2019 10:54:4","KM AC",5336,"2019-06-24 09:01:57","2019-06-27 08:58:47"
+728,"963418","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",1400,"ADVIKA","SBI","27-6-2019 10:29:51","2-7-2019 9:16:50","KM AC",5348,"2019-06-29 10:30:00","2019-07-03 09:14:37"
+729,"000015","ALOK RANJAN CHOUDHURY","OLD MADRAS","BENGALURU","CREDITED",16500,"SHIVANSH CHOUDHURY","HDFC","26-6-2019 10:34:38","1-7-2019 9:16:0","KM AC",5349,"2019-06-29 10:34:46","2019-07-02 09:16:05"
+730,"000008","SYED INAYATULLA K","INDIRA NAGAR","BENGALURU","CREDITED",22000,"ISHRAT FATIMA","RBL BANK","27-6-2019 10:39:48","2-7-2019 9:16:38","KM AC",5350,"2019-06-29 10:39:54","2019-07-03 09:14:34"
+731,"963420","VINOD V V","MERCY COLLEGE","PALAKKAD","PC",10000,"ADVIKA","SBI","25-7-2019 9:23:34","30-7-2019 9:10:38","KM AC",5417,"2019-07-29 09:23:41","2019-07-31 09:11:24"
+732,"089506","RAMESH A","ORR","BENGALURU","CREDITED",46450,"MOHITH","SBI","30-7-2019 9:12:53","30-7-2019 20:7:6","KM AC",5419,"2019-07-31 09:13:03","2019-08-01 20:07:11"
+733,"963421","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",2100,"ADVIKA","SBI","16-8-2019 9:14:2","22-8-2019 9:7:22","KM AC",5480,"2019-08-21 09:14:07","2019-08-23 08:56:57"
+734,"356338","RAJIB ROY","BORIVILI WEST)","MUMBAI","CREDITED",20000,"ARANYAK ROY","ICICI","23-8-2019 9:19:11","28-8-2019 8:57:30","KM AC",5467,"2019-08-26 09:19:17","2019-09-03 08:57:37"
+735,"003044","Anirudha Jadi","AECS LAYOUT","BENGALURU","CREDITED",12000,"ALHAD","ICICI","28-8-2019 8:56:11","3-9-2019 18:47:58","KM AC",5366,"2019-09-03 08:56:20","2019-09-04 18:48:05"
+736,"963422","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",6050,"ADVIKA","SBI","3-9-2019 9:19:36","10-9-2019 9:22:0","KM AC",5591,"2019-09-09 09:19:43","2019-09-13 09:00:36"
+737,"000001","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",16000,"KRISHNA PANDEY","HDFC","9-9-2019 9:23:32","10-9-2019 16:52:47","KM AC",5564,"2019-09-10 09:23:41","2019-09-13 09:00:40"
+738,"119371","GURUNATH REDDY N","BEGALURU","BENGALURU","CREDITED",19200,"DEETYA REDDY","CITI","13-9-2019 9:11:12","20-9-2019 8:39:46","KM AC",5544,"2019-09-19 09:11:18","2019-09-21 10:45:44"
+739,"864632","KUMUDINI PATEL","SUNDARGARH","SUNDARGARH","CREDITED",16400,"SHIVANSH CHOUDHURY","SBI","19-9-2019 9:13:3","20-9-2019 8:39:40","KM AC",5575,"2019-09-19 09:13:10","2019-09-21 10:45:51"
+740,"024560","SANDEEP KUMAR","BTM LAYOUT","BENGALURU","CREDITED",14000,"SHIPRA KUMARI","ICICI","19-9-2019 10:45:33","24-9-2019 9:2:59","KM AC",5568,"2019-09-21 10:45:39","2019-09-27 09:03:04"
+741,"963424","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",12100,"ADVIKA","SBI","14-10-2019 9:16:37","16-10-2019 9:16:54","KM AC",5540,"2019-10-15 09:16:44","2019-10-17 09:17:41"
+742,"241597","PRASANTH","MARATHALLY","BENGALURU","CREDITED",18800,"PARVATHY","FEDERAL BANK","16-10-2019 9:23:5","18-10-2019 9:12:20","KM AC",5672,"2019-10-17 09:23:13","2019-10-21 09:27:35"
+743,"517708","SANTHOSH BASAPPA ALLAPURE","BUND GARDEN ROAD","PUNE","CREDITED",20300,"LIKHITH BEHERA","ICICI","11-11-2019 9:8:52","12-11-2019 9:28:59","KM AC",5475,"2019-11-11 09:09:00","2019-11-13 09:21:43"
+744,"620676","RAJIB ROY","MARATHALLY","BENGALURU","CREDITED",900,"ARANYAK ROY","YES","9-11-2019 9:10:4","12-11-2019 9:28:54","KM AC",0,"2019-11-11 09:10:12","2019-11-13 09:21:33"
+745,"963425","VINOD V V","MERCY COLLEGE","PALAKKAD","CREDITED",4000,"ADVIKA","SBI","11-11-2019 9:21:49","12-11-2019 9:28:43","KM AC",5723,"2019-11-11 09:21:56","2019-11-13 09:22:22"
+746,"000009","SYED INAYATULLA K","INDIRA NAGAR","BENGALURU","CREDITED",15000,"ISHRAT FATIMA","RBL BANK","4-12-2019 9:9:21","12-12-2019 8:40:43","KM AC",5489,"2019-12-10 09:09:27","2019-12-13 15:44:30"
+747,"119373","GURUNATH REDDY N","BEGALURU","BENGALURU","CREDITED",17000,"DEETYA REDDY","CITI","12-12-2019 9:22:43","18-12-2019 17:12:1","KM AC",5784,"2019-12-17 09:22:54","2019-12-18 17:12:10"
+748,"963426","VINOD V V","MERCY COLLEGE","PALAKKAD","DEPOSITED",2800,"ADVIKA [Insufficient Funds]","SBI","19-12-2019 9:23:56","3-1-2020 8:50:8","KM AC [Rejected]",5878,"2020-01-02 09:24:05","2020-01-10 09:04:27"
+749,"024561","SANDEEP KUMAR","BTM LAYOUT","BENGALURU","CREDITED",14000,"SHIPRA KUMARI","ICICI","23-12-2019 9:24:46","3-1-2020 8:49:50","KM AC",5797,"2020-01-02 09:24:54","2020-01-06 08:54:23"
+750,"864635","KUMUDINI PATEL","SUNDARGARH","SUNDARGARH","CREDITED",15800,"SHIVANSH CHOUDHURY","SBI","3-1-2020 11:57:47","9-1-2020 9:20:6","KM AC",5799,"2020-01-07 11:57:59","2020-01-10 09:19:44"
+751,"963427","VINOD V V","MERCY COLLEGE","PALAKKAD","PC",10000,"ADVIKA","SBI","7-1-2020 9:1:49","8-1-2020 9:20:0","KM AC",5865,"2020-01-08 09:01:57","2020-01-10 09:23:45"
+752,"000002","Monish P","KAZHAKKOOTA","TRIVANDRUM","CREDITED",13000,"HARSHITHAA","HDFC","7-1-2020 9:4:42","8-1-2020 9:19:55","KM AC",5917,"2020-01-08 09:04:48","2020-01-10 09:19:25"
+753,"000003","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",15500,"KRISHNA PANDEY","HDFC","8-1-2020 9:20:58","10-1-2020 9:4:5","KM AC",5792,"2020-01-09 09:21:06","2020-01-10 09:20:03"
+754,"036714","GOKUL RAM ELAPAVULURU","NEW BEL ROAD","BENGALURU","CREDITED",28000,"SHRIHAN RAM","ICICI","3-2-2020 10:18:46","5-2-2020 22:23:46","KM AC",5577,"2020-02-03 10:18:53","2020-02-09 22:22:18"
+755,"284032","PRASANTH","MARATHALLY","BENGALURU","CREDITED",16400,"PARVATHY","FEDERAL BANK","4-2-2020 8:39:0","12-2-2020 9:26:41","KM AC",5794,"2020-02-11 08:39:10","2020-02-14 09:26:50"
+756,"000003","VINOD V V","DOMLUR","BENGALURU","CREDITED",6100,"ADVIKA","ICICI","5-2-2020 8:42:2","12-2-2020 9:26:30","KM AC",5943,"2020-02-11 08:42:11","2020-02-14 09:26:34"
+757,"000004","PRACHI PANDEY","PARK STREET","KOLKATA","CREDITED",8200,"KRISHNA PANDEY","HDFC","9-3-2020 20:41:41","7-5-2020 21:53:30","KM AC",6028,"2020-04-10 20:41:51","2020-05-10 21:54:07"
+758,"13731","Shivakumar Katti","MARATHALLY","BENGALURU","CREDITED",22000,"SHRAVYA","SOUTH INDIAN BANK","13-10-2020 21:7:42","17-10-2020 11:37:11","KM AC",6139,"2020-10-04 21:07:56","2020-11-23 11:37:24"
+759,"256257","RAMESH A","AIRPORT ROAD","BENGALURU","CREDITED",25000,"SHUBHA R","SBI","18-11-2020 12:37:3","23-11-2020 11:37:56","KM AC",6140,"2020-11-20 12:37:13","2020-11-23 21:30:07"
+760,"256270","RAMESH A","AIRPORT ROAD","BENGALURU","CREDITED",20000,"SHUBHA R","SBI","6-7-2021 13:31:3","12-7-2021 14:31:45","KM AC",6301,"2021-07-07 13:31:10","2021-07-13 14:31:49"
+761,"256271","RAMESH A","AIRPORT ROAD","BENGALURU","CREDITED",17500,"SHUBHA R","SBI","26-7-2021 13:59:23","3-8-2021 9:31:49","KM AC",6318,"2021-07-30 13:59:31","2021-08-05 09:31:53"
+762,"256284","RAMESH A","ORR","BENGALURU","CREDITED",15000,"SHUBHA R","SBI","23-12-2021 11:5:25","7-12-2021 16:32:25","KM AC",6399,"2021-12-04 11:05:30","2021-12-09 16:32:30"
+763,"007155","Balakrishna Maharana","AIRPORT ROAD","BENGALURU","CREDITED",28000,"MITHALI MAHARANA ","SBI","12-1-2022 13:27:14","19-1-2022 15:41:43","KM AC",6475,"2022-01-16 13:27:20","2022-01-20 15:41:47"
+764,"007156","BALAKRISHNA MAHARANA","AIRPORT ROAD","BENGALURU","CREDITED",28000,"MANASWINI  MAHARANA ","SBI","3-2-2022 17:4:45","7-2-2022 13:22:36","KM AC",6478,"2022-02-03 17:04:55","2022-02-09 13:22:41"
+765,"368356","Subhash K Dhanwant","BEGALURU","BENGALURU","CREDITED",5000,"VIRAT SUBHASH DHANWANT","CITI","10-5-2022 16:32:31","19-5-2022 19:45:26","KM AC",6618,"2022-05-17 16:32:37","2022-05-21 19:45:33"
+766,"159354","Mayank Dhaniwala","SINHAGAD ROAD","PUNE","CREDITED",12200,"HEEMANSH DHANANIWALA","AXIS","26-5-2022 22:15:14","14-6-2022 20:39:5","KM AC",6670,"2022-05-28 22:15:20","2022-06-14 15:41:21"
+767,"368357","SUBHASH K DHANWANT","BANGALORE","BENGALURU","CREDITED",24000,"VIRAT SUBHASH DHANWANT","CITI","6-6-2022 21:22:28","10-6-2022 21:43:46","KM AC",6694,"2022-06-06 21:22:37","2022-06-14 15:39:41"
+768,"068895","ANUP KUMAR PANDA","AECS LAYOUT","BENGALURU","CREDITED",29200,"SHIVANYA PANDA","ICICI","30-6-2022 14:36:12","7-7-2022 15:22:32","KM AC",6895,"2022-07-05 14:36:19","2022-07-09 18:07:21"
+769,"266994","MAYANK DHANIWALA","VIMAN NAGAR","PUNE","CREDITED",15000,"HEEMANSH DHANANIWALA","ICICI","30-6-2022 14:38:2","7-7-2022 15:22:24","KM AC",6896,"2022-07-05 14:38:09","2022-07-09 18:06:59"
+770,"716644","Arangi Anil Kumar","AIRPORT ROAD","BENGALURU","CREDITED",27950,"MITHILA ARANGI","SBI","6-7-2022 20:39:26","11-7-2022 18:7:10","KM AC",6847,"2022-07-07 20:39:33","2022-07-11 21:01:01"
+771,"368358","SUBHASH K DHANWANT","BENGALURU","BENGALURU","DEPOSITED",16000,"REJECTED- VIRAT SUBHASH DHANWANT","CITI ","10-10-2022 21:7:32","17-10-2022 8:22:8","KM AC",7091,"2022-10-10 21:07:37","2022-10-18 08:22:47"
+772,"368359","SUBHASH K DHANWANT","BEGALURU","BENGALURU","TOBE",16000,"VIRAT SUBHASH DHANWANT","CITI","1-12-2022 21:12:11","","KM AC",0,"2022-10-10 21:12:24","2022-10-10 21:12:24"
+773,"665795","GAYATHRI B","ORR","BENGALURU","CREDITED",22000,"MITHILA ARANGI","SBI","11-10-2022 8:23:40","17-10-2022 8:21:56","KM AC",7141,"2022-10-12 08:23:46","2022-10-18 08:22:00"
+774,"368359","SUBHASH K DHANWANT","CITI","BENGALURU","CREDITED",16000,"VIRAT SUBHASH DHANWANT","CITI","1-12-2022 16:38:52","10-12-2022 19:29:7","KM AC",7305,"2022-12-06 16:40:24","2022-12-14 08:32:31"
+775,"277305","BLUE STAR PLASTICS","MARATHALLY","BENGALURU","CREDITED",25000,"PARVATHY","IDBI","7-12-2022 16:43:58","10-12-2022 19:28:52","KM AC",7257,"2022-12-06 16:44:05","2022-12-14 08:32:36"
+776,"000119","Rakesh B","Matadahalli R Nagar","BENGALURU","DEPOSITED",20000,"Rejected JAASHRUTH RAJ GOWDA","KOTAK","20-12-2022 17:5:44","25-12-2022 18:34:44","KM AC",7448,"2022-12-21 17:05:50","2023-01-07 20:56:44"
+777,"277306 ","BLUE STAR PLASTICS","MARATHALLY","BENGALURU","CREDITED",28000,"PARVATHY","IDBI","20-12-2022 18:36:30","25-12-2022 18:36:46","KM AC",0,"2022-12-25 18:36:44","2023-01-07 20:56:30"
+778,"716646","ARANGI ANIL KUMAR","MARATHALLY","BENGALURU","CREDITED",20500,"MITHILA ARANGI","SBI","9-1-2023 16:55:56","10-1-2023 18:58:38","KM AC",7381,"2023-01-09 16:56:50","2023-01-12 08:14:11"
+779,"000038","Manpreet Singh Chugh","DLF CITY","GURGAON","CREDITED",22000,"JAPNEET KAUR","HDFC","27-2-2023 8:27:52","7-3-2023 17:12:45","KM AC",7590,"2023-03-01 08:28:00","2023-03-07 17:12:52"
