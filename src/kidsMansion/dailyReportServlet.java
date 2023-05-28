@@ -66,7 +66,7 @@ public class dailyReportServlet extends HttpServlet {
 		 } else if ("1-STD".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,first, req, "1-STD" ) ;
 		 } else if ("2-STD".equalsIgnoreCase(classValue)){
-			 generateReport(reportdate, classValue,first, req, "2-STD" ) ;
+			 generateReport(reportdate, classValue,second, req, "2-STD" ) ;
 		 }	 
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
@@ -111,7 +111,7 @@ public class dailyReportServlet extends HttpServlet {
 	  eMailTiming.put("2-STD", "15.50");
 	  
 	  
-	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 22 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";
+	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 23 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";
 	  System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 	  controllerDAO cDAO = new controllerDAO();
 	  ResultSet  rs =  cDAO.getResult(sql.toString());

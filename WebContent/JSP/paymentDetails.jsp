@@ -63,7 +63,7 @@
 		    String  active = (String) request.getAttribute("active");
 		    String  yearClass = (String) request.getAttribute("yearClass");
 		    
-		    System.out.println("paymentDetail.jsp --> searchData " + searchData + "yearClass " + yearClass) ;
+		    // // // // // System.out.println("paymentDetail.jsp --> searchData " + searchData + "yearClass " + yearClass) ;
 		    
 		    ResultSet rs  = (ResultSet)request.getAttribute("resultSet");
 		    int recCount = -1;
@@ -298,7 +298,7 @@
 	               
 	               <% }
 	                  rs.close();
-	                  System.out.println("paymentDetails.jsp --> Result Set Closed ...");
+	                  // // // // // System.out.println("paymentDetails.jsp --> Result Set Closed ...");
 	                  %>
 	              </div>
 	              </table>

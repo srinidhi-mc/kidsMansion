@@ -22,7 +22,7 @@
 <body>
 <%  List<DailyReportTO> dailyReportTO = (List<DailyReportTO>)request.getAttribute("dailReportTOList");
 	String selDate = (String)request.getAttribute("reportDate");
-	System.out.println(" date " + selDate);
+	// // // // // System.out.println(" date " + selDate);
 %>
 
 
@@ -208,12 +208,12 @@ td{
 		  <H4><table>Note:Active Reports will be displayed.</table> </H4>
 		  <br>
 		<% if(dailyReportTO != null){
-			boolean isPGDone= false,isNURDone= false,isLKGDone= false,isUKGDone= false, isFirstDone=false;
+			boolean isPGDone= false,isNURDone= false,isLKGDone= false,isUKGDone= false, isFirstDone=false, isSecondDone=false;
 			
 		int counter = 0;
 	  		 for(DailyReportTO drTo : dailyReportTO ) {
 		 %>
-		 <% //System.out.println("entered 0 " + isPGDone  + " subject " + drTo.getSUBJECT() + " - " + (drTo.getSUBJECT()).indexOf("Group")); %>
+		 <% //// // // // // System.out.println("entered 0 " + isPGDone  + " subject " + drTo.getSUBJECT() + " - " + (drTo.getSUBJECT()).indexOf("Group")); %>
 		 <% if(((drTo.getSUBJECT()).indexOf("Play")>-1) && !isPGDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
 					<%=drTo.getCONTENT() %> <hr align = 'left' width ='70%'> <br><br>
@@ -244,6 +244,12 @@ td{
 					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>
 		 <% isFirstDone = true; } %>
+		 
+		 <% if((drTo.getSUBJECT().indexOf("2-STD")>-1) && !isFirstDone && drTo.getDELETED() == 0){ %>
+			<div class="target" style="display: none; width:900px;">
+					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
+			 </div>
+		 <% isSecondDone = true; } %>
 		 
 		 
 	     

@@ -20,7 +20,7 @@
 <% String selDate = (String)request.getAttribute("reportDate");
    String classString = (request.getAttribute("classString")!= null? (String)request.getAttribute("classString"):"");
    List<String> fetchReportData = (request.getAttribute("fetchReportData")!= null? (List<String>)request.getAttribute("fetchReportData"):null);  
-   System.out.println(" dailyReportTemplate.jsp: date " + selDate + " classString " + classString + " fetchReportData " + fetchReportData); 
+   // // // // // System.out.println(" dailyReportTemplate.jsp: date " + selDate + " classString " + classString + " fetchReportData " + fetchReportData); 
  %>
 
 <style>
@@ -300,7 +300,7 @@ $( function() {
      		<textarea cols="80" rows="3"  id='SoneA' name = 'SoneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
        <br><br>
          <!--    <input type= 'text' id='StwoT' name= 'StwoT' value='ENGLISH' length = 75/> &nbsp;&nbsp;&nbsp; -->
-     		<textarea cols="80" rows="3" id='StwoA' name = 'FtwoA'></textarea>
+     		<textarea cols="80" rows="3" id='StwoA' name = 'StwoA'></textarea>
 		<br><br>
    			<!-- <input type= 'text' id='SthreeT' name= 'SthreeT' value='KANNADA' length = 75/> &nbsp;&nbsp;&nbsp; -->
     		 <textarea cols="80" rows="3" id='SthreeA' name = 'SthreeA'></textarea>

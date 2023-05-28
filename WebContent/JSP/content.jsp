@@ -14,6 +14,14 @@
 <title>Insert title here</title>
 </head>
 
+<style>
+
+div {
+    width: 1400px;
+    word-wrap: break-word;
+}
+
+</style>
 
 <script>
 	function onSubmit(result) {
@@ -73,9 +81,9 @@
 			String studentId = (String) request.getAttribute("studentId");
 			DecimalFormat moneyFormat = new DecimalFormat("#,##,##0.00");
 			int unpaid = 0, fullTotal = 0;
-			System.out.println("content.jsp :: studentId " + studentId);
-			System.out.println("content.jsp :: resp " + resp);
-			System.out.println("content.jsp :: classValue " + classValue);
+			// // // // // System.out.println("content.jsp :: studentId " + studentId);
+			// // // // // System.out.println("content.jsp :: resp " + resp);
+			// // // // // System.out.println("content.jsp :: classValue " + classValue);
 		%>
 
 		<!--  Search Screen -->
@@ -580,11 +588,9 @@
 
 		<!--  Listing the Class Emails -->
 		<%
-			} else if (resp != null && resp.equalsIgnoreCase("emailList")) {
-
-				out.print(emailList);
+			} else if (resp != null && resp.equalsIgnoreCase("emailList")) { 			
 		%>
-
+             <div> <% out.print(emailList); %> </div>
 
 
 		<%
@@ -596,7 +602,7 @@
 
 			if (rs != null) {
 				rs.close();
-				System.out.println("content.jsp --> Result Set Closed ...");
+				// // // // // System.out.println("content.jsp --> Result Set Closed ...");
 			}
 		%>
 

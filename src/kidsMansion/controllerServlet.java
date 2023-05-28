@@ -45,11 +45,12 @@ public class controllerServlet extends HttpServlet {
 		if(request.equalsIgnoreCase("Search")) selList = cdao.generateListBox("NA");
 		
 			
-		if(request.equalsIgnoreCase("emailList")) {
+		if(request.equalsIgnoreCase("emailList")) {	
 			
 			  StringBuffer emailString = new StringBuffer();
 			  StringBuffer emailStringFinal = new StringBuffer();
 			  emailStringFinal.append("<HTML> <BODY>");
+			  emailStringFinal.append("<B>Student Email List Year 2023 -24</B>");
 
 			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD","2-STD"};
 			
@@ -60,7 +61,7 @@ public class controllerServlet extends HttpServlet {
 				System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 				controllerDAO cDAO = new controllerDAO();
 				ResultSet rs = cDAO.getResult(sql.toString());
-				emailString.append("<BR>" + class1 + ":: ");
+				emailString.append("<BR><BR><B>" + class1 + ": </B> <BR>");
 				//emailString.append(System.getProperty("line.separator"));
 				
 				try {

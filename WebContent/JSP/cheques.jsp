@@ -163,7 +163,7 @@
 	     
 	     if(rs!= null) {
 		      rs.close();
-		      System.out.println("cheques.jsp --> Result Set Closed ...");
+		      // // // // // System.out.println("cheques.jsp --> Result Set Closed ...");
 		    }
 	  %>
 	
