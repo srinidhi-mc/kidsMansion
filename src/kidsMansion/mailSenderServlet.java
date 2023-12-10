@@ -203,6 +203,7 @@ public List<DailyReportTO> fetchData ( String selectDate){
 			dailReportTO.setTO_SEND(rs.getInt("TO_SEND"));
 			dailReportTO.setDELETED(rs.getInt("DELETED"));
 			dailReportTOList.add(dailReportTO);
+			System.out.println("fetchData: " +  dailReportTO.getSUBJECT());
 			//dailReportTOList.add(dailReportTO);
 			
 		  }

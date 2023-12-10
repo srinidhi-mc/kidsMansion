@@ -120,6 +120,7 @@ div {
 			<option value="21">2021-22</option>
 			<option value="22">2022-23</option>
 			<option value="23"  selected="selected">2023-24</option>
+			<option value="24">2024-25</option>
 
 		</Select> <br> <br> <input type="submit" value="Search"
 			onclick="javascript:onSubmit('searchSubmit');" />
@@ -152,6 +153,7 @@ div {
 			<option value="21">2021-22</option>
 			<option value="22" >2022-23</option>
 			<option value="23" selected="selected" >2023-24</option>
+			<option value="24">2024-25</option>
 		</Select> <br> <br> Active: &nbsp;&nbsp;<Select id="active"
 			name="active">
 			<option value="1">Active</option>
@@ -193,6 +195,7 @@ div {
 			<option value="21">2021-22</option>
 			<option value="22" >2022-23</option>
 			<option value="23" selected="selected" >2023-24</option>
+			<option value="24">2024-25</option>
 
 		</Select> <br> Active: &nbsp;&nbsp;<Select id="active" name="active">
 			<option value="1">Active</option>
@@ -314,8 +317,10 @@ div {
 											strYear = "2021-22";
 										} else if (rs.getInt("YEAR") == 22) {
 											strYear = "2022-23";
+										} else if (rs.getInt("YEAR") == 23) {
+											strYear = "2023-24";	
 										} else
-											strYear = "2023-24";
+											strYear = "2024-25";
 									}
 									out.print(strYear);
 					%> <!-- Generic Search no search String provided --> <%

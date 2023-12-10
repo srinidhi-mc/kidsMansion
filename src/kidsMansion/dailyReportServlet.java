@@ -106,9 +106,9 @@ public class dailyReportServlet extends HttpServlet {
 	  eMailTiming.put("PG", "15.30");
 	  eMailTiming.put("NURSERY", "15.32");
 	  eMailTiming.put("LKG", "15.34");
-	  eMailTiming.put("UKG", "15.38");
-	  eMailTiming.put("1-STD", "15.40");
-	  eMailTiming.put("2-STD", "15.50");
+	  eMailTiming.put("UKG", "15.36");
+	  eMailTiming.put("1-STD", "15.38");
+	  eMailTiming.put("2-STD", "15.40");
 	  
 	  
 	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 23 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";

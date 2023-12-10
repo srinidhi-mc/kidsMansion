@@ -201,9 +201,9 @@ public class paymentServlet extends HttpServlet{
 				 int paymentId = cDAO.returnPaymentId(sql);
 				  req.setAttribute("paymentId", paymentId);
 				
-				  sql = "select distinct(UPPER(CHEQUE_NAME)) from cheques order by CHEQUE_NAME"  ;
+				  sql = "select distinct((CHEQUE_NAME)) from cheques where CHEQUE_NAME <> null or  CHEQUE_NAME <> \"\" order by CHEQUE_NAME;"  ;
 				  List<String> issuedBy = cDAO.createRSList(sql); 
-				  				  sql = "select  distinct(UPPER (c.bank))BANK from cheques c order by c.bank";
+				  				  sql = "select distinct(BANK) from km.cheques c where c.bank <> null or  c.bank <> \"\" order by c.bank;";
 				   List<String> banks = cDAO.createRSList(sql);
 				  sql = "select distinct (UPPER (branch))BRANCH from cheques order by BRANCH";
 				  List<String> branch = cDAO.createRSList(sql);

@@ -245,7 +245,7 @@ td{
 			 </div>
 		 <% isFirstDone = true; } %>
 		 
-		 <% if((drTo.getSUBJECT().indexOf("2-STD")>-1) && !isFirstDone && drTo.getDELETED() == 0){ %>
+		 <% if((drTo.getSUBJECT().indexOf("2-STD")>-1) && !isSecondDone && drTo.getDELETED() == 0){ %>
 			<div class="target" style="display: none; width:900px;">
 					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>

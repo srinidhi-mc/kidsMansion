@@ -40,7 +40,7 @@ public class chequeServlet extends HttpServlet {
 			  List<String> issuedBy = cDAO.createRSList(sql);
 			   sql = "select distinct(UPPER(name)) name from students where active = 1 order by Name"  ;
 			   List<String> stuName = cDAO.createRSList(sql);
-			  sql = "select  distinct(UPPER (c.bank))BANK from cheques c order by c.bank";
+			  sql = "select distinct(BANK) from km.cheques c where c.bank <> null or  c.bank <> \"\" order by c.bank;";
 			   List<String> banks = cDAO.createRSList(sql);
 			  sql = "select distinct (UPPER (branch))BRANCH from cheques order by BRANCH";
 			  List<String> branch = cDAO.createRSList(sql);

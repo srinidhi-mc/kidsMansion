@@ -82,6 +82,16 @@ public class DailyReportTO {
 	public void setTO_SEND(int tO_SEND) {
 		TO_SEND = tO_SEND;
 	}
+	@Override
+	public String toString() {
+		return "DailyReportTO [ID=" + ID + ", " + (CONTENT != null ? "CONTENT=" + CONTENT + ", " : "") + "STATUS="
+				+ STATUS + ", " + (SEND_DATE != null ? "SEND_DATE=" + SEND_DATE + ", " : "")
+				+ (MAIL_ID != null ? "MAIL_ID=" + MAIL_ID + ", " : "")
+				+ (CREATED_DATE != null ? "CREATED_DATE=" + CREATED_DATE + ", " : "")
+				+ (UPDATED_DATE != null ? "UPDATED_DATE=" + UPDATED_DATE + ", " : "")
+				+ (SUBJECT != null ? "SUBJECT=" + SUBJECT + ", " : "") + (TIME != null ? "TIME=" + TIME + ", " : "")
+				+ "TO_SEND=" + TO_SEND + ", DELETED=" + DELETED + "]";
+	}
 
 	
 	
