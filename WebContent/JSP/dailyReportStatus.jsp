@@ -208,7 +208,7 @@ td{
 		  <H4><table>Note:Active Reports will be displayed.</table> </H4>
 		  <br>
 		<% if(dailyReportTO != null){
-			boolean isPGDone= false,isNURDone= false,isLKGDone= false,isUKGDone= false, isFirstDone=false, isSecondDone=false;
+			boolean isPGDone= false,isNURDone= false,isLKGDone= false,isUKGDone= false, isFirstDone=false, isSecondDone=false, isThirdDone=false;
 			
 		int counter = 0;
 	  		 for(DailyReportTO drTo : dailyReportTO ) {
@@ -250,6 +250,12 @@ td{
 					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
 			 </div>
 		 <% isSecondDone = true; } %>
+		 
+		  <% if((drTo.getSUBJECT().indexOf("3-STD")>-1) && !isThirdDone && drTo.getDELETED() == 0){ %>
+			<div class="target" style="display: none; width:900px;">
+					<%=drTo.getCONTENT()%> <hr align = 'left' width ='70%'>  <br><br>
+			 </div>
+		 <% isThirdDone = true; } %>
 		 
 		 
 	     

@@ -40,7 +40,7 @@ public class controllerDAO {
 				 return connect ;
 			 }
 			Class.forName("com.mysql.jdbc.Driver");
-			connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/KM?user=root&password=root");
+			connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/KM?user=root&password=Root@1234");
 			connect.setAutoCommit(true);
 			System.out.println("controllerDAO:getConnection::Created a new connection");
 		  } catch (ClassNotFoundException e) {
@@ -263,6 +263,12 @@ public class controllerDAO {
 				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
 			}else {
 				sb.append("<option value=\"2-STD\"> 2-STD </option>");
+			}
+			
+			if(type.equalsIgnoreCase("3-STD")) {
+				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
+			}else {
+				sb.append("<option value=\"3-STD\"> 3-STD </option>");
 			}
 			
 			if(type.equalsIgnoreCase("NETBANKING")) {

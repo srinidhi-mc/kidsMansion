@@ -119,8 +119,8 @@ div {
 			<option value="20">2020-21</option>
 			<option value="21">2021-22</option>
 			<option value="22">2022-23</option>
-			<option value="23"  selected="selected">2023-24</option>
-			<option value="24">2024-25</option>
+			<option value="23" >2023-24</option>
+			<option value="24"  selected="selected" >2024-25</option>
 
 		</Select> <br> <br> <input type="submit" value="Search"
 			onclick="javascript:onSubmit('searchSubmit');" />
@@ -140,6 +140,7 @@ div {
 			<option value="UKG">UKG</option>
 			<option value="1-STD">1-STD</option>
 			<option value="2-STD">2-STD</option>
+			<option value="3-STD">3-STD</option>
 			<option value="DayCare">Day Care</option>
 		</Select> <br> Email1: &nbsp;&nbsp; <input type="text" name="email1" /> <br>
 		Email2: &nbsp;&nbsp; <input type="text" name="email2" /> <br> <Br>
@@ -152,8 +153,8 @@ div {
 			<option value="20">2020-21</option>
 			<option value="21">2021-22</option>
 			<option value="22" >2022-23</option>
-			<option value="23" selected="selected" >2023-24</option>
-			<option value="24">2024-25</option>
+			<option value="23"  >2023-24</option>
+			<option value="24" selected="selected" >2024-25</option>
 		</Select> <br> <br> Active: &nbsp;&nbsp;<Select id="active"
 			name="active">
 			<option value="1">Active</option>
@@ -179,6 +180,7 @@ div {
 			<option value="UKG">UKG</option>
 			<option value="1-STD">1-STD</option>
 			<option value="2-STD">2-STD</option>
+			<option value="3-STD">3-STD</option>
 			<option value="DayCare">Day Care</option>
 		</Select> <br> <br> Email1: &nbsp;&nbsp; <input type="text"
 			name="email1" value="<%=rs.getString("email_1")%>" size=75 /> <br>
@@ -194,8 +196,8 @@ div {
 			<option value="20">2020-21</option>
 			<option value="21">2021-22</option>
 			<option value="22" >2022-23</option>
-			<option value="23" selected="selected" >2023-24</option>
-			<option value="24">2024-25</option>
+			<option value="23"  >2023-24</option>
+			<option value="24" selected="selected" >2024-25</option>
 
 		</Select> <br> Active: &nbsp;&nbsp;<Select id="active" name="active">
 			<option value="1">Active</option>
