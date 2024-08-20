@@ -120,32 +120,53 @@ public class dailyReportServlet extends HttpServlet {
 	  controllerDAO cDAO = new controllerDAO();
 	  ResultSet  rs =  cDAO.getResult(sql.toString());
 	  List<emailDetails> emailDetail = new ArrayList<emailDetails>();
-	  emailDetails emailDet = new emailDetails();
+	 
 	  StringBuffer emailString  = new StringBuffer();
+	  // Introduce to breakup the email to have Max 50 ids as per the new gmail policy to avoid non delivery
+	  counter = 0;
+	  int stepCounter = 0;
 	  try{
 		  while(rs.next()){
+			  emailDetails emailDet = new emailDetails();
 			  if(rs.getString("EMAIL_1") != null &&  rs.getString("EMAIL_1") != "" &&  !rs.getString("EMAIL_1").equalsIgnoreCase("null")){
 			      emailString.append(rs.getString("EMAIL_1"));
 			      emailString.append(",");
+			      counter++;
+				  stepCounter++;
 			  }   
 			  if(rs.getString("EMAIL_2") != null &&  rs.getString("EMAIL_2") != "" &&  !rs.getString("EMAIL_2").equalsIgnoreCase("null")){
 				   emailString.append(rs.getString("EMAIL_2"));
 				   emailString.append(",");
+				   counter++;
+				   stepCounter++;
 			  }else {
 				  emailString.append(",");
 			  }
+			 
+			 if(stepCounter >= 50) {
+				 emailDet.setCLASS(classValue.toUpperCase());
+				 emailDet.setEMAIL_ID(emailString.toString());
+				 emailDet.setSEND_TIME(eMailTiming.get(classValue.toUpperCase()));
+				 emailDetail.add(emailDet);		
+				 stepCounter = 0;
+				 emailString = new StringBuffer();
+			 }
 			  
 		  }
 		  
-		  emailDet.setCLASS(classValue.toUpperCase());
-		  emailDet.setEMAIL_ID(emailString.toString());
-		  emailDet.setSEND_TIME(eMailTiming.get(classValue.toUpperCase()));
-		  emailDetail.add(emailDet);
+		 if(counter == stepCounter || stepCounter < counter) {
+			 emailDetails emailDet = new emailDetails();
+			 emailDet.setCLASS(classValue.toUpperCase());
+			 emailDet.setEMAIL_ID(emailString.toString());
+			 emailDet.setSEND_TIME(eMailTiming.get(classValue.toUpperCase()));
+			 emailDetail.add(emailDet);	
+		 } 
 		 rs.close();
-		  for(emailDetails e : emailDetail ){
-		   sql ="insert into KM.DAILY_REPORT (CONTENT,STATUS,SEND_DATE,CREATED_DATE,UPDATED_DATE,SUBJECT,MAIL_ID, TIME) values( '" + (sb.toString()).replaceAll("'", "''") +"' ,"
+		 for(emailDetails e : emailDetail ){
+		    sql ="insert into KM.DAILY_REPORT (CONTENT,STATUS,SEND_DATE,CREATED_DATE,UPDATED_DATE,SUBJECT,MAIL_ID, TIME) values( '" + (sb.toString()).replaceAll("'", "''") +"' ,"
 		  		+ "0,'"+ reportdate +"', now(),now(),'" + subject +"','" + e.getEMAIL_ID() +"', '" + e.getSEND_TIME() +"')";
-		   System.out.println(" -- " + sql + " -- " + cDAO.addUser(sql));
+		   System.out.println(" -- " + sql + " -- " + new controllerDAO().addUser(sql));
+		   //counter++;
 		  }
 		  /*boolean sent = new sendMailModified().sendMailContent(subject, "srinidhi.mc@gmail.com,srinidhi.chatrapathi@tarams.com", sb.toString());
 		  System.out.println("Mail sent "+ sent);*/

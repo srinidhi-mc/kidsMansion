@@ -65,11 +65,13 @@ public class controllerDAO {
 			  setError(true);
 			e.printStackTrace();
 			closeAll();
-		} /*finally{
-			
-			closeConStat();
-			
-		}*/
+		} /*
+			 * finally{
+			 * 
+			 * closeConStat();
+			 * 
+			 * }
+			 */
 		
 		
 		return resultSet ;
@@ -85,7 +87,7 @@ public class controllerDAO {
 			  setError(true);
 			e.printStackTrace();
 		}finally{
-			closeAll();
+			// closeAll();
 		}
 		
 		return successful;
