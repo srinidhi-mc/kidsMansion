@@ -78,7 +78,7 @@ public class mailThreadExecutor extends Thread  {
 					rs.close();
 			    	sql = "UPDATE KM.DAILY_REPORT SET STATUS = 1 , UPDATED_DATE = NOW() WHERE ID =" + id;
 			    	 cDAO.addUser(sql); 
-			    	 Thread.sleep(120000); // Now set to 2 mins after migrtion to office 365 mail box
+			    	 Thread.sleep(45000); // Now set to 45 * 1000 seconds after migration to office 365 mail box
 			}	
 		} catch (InterruptedException e) {
 			sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
@@ -90,7 +90,7 @@ public class mailThreadExecutor extends Thread  {
 		     me.printStackTrace();
 	     }catch(Exception e){
 	    	 sql = "UPDATE KM.DAILY_REPORT SET STATUS = -1, TO_SEND =0 , UPDATED_DATE = NOW() WHERE STATUS = 0 and  ID in (" + iDs + ")";
-	    	 cDAO.addUser(sql);
+	    	 cDAO.addUser(sql);	
 			e.printStackTrace();
 		}
   }
@@ -103,7 +103,7 @@ public class mailThreadExecutor extends Thread  {
         
 
         final String username = "vinaya@kidsmansion.in";
-		final String password = "";
+		final String password = "Hari$om02";
 
       
 		/* To address this below authentication error the following changes are made

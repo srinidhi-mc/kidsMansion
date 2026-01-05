@@ -40,11 +40,12 @@ public class mailSenderServlet extends HttpServlet {
 		       /*List<mailerTO> mailerDate = new ArrayList<mailerTO>();*/
 		       List<DailyReportTO> dailReportTOList = new ArrayList<DailyReportTO>();
 		       if(type.equalsIgnoreCase("fetch")){
-		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate, new controllerDAO());
 				   
 		       }else if (type.equalsIgnoreCase("deleted")){
 		    	   boolean firstEntry = true;
 		    	   StringBuilder sb = new StringBuilder();
+		    	   controllerDAO cDAO = new controllerDAO();
 		    	   sb.append("Update KM.DAILY_REPORT SET DELETED = 1, UPDATED_DATE = NOW() where ID IN (" );
 		    	   if(ids != null && !ids.equalsIgnoreCase("")){
 		    		   String[] idDetail = ids.split(",");
@@ -57,10 +58,10 @@ public class mailSenderServlet extends HttpServlet {
 		    			   }
 		    		   }
 		    		   sb.append(")");
-		    		   controllerDAO cDAO = new controllerDAO();
+		    		  
 		    		   cDAO.addUser(sb.toString());
 		    	   }
-		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate, cDAO);
 		       
 		       }else if(type.equalsIgnoreCase("submit")){
 		    	    
@@ -88,7 +89,7 @@ public class mailSenderServlet extends HttpServlet {
 		    	   	  mTE.start();
 			          System.out.println(" *** Task Completed **** "); 
 		    	  }
-		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate);
+		    	   dailReportTOList =  new mailSenderServlet().fetchData(selectDate, new controllerDAO());
 		      }
 		      req.setAttribute("reportDate", selectDate);
 		      if(type.equalsIgnoreCase("List") ){     
@@ -184,13 +185,14 @@ public class mailSenderServlet extends HttpServlet {
 
 
 
-public List<DailyReportTO> fetchData ( String selectDate){
+public List<DailyReportTO> fetchData ( String selectDate, controllerDAO cDAO){
 	List<DailyReportTO> dailReportTOList = new ArrayList<DailyReportTO>();
 	   String sql = "select * from KM.DAILY_REPORT where SEND_DATE = '"+selectDate +"' and deleted = 0 order by TIME" ;
 	   System.out.println("fetchData  sql " + sql);
-	   controllerDAO cDAO = new controllerDAO();
+	  // controllerDAO cDAO1 = new controllerDAO();
 	 
 	  ResultSet rs = cDAO.getResult(sql);
+	  System.out.println("fetchData--> After execution " + rs);
 	  try {
 		while(rs.next()){
 			DailyReportTO dailReportTO = new DailyReportTO();

@@ -50,13 +50,13 @@ public class controllerServlet extends HttpServlet {
 			  StringBuffer emailString = new StringBuffer();
 			  StringBuffer emailStringFinal = new StringBuffer();
 			  emailStringFinal.append("<HTML> <BODY>");
-			  emailStringFinal.append("<B>Student Email List Year 2024 -25</B>");
+			  emailStringFinal.append("<B>Student Email List Year 2025 -26</B>");
 
-			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD","2-STD","3-STD"};
+			  String[] classes = { "PG","NURSERY","LKG","UKG","1-STD","2-STD","3-STD","4-STD"};
 			
 			for (String class1 : classes) {
 
-				String sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 24 and ACTIVE = 1  AND CLASS = '"
+				String sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 25 and ACTIVE = 1  AND CLASS = '"
 						+ class1.toUpperCase() + "';";
 				System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 				controllerDAO cDAO = new controllerDAO();
@@ -130,7 +130,7 @@ public class controllerServlet extends HttpServlet {
 					if(searchString == null || searchString == "" || searchString.equalsIgnoreCase("null")) {
 						sql.append(" and STU.CLASS <>'DayCare' ");
 					}
-					sql.append(" order by FIELD(CLASS, 'PG','NURSERY','LKG','UKG','1-STD','2-STD','3-STD'),  NAME asc"); 
+					sql.append(" order by FIELD(CLASS, 'PG','NURSERY','LKG','UKG','1-STD','2-STD','3-STD','4-STD'),  NAME asc"); 
 			//  sql.append( " FROM KM.STUDENTS STU where NAME like '%" + searchString + "%' and active =" + active + " order by STU.NAME ") ;
 			 
 			 }else if(classValue.equalsIgnoreCase("DayCare")) {

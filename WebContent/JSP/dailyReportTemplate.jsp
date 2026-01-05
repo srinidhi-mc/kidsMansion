@@ -78,6 +78,8 @@ td{
 	   		$( "#tabs" ).tabs({ active: 5 });
 	   	<%}else if(classString.equalsIgnoreCase("III-STD")){%>
 	   		$( "#tabs" ).tabs({ active: 5 });
+	   	<%}else if(classString.equalsIgnoreCase("IV-STD")){%>
+	   		$( "#tabs" ).tabs({ active: 5 });
 	   <%}%>
    }
  
@@ -118,6 +120,7 @@ $( function() {
     <li><a href="#tabs-5">1-STD </a></li>
     <li><a href="#tabs-6">2-STD </a></li>
     <li><a href="#tabs-7">3-STD </a></li>
+    <li><a href="#tabs-8">4-STD </a></li>
     
   </ul>
   <%   String message = (String)request.getAttribute("message");  
@@ -356,6 +359,39 @@ $( function() {
    			 <textarea cols="80" rows="3" id=TSevenA' name = 'TSevenA'></textarea>
    	 	<br><br>
    	 		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('3-STD', 'datepicker3')"/>
+     <hr><hr>
+ 
+  </div>
+  
+   <!--  4-STD -->
+  <div id="tabs-8">
+  		Activity
+     <br><br>
+    		Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    		<input type="text" name = 'datepicker5' id = 'datepicker5' class="datepicker"  <%if(selDate!= null) %> value = "<%=selDate%>"/>
+      <br><br>
+   			<!-- <input type= 'text' id='SoneT' name= 'SoneT' value='Assembly' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3"  id='FToneA' name = 'FToneA'>Circle Time(Prayer , National Anthem & Rhymes with action)</textarea>
+       <br><br>
+         <!--    <input type= 'text' id='StwoT' name= 'StwoT' value='ENGLISH' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3" id='FTtwoA' name = 'FTtwoA'></textarea>
+		<br><br>
+   			<!-- <input type= 'text' id='SthreeT' name= 'SthreeT' value='KANNADA' length = 75/> &nbsp;&nbsp;&nbsp; -->
+    		 <textarea cols="80" rows="3" id='FTthreeA' name = 'FTthreeA'></textarea>
+ 		 <br><br>
+   			<!-- <input type= 'text' id='SfourT' name= 'SfourT' value='HINDI' length = 75/> &nbsp;&nbsp;&nbsp; -->
+     		<textarea cols="80" rows="3" id='FTfourA' name = 'FTfourA'></textarea>
+     	<br><br>
+   			<!-- <input type= 'text' id='SfiveT' name= 'SfiveT' value='MATH' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   		 	<textarea cols="80" rows="3" id='FTfiveA' name = 'FTfiveA'></textarea>
+   		<br><br>
+   			<!-- <input type= 'text' id='SSixT' name= 'SSixT' value='General Awareness' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   			 <textarea cols="80" rows="3" id=FTSixA' name = 'FTSixA'></textarea>
+   		<br><br>
+   			<!-- <input type= 'text' id='SSevenT' name= 'SSevenT' value='EVS' length = 75/> &nbsp;&nbsp;&nbsp; -->
+   			 <textarea cols="80" rows="3" id=FTSevenA' name = 'FTSevenA'></textarea>
+   	 	<br><br>
+   	 		 <input type="submit" value ="Submit" onclick="javascript:onSubmit('4-STD', 'datepicker3')"/>
      <hr><hr>
  
   </div>

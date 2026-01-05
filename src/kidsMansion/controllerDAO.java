@@ -63,6 +63,30 @@ public class controllerDAO {
 			 resultSet = statement.executeQuery(sql);
 		} catch (SQLException e) {
 			  setError(true);
+			 e.printStackTrace();
+			closeAll();
+		} 
+			  finally{
+			  
+			// closeConStat();
+			  
+			  }
+			 
+		
+		
+		return resultSet ;
+	}
+	
+public ResultSet getResult1(String sql) {
+		
+		try {
+			if(statement == null) {
+				System.out.println("controllerDAO:getResult::Created a new statement");
+				statement = getConnection().createStatement();
+			}
+			 resultSet = statement.executeQuery(sql);
+		} catch (SQLException e) {
+			  setError(true);
 			e.printStackTrace();
 			closeAll();
 		} /*
@@ -271,6 +295,12 @@ public class controllerDAO {
 				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
 			}else {
 				sb.append("<option value=\"3-STD\"> 3-STD </option>");
+			}
+			
+			if(type.equalsIgnoreCase("4-STD")) {
+				sb.append("<option value=\" "+ type +"\" selected > " +type + "</option>");
+			}else {
+				sb.append("<option value=\"4-STD\"> 4-STD </option>");
 			}
 			
 			if(type.equalsIgnoreCase("NETBANKING")) {

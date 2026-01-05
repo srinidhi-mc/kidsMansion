@@ -48,6 +48,7 @@ public class dailyReportServlet extends HttpServlet {
 		String[] first ={"FoneT","FoneA" ,"FtwoT","FtwoA","FthreeT","FthreeA","FfourT","FfourA","FfiveT","FfiveA","FSixT","FSixA","FSevenT","FSevenA"};
 		String[] second  ={"SoneT","SoneA" ,"StwoT","StwoA","SthreeT","SthreeA","SfourT","SfourA","SfiveT","SfiveA","SSixT","SSixA","SSevenT","SSevenA"};
 		String[] third  ={"ToneT","ToneA" ,"TtwoT","TtwoA","TthreeT","TthreeA","TfourT","TfourA","TfiveT","TfiveA","TSixT","TSixA","TSevenT","TSevenA"};
+		String[] fourth  ={"FToneT","FToneA" ,"FTtwoT","FTtwoA","FTthreeT","FTthreeA","FTfourT","FTfourA","FTfiveT","FTfiveA","FTSixT","FTSixA","FTSevenT","FTSevenA"};
 		 System.out.println("inside Do Post dailyReportServlet ");
 		 String classValue = req.getParameter("type");
 		 String reportdate =req.getParameter("reportdate");
@@ -70,7 +71,9 @@ public class dailyReportServlet extends HttpServlet {
 			 generateReport(reportdate, classValue,second, req, "2-STD" ) ;
 		 } else if ("3-STD".equalsIgnoreCase(classValue)){
 			 generateReport(reportdate, classValue,third, req, "3-STD" ) ;
-		 }	 
+		 } else if ("4-STD".equalsIgnoreCase(classValue)){
+			 generateReport(reportdate, classValue,fourth, req, "4-STD" ) ;
+		 }	
 		 req.setAttribute("reportDate", reportdate);
 		 getServletContext().getRequestDispatcher("/JSP/dailyReportTemplate.jsp").forward(req, resp);
 	}
@@ -113,12 +116,14 @@ public class dailyReportServlet extends HttpServlet {
 	  eMailTiming.put("1-STD", "15.38");
 	  eMailTiming.put("2-STD", "15.40");
 	  eMailTiming.put("3-STD", "15.42");
+	  eMailTiming.put("4-STD", "15.44");
 	  
 	  
-	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 24 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";
+	  
+	  sql = "Select TRIM(EMAIL_1) 'EMAIL_1', TRIM(EMAIL_2)'EMAIL_2' from students where YEAR = 25 and ACTIVE = 1  AND CLASS = '" + classValue.toUpperCase() + "';";
 	  System.out.println(" dailyReportServlet:doPost: sql --" + sql);
 	  controllerDAO cDAO = new controllerDAO();
-	  ResultSet  rs =  cDAO.getResult(sql.toString());
+	  ResultSet  rs =  cDAO.getResult1(sql.toString());
 	  List<emailDetails> emailDetail = new ArrayList<emailDetails>();
 	 
 	  StringBuffer emailString  = new StringBuffer();
@@ -139,11 +144,9 @@ public class dailyReportServlet extends HttpServlet {
 				   emailString.append(",");
 				   counter++;
 				   stepCounter++;
-			  }else {
-				  emailString.append(",");
 			  }
 			 
-			 if(stepCounter >= 50) {
+			 if(stepCounter > 50) {
 				 emailDet.setCLASS(classValue.toUpperCase());
 				 emailDet.setEMAIL_ID(emailString.toString());
 				 emailDet.setSEND_TIME(eMailTiming.get(classValue.toUpperCase()));
